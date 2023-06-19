@@ -73,6 +73,179 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-python" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/06/19/python/" class="article-date">
+  <time class="dt-published" datetime="2023-06-19T13:50:11.000Z" itemprop="datePublished">2023-06-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/06/19/python/">python</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><h2 id="基础内容"><a href="#基础内容" class="headerlink" title="基础内容"></a>基础内容</h2><ul>
+<li><p>常用的快捷键</p>
+<ul>
+<li>ctrl + alt +s:打开软件设置</li>
+<li>ctrl+d：复制当前行代码</li>
+<li>shift+alt+上\下：将当前的行代码上移或下移</li>
+<li>ctrl+shift+f10：运行当前代码文件</li>
+<li>shift+f6:重命名文件</li>
+<li>ctrl+f：搜索</li>
+</ul>
+</li>
+<li><p>注释</p>
+<ul>
+<li><p>单行注释</p>
+<ul>
+<li>以#开头(一般#号和注释内容一般建议以一个空格隔开)</li>
+</ul>
+</li>
+<li><p>多行注释</p>
+<ul>
+<li>以一对三个双引号引起来来接受说明一段代码的作用和使用方法</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>数据类型</p>
+<ul>
+<li>type（）语句可以输出类型信息</li>
+</ul>
+</li>
+<li><p>数据类型转换</p>
+<ul>
+<li>str（）转换为字符串</li>
+<li>int（）转换为整数</li>
+<li>float（）转换为数字</li>
+</ul>
+</li>
+<li><p>标识符命名规则</p>
+<ul>
+<li>只能出现<ul>
+<li>英文</li>
+<li>中文</li>
+<li>数字</li>
+<li>下划线</li>
+</ul>
+</li>
+<li>大小写敏感</li>
+<li>不可使用关键词</li>
+</ul>
+</li>
+<li><p>算术运算符</p>
+<ul>
+<li><ul>
+<li></li>
+</ul>
+</li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+<li><ul>
+<li></li>
+</ul>
+</li>
+<li>&#x2F;</li>
+<li>&#x2F;&#x2F;（取整除）</li>
+<li>%(取余)</li>
+<li>**（指数 ）</li>
+</ul>
+</li>
+<li><p>使用转义字符\接触引号的效用</p>
+<ul>
+<li>例如” &quot;111 “输出”111（格式为name&#x3D;“\“111”）</li>
+</ul>
+</li>
+<li><p>字符串格式化 </p>
+<ul>
+<li><p>字符串拼接%s占位拼接</p>
+<ul>
+<li><pre><code class="python">name = &quot;董佬&quot;
+message =&quot;卷王 %s&quot; % name
+print (message) 
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">    + %s 将内容转换为字符串，放入占位位置</span><br><span class="line"></span><br><span class="line">    + %d 将内容转换成1整数，放入占位位置</span><br><span class="line"></span><br><span class="line">    + %f将内容转换成浮点型，放入占位位置</span><br><span class="line"></span><br><span class="line">  + 数字精度控制(和java差不多)</span><br><span class="line"></span><br><span class="line">    +  例如%5.2f：表示将宽度控制为5，将小数点精度设置为2</span><br><span class="line">    +  %.2f小数点精度设置为2</span><br><span class="line"></span><br><span class="line">  + 快速拼接f&quot; &#123;占位内容&#125;&quot;</span><br><span class="line"></span><br><span class="line">+ 数据输入</span><br><span class="line"></span><br><span class="line">  + input()获取用户输入</span><br><span class="line">  + 获取的数据永远都是字符串类型的</span><br><span class="line"></span><br><span class="line">### 判断语句</span><br><span class="line"></span><br><span class="line">+ if （和java略微不同，python里是：结尾例如 if age &gt;18: 满足条件应该做的事）</span><br><span class="line">+ if else（和java相同）</span><br><span class="line">+ if  条件1：elif 条件2： ...... else ： </span><br><span class="line"></span><br><span class="line">### 循环语句</span><br><span class="line"></span><br><span class="line">+ while</span><br><span class="line"></span><br><span class="line">  + while 条件: (其他跟java一样)</span><br><span class="line">  + while循环的循环条件是自定义的，自行控制循环条件</span><br><span class="line">  + for循环是一种“轮询”机制，1是对一批内容进行逐个处理</span><br><span class="line"></span><br><span class="line">+ for</span><br><span class="line"></span><br><span class="line">  + ```python</span><br><span class="line">    for 临时变量 in 待处理的数据集：循环满足时执行的代码</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>也称遍历循环</p>
+</li>
+<li><p>临时变量，在编程规范上，作用范围，只限定在for内部</p>
+<ul>
+<li>实际上可以访问到</li>
+<li>但是编程规范上不允许，不建议这么使用</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>range语句</p>
+<ul>
+<li>range（num）表示获取一个从0开始，到num结束的数字序列不包含num</li>
+<li>range（num1，num2）从num1到num2不包含num2<ul>
+<li>例如range（5,10）   [5,6,7,8,9]</li>
+</ul>
+</li>
+<li>range（num1，num2，step）<ul>
+<li>例如range（5,10,2）  [5,7,9]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>continue</p>
+<ul>
+<li>类似java中的</li>
+<li>break<ul>
+<li>类似java中的</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h3><ul>
+<li><p>print 语句中加end&#x3D;’’可以不换行</p>
+<ul>
+<li><pre><code>print(&quot;hellow&quot;,end=&#39;&#39;)
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>\t 效果等于 tab键</p>
+</li>
+<li><p>ctrl+&#x2F;快速注释</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/06/19/python/" data-id="clj2x50ni0000lgwf87rl6sqi" data-title="python" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-servlet" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/06/19/servlet/" class="article-date">
@@ -1055,9 +1228,23 @@ MARKUP&lt;listener&gt;
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/python/" style="font-size: 10px;">python</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
@@ -1074,6 +1261,10 @@ MARKUP&lt;listener&gt;
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2023/06/19/python/">python</a>
+          </li>
         
           <li>
             <a href="/2023/06/19/servlet/">servlet</a>

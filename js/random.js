@@ -1,0 +1,1 @@
+var posts=["2023/06/19/python/","2023/06/19/hello-world/","2023/06/19/servlet/"];function toRandomPost(){window.open('/'+posts[Math.floor(Math.random() * posts.length)],"_self");};

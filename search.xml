@@ -19,129 +19,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>python</title>
-    <url>/2023/06/19/python/</url>
-    <content><![CDATA[<h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><h2 id="基础内容"><a href="#基础内容" class="headerlink" title="基础内容"></a>基础内容</h2><ul>
-<li><p>常用的快捷键</p>
-<ul>
-<li>ctrl + alt +s:打开软件设置</li>
-<li>ctrl+d：复制当前行代码</li>
-<li>shift+alt+上\下：将当前的行代码上移或下移</li>
-<li>ctrl+shift+f10：运行当前代码文件</li>
-<li>shift+f6:重命名文件</li>
-<li>ctrl+f：搜索</li>
-</ul>
-</li>
-<li><p>print 语句中加end&#x3D;’’可以不换行</p>
-<ul>
-<li><pre><code>print(&quot;hellow&quot;,end=&#39;&#39;)
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">+ \t 效果等于 tab键</span><br><span class="line"></span><br><span class="line">+ ctrl+/快速注释</span><br><span class="line"></span><br><span class="line">+ 注释</span><br><span class="line"></span><br><span class="line">  + 单行注释</span><br><span class="line">    + 以#开头(一般#号和注释内容一般建议以一个空格隔开)</span><br><span class="line"></span><br><span class="line">  + 多行注释</span><br><span class="line">    + 以一对三个双引号引起来来接受说明一段代码的作用和使用方法</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">+ 数据类型</span><br><span class="line"></span><br><span class="line">  + type（）语句可以输出类型信息</span><br><span class="line"></span><br><span class="line">+ 数据类型转换</span><br><span class="line"></span><br><span class="line">  + str（）转换为字符串</span><br><span class="line">  + int（）转换为整数</span><br><span class="line">  + float（）转换为数字     </span><br><span class="line"></span><br><span class="line">+ 标识符命名规则</span><br><span class="line"></span><br><span class="line">  + 只能出现</span><br><span class="line">    + 英文</span><br><span class="line">    + 中文</span><br><span class="line">    + 数字</span><br><span class="line">    + 下划线</span><br><span class="line">  + 大小写敏感</span><br><span class="line">  + 不可使用关键词   </span><br><span class="line"></span><br><span class="line">+ 算术运算符</span><br><span class="line"></span><br><span class="line">  + +</span><br><span class="line">  + -</span><br><span class="line">  + *</span><br><span class="line">  + /</span><br><span class="line">  + //（取整除）</span><br><span class="line">  + %(取余)</span><br><span class="line">  + **（指数 ）</span><br><span class="line"></span><br><span class="line">+ 使用转义字符\接触引号的效用</span><br><span class="line"></span><br><span class="line">  + 例如&quot; \&quot;111 &quot;输出&quot;111（格式为name=“\“111”）</span><br><span class="line"></span><br><span class="line">+ 字符串格式化 </span><br><span class="line"></span><br><span class="line">  + 字符串拼接%s占位拼接</span><br><span class="line"></span><br><span class="line">    + ```python</span><br><span class="line">      name = &quot;董佬&quot;</span><br><span class="line">      message =&quot;卷王 %s&quot; % name</span><br><span class="line">      print (message) </span><br></pre></td></tr></table></figure>
-
-+ %s 将内容转换为字符串，放入占位位置
-
-+ %d 将内容转换成1整数，放入占位位置
-
-+ %f将内容转换成浮点型，放入占位位置
-</code></pre>
-</li>
-<li><p>数字精度控制(和java差不多)</p>
-<ul>
-<li>例如%5.2f：表示将宽度控制为5，将小数点精度设置为2</li>
-<li>%.2f小数点精度设置为2</li>
-</ul>
-</li>
-<li><p>快速拼接f” {占位内容}”</p>
-</li>
-</ul>
-</li>
-<li><p>数据输入</p>
-<ul>
-<li>input()获取用户输入</li>
-<li>获取的数据永远都是字符串类型的</li>
-</ul>
-</li>
-</ul>
-<h3 id="判断语句"><a href="#判断语句" class="headerlink" title="判断语句"></a>判断语句</h3><ul>
-<li>if （和java略微不同，python里是：结尾例如 if age &gt;18: 满足条件应该做的事）</li>
-<li>if else（和java相同）</li>
-<li>if  条件1：elif 条件2： …… else ：</li>
-</ul>
-<h3 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h3><ul>
-<li><p>while</p>
-<ul>
-<li>while 条件: (其他跟java一样)</li>
-<li>while循环的循环条件是自定义的，自行控制循环条件</li>
-<li>for循环是一种“轮询”机制，1是对一批内容进行逐个处理</li>
-</ul>
-</li>
-<li><p>for</p>
-<ul>
-<li><pre><code class="python">for 临时变量 in 待处理的数据集：循环满足时执行的代码
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">  + 也称遍历循环</span><br><span class="line"></span><br><span class="line">  + 临时变量，在编程规范上，作用范围，只限定在for内部</span><br><span class="line"></span><br><span class="line">    + 实际上可以访问到</span><br><span class="line">    + 但是编程规范上不允许，不建议这么使用</span><br><span class="line"></span><br><span class="line">+ range语句</span><br><span class="line"></span><br><span class="line">  + range（num）表示获取一个从0开始，到num结束的数字序列不包含num</span><br><span class="line">  + range（num1，num2）从num1到num2不包含num2</span><br><span class="line">    + 例如range（5,10）   [5,6,7,8,9]</span><br><span class="line">  + range（num1，num2，step）</span><br><span class="line">    + 例如range（5,10,2）  [5,7,9]</span><br><span class="line"></span><br><span class="line">+ continue</span><br><span class="line"></span><br><span class="line">  + 类似java中的</span><br><span class="line">  + break</span><br><span class="line">    + 类似java中的</span><br><span class="line"></span><br><span class="line">### 函数</span><br><span class="line"></span><br><span class="line">+ 函数是：组织好的、可重复使用的、用来实现特定功能的代码段</span><br><span class="line"></span><br><span class="line">  + 函数的定义	</span><br><span class="line"></span><br><span class="line">    + ```python</span><br><span class="line">      def 函数名(传入参数)：</span><br><span class="line">      	函数体</span><br><span class="line">      	return 返回值</span><br><span class="line">      调用函数</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><p>函数的传入参数</p>
-<ul>
-<li><pre><code class="python">def 函数名(x,y)：
-    函数体
-    return 返回值
-调用函数(a,b)
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">  + x,y为形式参数，a，b为实际参数</span><br><span class="line"></span><br><span class="line">+ 函数的返回值</span><br><span class="line"></span><br><span class="line">  + ```python</span><br><span class="line">    def 函数名(x,y)：</span><br><span class="line">    	函数体</span><br><span class="line">    	return 返回值</span><br><span class="line">    调用函数(a,b)</span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><p>可以直接用一个变量接受返回值</p>
-</li>
-</ul>
-</li>
-<li><p>None字面量</p>
-<ul>
-<li>None是类型‘NoneType’的字面量，用于表示空的、无意义的</li>
-<li>不使用return返回none</li>
-</ul>
-</li>
-<li><p>函数说明文档</p>
-<ul>
-<li><pre><code class="python">def add (x,y):
-    &quot;&quot;&quot;
-
-    :param x: 参数x说明
-    :param y:参数y的说明
-    :return:返回值的说明
-    &quot;&quot;&quot;
-    return x+y
-
-add(1,2)
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">  + 局部变量：只能在函数体内生效的变量</span><br><span class="line"></span><br><span class="line">  + 全局变量：在函数体内和外部都能生效的变量</span><br><span class="line"></span><br><span class="line">  + global：可以将局部变量设置为全局变量</span><br><span class="line"></span><br><span class="line">### 数据容器</span><br><span class="line"></span><br><span class="line">+ 数据容器：List</span><br><span class="line"></span><br><span class="line">  + ```python</span><br><span class="line">    # 字面量</span><br><span class="line">    [元素1，元素2，元素3，元素4，...]</span><br><span class="line">    </span><br><span class="line">    # 定义变量</span><br><span class="line">    变量名称=[元素1，元素2，...]</span><br><span class="line">    </span><br><span class="line">    # 定义空列表</span><br><span class="line">    变量名称=[]</span><br><span class="line">    变量名称=list()</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-</ul>
-</li>
-<li><p>列表下标索引类似java中的数组</p>
-<ul>
-<li><p>从前向后的方向，编号从0开始递增</p>
-</li>
-<li><p>从后向前的方向，编号从-1开始递减</p>
-</li>
-<li><p>嵌套列表中的数据例如</p>
-<ul>
-<li><pre><code class="python">my_list=[[1,2,3],[2,3,666]]
-print(my_list[1][2])
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">  + 查找某元素的下标</span><br><span class="line"></span><br><span class="line">    + 语法：列表.index(元素)</span><br><span class="line"></span><br><span class="line">  + 修改特定下标索引的值</span><br><span class="line"></span><br><span class="line">    + 只需取到对应下标然后=所需要改变成的值进行</span><br><span class="line"></span><br><span class="line">  + 在指定位置插入新元素</span><br><span class="line"></span><br><span class="line">    + 语法：列表.insert(下标，元素 )</span><br><span class="line"></span><br><span class="line">  + 将指定元素，追加到列表的尾部</span><br><span class="line"></span><br><span class="line">    + 语法：列表.append(元素)</span><br><span class="line">    + 语法2：列表.extend(其他数据容器)，将其他数据容器内容取出，依次追加到列表尾部</span><br><span class="line"></span><br><span class="line">  + 删除元素</span><br><span class="line"></span><br><span class="line">    + 语法1：del列表（下标）</span><br><span class="line">    + 语法2：列表.pop(下标)</span><br><span class="line"></span><br><span class="line">  + 删除某元素在列表中的第一个匹配项</span><br><span class="line"></span><br><span class="line">    + 语法：列表.remove(元素)</span><br><span class="line"></span><br><span class="line">  + 清空列表内容</span><br><span class="line"></span><br><span class="line">    + 语法：列表.clear()</span><br><span class="line"></span><br><span class="line">  + 统计某元素在列表内的数量</span><br><span class="line"></span><br><span class="line">    + 语法：列表.count(元素)</span><br><span class="line"></span><br><span class="line">  + 统计列表元素数量</span><br><span class="line"></span><br><span class="line">    + len(列表)</span><br><span class="line"></span><br><span class="line">+ 元组(tuple)</span><br><span class="line"></span><br><span class="line">  + ```python</span><br><span class="line">    # 元组字面量</span><br><span class="line">    (元素1，元素2，元素3，元素4，...)</span><br><span class="line">    </span><br><span class="line">    # 定义元组变量</span><br><span class="line">    变量名称=(元素1，元素2，...)</span><br><span class="line">    </span><br><span class="line">    # 定义空元组</span><br><span class="line">    变量名称=()# 方式1</span><br><span class="line">    变量名称=tuple() #方式2</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
-</code></pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>servlet</title>
     <url>/2023/06/19/servlet/</url>
     <content><![CDATA[<h1 id="Servlet"><a href="#Servlet" class="headerlink" title="Servlet"></a>Servlet</h1><h2 id="关于系统架构"><a href="#关于系统架构" class="headerlink" title="关于系统架构"></a>关于系统架构</h2><p>1.系统架构包括</p>
@@ -1030,6 +907,129 @@ MARKUP&lt;listener&gt;
 ]]></content>
       <tags>
         <tag>servlet</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python</title>
+    <url>/2023/06/19/python/</url>
+    <content><![CDATA[<h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><h2 id="基础内容"><a href="#基础内容" class="headerlink" title="基础内容"></a>基础内容</h2><ul>
+<li><p>常用的快捷键</p>
+<ul>
+<li>ctrl + alt +s:打开软件设置</li>
+<li>ctrl+d：复制当前行代码</li>
+<li>shift+alt+上\下：将当前的行代码上移或下移</li>
+<li>ctrl+shift+f10：运行当前代码文件</li>
+<li>shift+f6:重命名文件</li>
+<li>ctrl+f：搜索</li>
+</ul>
+</li>
+<li><p>print 语句中加end&#x3D;’’可以不换行</p>
+<ul>
+<li><pre><code>print(&quot;hellow&quot;,end=&#39;&#39;)
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">+ \t 效果等于 tab键</span><br><span class="line"></span><br><span class="line">+ ctrl+/快速注释</span><br><span class="line"></span><br><span class="line">+ 注释</span><br><span class="line"></span><br><span class="line">  + 单行注释</span><br><span class="line">    + 以#开头(一般#号和注释内容一般建议以一个空格隔开)</span><br><span class="line"></span><br><span class="line">  + 多行注释</span><br><span class="line">    + 以一对三个双引号引起来来接受说明一段代码的作用和使用方法</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">+ 数据类型</span><br><span class="line"></span><br><span class="line">  + type（）语句可以输出类型信息</span><br><span class="line"></span><br><span class="line">+ 数据类型转换</span><br><span class="line"></span><br><span class="line">  + str（）转换为字符串</span><br><span class="line">  + int（）转换为整数</span><br><span class="line">  + float（）转换为数字     </span><br><span class="line"></span><br><span class="line">+ 标识符命名规则</span><br><span class="line"></span><br><span class="line">  + 只能出现</span><br><span class="line">    + 英文</span><br><span class="line">    + 中文</span><br><span class="line">    + 数字</span><br><span class="line">    + 下划线</span><br><span class="line">  + 大小写敏感</span><br><span class="line">  + 不可使用关键词   </span><br><span class="line"></span><br><span class="line">+ 算术运算符</span><br><span class="line"></span><br><span class="line">  + +</span><br><span class="line">  + -</span><br><span class="line">  + *</span><br><span class="line">  + /</span><br><span class="line">  + //（取整除）</span><br><span class="line">  + %(取余)</span><br><span class="line">  + **（指数 ）</span><br><span class="line"></span><br><span class="line">+ 使用转义字符\接触引号的效用</span><br><span class="line"></span><br><span class="line">  + 例如&quot; \&quot;111 &quot;输出&quot;111（格式为name=“\“111”）</span><br><span class="line"></span><br><span class="line">+ 字符串格式化 </span><br><span class="line"></span><br><span class="line">  + 字符串拼接%s占位拼接</span><br><span class="line"></span><br><span class="line">    + ```python</span><br><span class="line">      name = &quot;董佬&quot;</span><br><span class="line">      message =&quot;卷王 %s&quot; % name</span><br><span class="line">      print (message) </span><br></pre></td></tr></table></figure>
+
++ %s 将内容转换为字符串，放入占位位置
+
++ %d 将内容转换成1整数，放入占位位置
+
++ %f将内容转换成浮点型，放入占位位置
+</code></pre>
+</li>
+<li><p>数字精度控制(和java差不多)</p>
+<ul>
+<li>例如%5.2f：表示将宽度控制为5，将小数点精度设置为2</li>
+<li>%.2f小数点精度设置为2</li>
+</ul>
+</li>
+<li><p>快速拼接f” {占位内容}”</p>
+</li>
+</ul>
+</li>
+<li><p>数据输入</p>
+<ul>
+<li>input()获取用户输入</li>
+<li>获取的数据永远都是字符串类型的</li>
+</ul>
+</li>
+</ul>
+<h3 id="判断语句"><a href="#判断语句" class="headerlink" title="判断语句"></a>判断语句</h3><ul>
+<li>if （和java略微不同，python里是：结尾例如 if age &gt;18: 满足条件应该做的事）</li>
+<li>if else（和java相同）</li>
+<li>if  条件1：elif 条件2： …… else ：</li>
+</ul>
+<h3 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h3><ul>
+<li><p>while</p>
+<ul>
+<li>while 条件: (其他跟java一样)</li>
+<li>while循环的循环条件是自定义的，自行控制循环条件</li>
+<li>for循环是一种“轮询”机制，1是对一批内容进行逐个处理</li>
+</ul>
+</li>
+<li><p>for</p>
+<ul>
+<li><pre><code class="python">for 临时变量 in 待处理的数据集：循环满足时执行的代码
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">  + 也称遍历循环</span><br><span class="line"></span><br><span class="line">  + 临时变量，在编程规范上，作用范围，只限定在for内部</span><br><span class="line"></span><br><span class="line">    + 实际上可以访问到</span><br><span class="line">    + 但是编程规范上不允许，不建议这么使用</span><br><span class="line"></span><br><span class="line">+ range语句</span><br><span class="line"></span><br><span class="line">  + range（num）表示获取一个从0开始，到num结束的数字序列不包含num</span><br><span class="line">  + range（num1，num2）从num1到num2不包含num2</span><br><span class="line">    + 例如range（5,10）   [5,6,7,8,9]</span><br><span class="line">  + range（num1，num2，step）</span><br><span class="line">    + 例如range（5,10,2）  [5,7,9]</span><br><span class="line"></span><br><span class="line">+ continue</span><br><span class="line"></span><br><span class="line">  + 类似java中的</span><br><span class="line">  + break</span><br><span class="line">    + 类似java中的</span><br><span class="line"></span><br><span class="line">### 函数</span><br><span class="line"></span><br><span class="line">+ 函数是：组织好的、可重复使用的、用来实现特定功能的代码段</span><br><span class="line"></span><br><span class="line">  + 函数的定义	</span><br><span class="line"></span><br><span class="line">    + ```python</span><br><span class="line">      def 函数名(传入参数)：</span><br><span class="line">      	函数体</span><br><span class="line">      	return 返回值</span><br><span class="line">      调用函数</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+<li><p>函数的传入参数</p>
+<ul>
+<li><pre><code class="python">def 函数名(x,y)：
+    函数体
+    return 返回值
+调用函数(a,b)
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">  + x,y为形式参数，a，b为实际参数</span><br><span class="line"></span><br><span class="line">+ 函数的返回值</span><br><span class="line"></span><br><span class="line">  + ```python</span><br><span class="line">    def 函数名(x,y)：</span><br><span class="line">    	函数体</span><br><span class="line">    	return 返回值</span><br><span class="line">    调用函数(a,b)</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+<li><p>可以直接用一个变量接受返回值</p>
+</li>
+</ul>
+</li>
+<li><p>None字面量</p>
+<ul>
+<li>None是类型‘NoneType’的字面量，用于表示空的、无意义的</li>
+<li>不使用return返回none</li>
+</ul>
+</li>
+<li><p>函数说明文档</p>
+<ul>
+<li><pre><code class="python">def add (x,y):
+    &quot;&quot;&quot;
+
+    :param x: 参数x说明
+    :param y:参数y的说明
+    :return:返回值的说明
+    &quot;&quot;&quot;
+    return x+y
+
+add(1,2)
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">  + 局部变量：只能在函数体内生效的变量</span><br><span class="line"></span><br><span class="line">  + 全局变量：在函数体内和外部都能生效的变量</span><br><span class="line"></span><br><span class="line">  + global：可以将局部变量设置为全局变量</span><br><span class="line"></span><br><span class="line">### 数据容器</span><br><span class="line"></span><br><span class="line">+ 数据容器：List</span><br><span class="line"></span><br><span class="line">  + ```python</span><br><span class="line">    # 字面量</span><br><span class="line">    [元素1，元素2，元素3，元素4，...]</span><br><span class="line">    </span><br><span class="line">    # 定义变量</span><br><span class="line">    变量名称=[元素1，元素2，...]</span><br><span class="line">    </span><br><span class="line">    # 定义空列表</span><br><span class="line">    变量名称=[]</span><br><span class="line">    变量名称=list()</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>列表下标索引类似java中的数组</p>
+<ul>
+<li><p>从前向后的方向，编号从0开始递增</p>
+</li>
+<li><p>从后向前的方向，编号从-1开始递减</p>
+</li>
+<li><p>嵌套列表中的数据例如</p>
+<ul>
+<li><pre><code class="python">my_list=[[1,2,3],[2,3,666]]
+print(my_list[1][2])
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">  + 查找某元素的下标</span><br><span class="line"></span><br><span class="line">    + 语法：列表.index(元素)</span><br><span class="line"></span><br><span class="line">  + 修改特定下标索引的值</span><br><span class="line"></span><br><span class="line">    + 只需取到对应下标然后=所需要改变成的值进行</span><br><span class="line"></span><br><span class="line">  + 在指定位置插入新元素</span><br><span class="line"></span><br><span class="line">    + 语法：列表.insert(下标，元素 )</span><br><span class="line"></span><br><span class="line">  + 将指定元素，追加到列表的尾部</span><br><span class="line"></span><br><span class="line">    + 语法：列表.append(元素)</span><br><span class="line">    + 语法2：列表.extend(其他数据容器)，将其他数据容器内容取出，依次追加到列表尾部</span><br><span class="line"></span><br><span class="line">  + 删除元素</span><br><span class="line"></span><br><span class="line">    + 语法1：del列表（下标）</span><br><span class="line">    + 语法2：列表.pop(下标)</span><br><span class="line"></span><br><span class="line">  + 删除某元素在列表中的第一个匹配项</span><br><span class="line"></span><br><span class="line">    + 语法：列表.remove(元素)</span><br><span class="line"></span><br><span class="line">  + 清空列表内容</span><br><span class="line"></span><br><span class="line">    + 语法：列表.clear()</span><br><span class="line"></span><br><span class="line">  + 统计某元素在列表内的数量</span><br><span class="line"></span><br><span class="line">    + 语法：列表.count(元素)</span><br><span class="line"></span><br><span class="line">  + 统计列表元素数量</span><br><span class="line"></span><br><span class="line">    + len(列表)</span><br><span class="line"></span><br><span class="line">+ 元组(tuple)</span><br><span class="line"></span><br><span class="line">  + ```python</span><br><span class="line">    # 元组字面量</span><br><span class="line">    (元素1，元素2，元素3，元素4，...)</span><br><span class="line">    </span><br><span class="line">    # 定义元组变量</span><br><span class="line">    变量名称=(元素1，元素2，...)</span><br><span class="line">    </span><br><span class="line">    # 定义空元组</span><br><span class="line">    变量名称=()# 方式1</span><br><span class="line">    变量名称=tuple() #方式2</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>python</tag>
       </tags>
   </entry>
 </search>

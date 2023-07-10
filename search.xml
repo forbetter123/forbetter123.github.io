@@ -925,8 +925,8 @@ MARKUP&lt;listener&gt;
 </li>
 <li><p>print 语句中加end&#x3D;’’可以不换行</p>
 <ul>
-<li><pre><code>print(&quot;hellow&quot;,end=&#39;&#39;)
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">+ \t 效果等于 tab键</span><br><span class="line"></span><br><span class="line">+ ctrl+/快速注释</span><br><span class="line"></span><br><span class="line">+ 注释</span><br><span class="line"></span><br><span class="line">  + 单行注释</span><br><span class="line">    + 以#开头(一般#号和注释内容一般建议以一个空格隔开)</span><br><span class="line"></span><br><span class="line">  + 多行注释</span><br><span class="line">    + 以一对三个双引号引起来来接受说明一段代码的作用和使用方法</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">+ 数据类型</span><br><span class="line"></span><br><span class="line">  + type（）语句可以输出类型信息</span><br><span class="line"></span><br><span class="line">+ 数据类型转换</span><br><span class="line"></span><br><span class="line">  + str（）转换为字符串</span><br><span class="line">  + int（）转换为整数</span><br><span class="line">  + float（）转换为数字     </span><br><span class="line"></span><br><span class="line">+ 标识符命名规则</span><br><span class="line"></span><br><span class="line">  + 只能出现</span><br><span class="line">    + 英文</span><br><span class="line">    + 中文</span><br><span class="line">    + 数字</span><br><span class="line">    + 下划线</span><br><span class="line">  + 大小写敏感</span><br><span class="line">  + 不可使用关键词   </span><br><span class="line"></span><br><span class="line">+ 算术运算符</span><br><span class="line"></span><br><span class="line">  + +</span><br><span class="line">  + -</span><br><span class="line">  + *</span><br><span class="line">  + /</span><br><span class="line">  + //（取整除）</span><br><span class="line">  + %(取余)</span><br><span class="line">  + **（指数 ）</span><br><span class="line"></span><br><span class="line">+ 使用转义字符\接触引号的效用</span><br><span class="line"></span><br><span class="line">  + 例如&quot; \&quot;111 &quot;输出&quot;111（格式为name=“\“111”）</span><br><span class="line"></span><br><span class="line">+ 字符串格式化 </span><br><span class="line"></span><br><span class="line">  + 字符串拼接%s占位拼接</span><br><span class="line"></span><br><span class="line">    + ```python</span><br><span class="line">      name = &quot;董佬&quot;</span><br><span class="line">      message =&quot;卷王 %s&quot; % name</span><br><span class="line">      print (message) </span><br></pre></td></tr></table></figure>
+<li><pre><code class="hljs">print(&quot;hellow&quot;,end=&#39;&#39;)
+<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">+</span> \t 效果等于 tab键<br><br><span class="hljs-bullet">+</span> ctrl+/快速注释<br><br><span class="hljs-bullet">+</span> 注释<br><br><span class="hljs-bullet">  +</span> 单行注释<br><span class="hljs-bullet">    +</span> 以#开头(一般#号和注释内容一般建议以一个空格隔开)<br><br><span class="hljs-bullet">  +</span> 多行注释<br><span class="hljs-bullet">    +</span> 以一对三个双引号引起来来接受说明一段代码的作用和使用方法<br><br><br><span class="hljs-bullet">+</span> 数据类型<br><br><span class="hljs-bullet">  +</span> type（）语句可以输出类型信息<br><br><span class="hljs-bullet">+</span> 数据类型转换<br><br><span class="hljs-bullet">  +</span> str（）转换为字符串<br><span class="hljs-bullet">  +</span> int（）转换为整数<br><span class="hljs-bullet">  +</span> float（）转换为数字     <br><br><span class="hljs-bullet">+</span> 标识符命名规则<br><br><span class="hljs-bullet">  +</span> 只能出现<br><span class="hljs-bullet">    +</span> 英文<br><span class="hljs-bullet">    +</span> 中文<br><span class="hljs-bullet">    +</span> 数字<br><span class="hljs-bullet">    +</span> 下划线<br><span class="hljs-bullet">  +</span> 大小写敏感<br><span class="hljs-bullet">  +</span> 不可使用关键词   <br><br><span class="hljs-bullet">+</span> 算术运算符<br><br><span class="hljs-bullet">  +</span> +<br><span class="hljs-bullet">  +</span> -<br><span class="hljs-bullet">  +</span> *<br><span class="hljs-bullet">  +</span> /<br><span class="hljs-bullet">  +</span> //（取整除）<br><span class="hljs-bullet">  +</span> %(取余)<br><span class="hljs-bullet">  +</span> <span class="hljs-strong">**（指数 ）</span><br><span class="hljs-strong"></span><br><span class="hljs-strong">+ 使用转义字符\接触引号的效用</span><br><span class="hljs-strong"></span><br><span class="hljs-strong">  + 例如&quot; \&quot;111 &quot;输出&quot;111（格式为name=“\“111”）</span><br><span class="hljs-strong"></span><br><span class="hljs-strong">+ 字符串格式化 </span><br><span class="hljs-strong"></span><br><span class="hljs-strong">  + 字符串拼接%s占位拼接</span><br><span class="hljs-strong"></span><br><span class="hljs-strong">    + ```python</span><br><span class="hljs-strong">      name = &quot;董佬&quot;</span><br><span class="hljs-strong">      message =&quot;卷王 %s&quot; % name</span><br><span class="hljs-strong">      print (message) </span><br></code></pre></td></tr></table></figure>
 
 + %s 将内容转换为字符串，放入占位位置
 
@@ -968,7 +968,7 @@ MARKUP&lt;listener&gt;
 <li><p>for</p>
 <ul>
 <li><pre><code class="python">for 临时变量 in 待处理的数据集：循环满足时执行的代码
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">  + 也称遍历循环</span><br><span class="line"></span><br><span class="line">  + 临时变量，在编程规范上，作用范围，只限定在for内部</span><br><span class="line"></span><br><span class="line">    + 实际上可以访问到</span><br><span class="line">    + 但是编程规范上不允许，不建议这么使用</span><br><span class="line"></span><br><span class="line">+ range语句</span><br><span class="line"></span><br><span class="line">  + range（num）表示获取一个从0开始，到num结束的数字序列不包含num</span><br><span class="line">  + range（num1，num2）从num1到num2不包含num2</span><br><span class="line">    + 例如range（5,10）   [5,6,7,8,9]</span><br><span class="line">  + range（num1，num2，step）</span><br><span class="line">    + 例如range（5,10,2）  [5,7,9]</span><br><span class="line"></span><br><span class="line">+ continue</span><br><span class="line"></span><br><span class="line">  + 类似java中的</span><br><span class="line">  + break</span><br><span class="line">    + 类似java中的</span><br><span class="line"></span><br><span class="line">### 函数</span><br><span class="line"></span><br><span class="line">+ 函数是：组织好的、可重复使用的、用来实现特定功能的代码段</span><br><span class="line"></span><br><span class="line">  + 函数的定义	</span><br><span class="line"></span><br><span class="line">    + ```python</span><br><span class="line">      def 函数名(传入参数)：</span><br><span class="line">      	函数体</span><br><span class="line">      	return 返回值</span><br><span class="line">      调用函数</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">  +</span> 也称遍历循环<br><br><span class="hljs-bullet">  +</span> 临时变量，在编程规范上，作用范围，只限定在for内部<br><br><span class="hljs-bullet">    +</span> 实际上可以访问到<br><span class="hljs-bullet">    +</span> 但是编程规范上不允许，不建议这么使用<br><br><span class="hljs-bullet">+</span> range语句<br><br><span class="hljs-bullet">  +</span> range（num）表示获取一个从0开始，到num结束的数字序列不包含num<br><span class="hljs-bullet">  +</span> range（num1，num2）从num1到num2不包含num2<br><span class="hljs-bullet">    +</span> 例如range（5,10）   [5,6,7,8,9]<br><span class="hljs-bullet">  +</span> range（num1，num2，step）<br><span class="hljs-bullet">    +</span> 例如range（5,10,2）  [5,7,9]<br><br><span class="hljs-bullet">+</span> continue<br><br><span class="hljs-bullet">  +</span> 类似java中的<br><span class="hljs-bullet">  +</span> break<br><span class="hljs-bullet">    +</span> 类似java中的<br><br><span class="hljs-section">### 函数</span><br><br><span class="hljs-bullet">+</span> 函数是：组织好的、可重复使用的、用来实现特定功能的代码段<br><br><span class="hljs-bullet">  +</span> 函数的定义	<br><br><span class="hljs-bullet">    +</span> <span class="hljs-code">```python</span><br><span class="hljs-code">      def 函数名(传入参数)：</span><br><span class="hljs-code">      	函数体</span><br><span class="hljs-code">      	return 返回值</span><br><span class="hljs-code">      调用函数</span><br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
 <li><p>函数的传入参数</p>
@@ -977,7 +977,7 @@ MARKUP&lt;listener&gt;
     函数体
     return 返回值
 调用函数(a,b)
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">  + x,y为形式参数，a，b为实际参数</span><br><span class="line"></span><br><span class="line">+ 函数的返回值</span><br><span class="line"></span><br><span class="line">  + ```python</span><br><span class="line">    def 函数名(x,y)：</span><br><span class="line">    	函数体</span><br><span class="line">    	return 返回值</span><br><span class="line">    调用函数(a,b)</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="code"><pre><code class="hljs css"><br>  + x,y为形式参数，<span class="hljs-selector-tag">a</span>，<span class="hljs-selector-tag">b</span>为实际参数<br><br>+ 函数的返回值<br><br>  + ```python<br>    def 函数名(x,y)：<br>    	函数体<br>    	return 返回值<br>    调用函数(<span class="hljs-selector-tag">a</span>,<span class="hljs-selector-tag">b</span>)<br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
 <li><p>可以直接用一个变量接受返回值</p>
@@ -1002,7 +1002,7 @@ MARKUP&lt;listener&gt;
     return x+y
 
 add(1,2)
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">  + 局部变量：只能在函数体内生效的变量</span><br><span class="line"></span><br><span class="line">  + 全局变量：在函数体内和外部都能生效的变量</span><br><span class="line"></span><br><span class="line">  + global：可以将局部变量设置为全局变量</span><br><span class="line"></span><br><span class="line">### 数据容器</span><br><span class="line"></span><br><span class="line">+ 数据容器：List</span><br><span class="line"></span><br><span class="line">  + ```python</span><br><span class="line">    # 字面量</span><br><span class="line">    [元素1，元素2，元素3，元素4，...]</span><br><span class="line">    </span><br><span class="line">    # 定义变量</span><br><span class="line">    变量名称=[元素1，元素2，...]</span><br><span class="line">    </span><br><span class="line">    # 定义空列表</span><br><span class="line">    变量名称=[]</span><br><span class="line">    变量名称=list()</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+<figure class="highlight clean"><table><tr><td class="code"><pre><code class="hljs clean"><br>  + 局部变量：只能在函数体内生效的变量<br><br>  + 全局变量：在函数体内和外部都能生效的变量<br><br>  + global：可以将局部变量设置为全局变量<br><br>### 数据容器<br><br>+ 数据容器：List<br><br>  + ```python<br>    # 字面量<br>    [元素<span class="hljs-number">1</span>，元素<span class="hljs-number">2</span>，元素<span class="hljs-number">3</span>，元素<span class="hljs-number">4</span>，...]<br>    <br>    # 定义变量<br>    变量名称=[元素<span class="hljs-number">1</span>，元素<span class="hljs-number">2</span>，...]<br>    <br>    # 定义空列表<br>    变量名称=[]<br>    变量名称=list()<br>    <br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
 </ul>
@@ -1017,13 +1017,83 @@ add(1,2)
 <ul>
 <li><pre><code class="python">my_list=[[1,2,3],[2,3,666]]
 print(my_list[1][2])
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">  + 查找某元素的下标</span><br><span class="line"></span><br><span class="line">    + 语法：列表.index(元素)</span><br><span class="line"></span><br><span class="line">  + 修改特定下标索引的值</span><br><span class="line"></span><br><span class="line">    + 只需取到对应下标然后=所需要改变成的值进行</span><br><span class="line"></span><br><span class="line">  + 在指定位置插入新元素</span><br><span class="line"></span><br><span class="line">    + 语法：列表.insert(下标，元素 )</span><br><span class="line"></span><br><span class="line">  + 将指定元素，追加到列表的尾部</span><br><span class="line"></span><br><span class="line">    + 语法：列表.append(元素)</span><br><span class="line">    + 语法2：列表.extend(其他数据容器)，将其他数据容器内容取出，依次追加到列表尾部</span><br><span class="line"></span><br><span class="line">  + 删除元素</span><br><span class="line"></span><br><span class="line">    + 语法1：del列表（下标）</span><br><span class="line">    + 语法2：列表.pop(下标)</span><br><span class="line"></span><br><span class="line">  + 删除某元素在列表中的第一个匹配项</span><br><span class="line"></span><br><span class="line">    + 语法：列表.remove(元素)</span><br><span class="line"></span><br><span class="line">  + 清空列表内容</span><br><span class="line"></span><br><span class="line">    + 语法：列表.clear()</span><br><span class="line"></span><br><span class="line">  + 统计某元素在列表内的数量</span><br><span class="line"></span><br><span class="line">    + 语法：列表.count(元素)</span><br><span class="line"></span><br><span class="line">  + 统计列表元素数量</span><br><span class="line"></span><br><span class="line">    + len(列表)</span><br><span class="line"></span><br><span class="line">+ 元组(tuple)</span><br><span class="line"></span><br><span class="line">  + ```python</span><br><span class="line">    # 元组字面量</span><br><span class="line">    (元素1，元素2，元素3，元素4，...)</span><br><span class="line">    </span><br><span class="line">    # 定义元组变量</span><br><span class="line">    变量名称=(元素1，元素2，...)</span><br><span class="line">    </span><br><span class="line">    # 定义空元组</span><br><span class="line">    变量名称=()# 方式1</span><br><span class="line">    变量名称=tuple() #方式2</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">  +</span> 查找某元素的下标<br><br><span class="hljs-bullet">    +</span> 语法：列表.index(元素)<br><br><span class="hljs-bullet">  +</span> 修改特定下标索引的值<br><br><span class="hljs-bullet">    +</span> 只需取到对应下标然后=所需要改变成的值进行<br><br><span class="hljs-bullet">  +</span> 在指定位置插入新元素<br><br><span class="hljs-bullet">    +</span> 语法：列表.insert(下标，元素 )<br><br><span class="hljs-bullet">  +</span> 将指定元素，追加到列表的尾部<br><br><span class="hljs-bullet">    +</span> 语法：列表.append(元素)<br><span class="hljs-bullet">    +</span> 语法2：列表.extend(其他数据容器)，将其他数据容器内容取出，依次追加到列表尾部<br><br><span class="hljs-bullet">  +</span> 删除元素<br><br><span class="hljs-bullet">    +</span> 语法1：del列表（下标）<br><span class="hljs-bullet">    +</span> 语法2：列表.pop(下标)<br><br><span class="hljs-bullet">  +</span> 删除某元素在列表中的第一个匹配项<br><br><span class="hljs-bullet">    +</span> 语法：列表.remove(元素)<br><br><span class="hljs-bullet">  +</span> 清空列表内容<br><br><span class="hljs-bullet">    +</span> 语法：列表.clear()<br><br><span class="hljs-bullet">  +</span> 统计某元素在列表内的数量<br><br><span class="hljs-bullet">    +</span> 语法：列表.count(元素)<br><br><span class="hljs-bullet">  +</span> 统计列表元素数量<br><br><span class="hljs-bullet">    +</span> len(列表)<br><br><span class="hljs-bullet">+</span> 元组：tuple(不可修改)<br><br><span class="hljs-bullet">  +</span> <span class="hljs-code">```python</span><br><span class="hljs-code">    # 元组字面量</span><br><span class="hljs-code">    (元素1，元素2，元素3，元素4，...)</span><br><span class="hljs-code">    </span><br><span class="hljs-code">    # 定义元组变量</span><br><span class="hljs-code">    变量名称=(元素1，元素2，...)</span><br><span class="hljs-code">    </span><br><span class="hljs-code">    # 定义空元组</span><br><span class="hljs-code">    变量名称=()# 方式1</span><br><span class="hljs-code">    变量名称=tuple() #方式2</span><br><span class="hljs-code">    </span><br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
 </ul>
 </li>
 </ul>
 </li>
+<li><p>定义单独元素需要在后面加一个逗号</p>
+<ul>
+<li><pre><code class="python">t1=(&quot;hello&quot;,)
+<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">  +</span> 相关操作<br><br><span class="hljs-bullet">    +</span> index()<br><span class="hljs-bullet">      +</span> 查找某个数据的下标，如果没有则报错<br><span class="hljs-bullet">    +</span> count()<br><span class="hljs-bullet">      +</span> 统计某个数据出现在当前元组的次数<br><span class="hljs-bullet">    +</span> len(元组)<br><span class="hljs-bullet">      +</span> 统计元素个数<br><br><span class="hljs-bullet">  +</span> 可以修改元组中list中的内容<br><br><span class="hljs-bullet">+</span> 字符串（str）<br><br><span class="hljs-bullet">  +</span> 字符串不支持修改<br><span class="hljs-bullet">  +</span> 相关操作<br><span class="hljs-bullet">    +</span> index()方法<br><span class="hljs-bullet">      +</span> 语法：字符串.index(a)<br><span class="hljs-bullet">      +</span> 和list中的用法相似<br><span class="hljs-bullet">    +</span> replace方法<br><span class="hljs-bullet">      +</span> 语法：字符串.replace(a,b)<br><span class="hljs-bullet">      +</span> 功能：replace(a,b)生成一个新的字符串将字符串中的b替换成a<br><span class="hljs-bullet">    +</span> spilt方法<br><span class="hljs-bullet">      +</span> 语法:字符串.spilt(分割字符串)<br><span class="hljs-bullet">      +</span> 功能：按照指定的分割字符串，将字符串划分为多个字符串，并存入列表对象中<br><span class="hljs-bullet">    +</span> strip方法<br><span class="hljs-bullet">      +</span> 语法1：字符串.strip()  (去除前后空格)<br><span class="hljs-bullet">      +</span> 语法2：字符串.strip(字符串)（去除前后指定字符串）<br><span class="hljs-bullet">        +</span> 传入的如果是&quot;12&quot;就是&quot;1&quot;和&quot;2&quot;都会移除，是按照单个字符<br><span class="hljs-bullet">    +</span> count方法<br><span class="hljs-bullet">      +</span> 用法和list中相似<br><span class="hljs-bullet">    +</span> len方法<br><span class="hljs-bullet">      +</span> 同上<br><br><span class="hljs-bullet">+</span> 切片：从一个序列中取出一个子序列<br><br><span class="hljs-bullet">  +</span> 语法：序列[起始下标：结束下标：步长]<br><span class="hljs-bullet">  +</span> 起始下标可以留空，表示从头开始<br><span class="hljs-bullet">  +</span> 结束下标（不包含），可以留空，表示截取到结尾<br><span class="hljs-bullet">  +</span> [::-1]等同于将序列反转<br><br><span class="hljs-bullet">+</span> set集合<br><br><span class="hljs-bullet">  +</span> <span class="hljs-code">```python</span><br><span class="hljs-code">    # 定义集合字面量</span><br><span class="hljs-code">    &#123;元素，元素，元素，元素，...&#125;</span><br><span class="hljs-code">    </span><br><span class="hljs-code">    # 定义集合变量</span><br><span class="hljs-code">    变量名称=&#123;元素，元素，...&#125;</span><br><span class="hljs-code">    </span><br><span class="hljs-code">    # 定义空集合</span><br><span class="hljs-code">    变量名称=set()</span><br><span class="hljs-code">    </span><br></code></pre></td></tr></table></figure>
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>集合是无序的，不支持下标索引访问，会去重</p>
+</li>
+<li><p>相关操作</p>
+<ul>
+<li>添加元素<ul>
+<li>语法：集合.add（元素）</li>
+</ul>
+</li>
+<li>移除元素<ul>
+<li>语法：集合.remove(元素)</li>
+</ul>
+</li>
+<li>随机取出一个元素<ul>
+<li>语法：集合.pop() </li>
+<li>结果：会得到一个元素的结果。同时集合本身被修改，元素被移除</li>
+</ul>
+</li>
+<li>清空集合<ul>
+<li>语法：集合.clear()</li>
+</ul>
+</li>
+<li>取出两个集合的差集<ul>
+<li>语法：集合1.difference(集合2)</li>
+<li>结果：得到一个新集合，集合1和2不变</li>
+</ul>
+</li>
+<li>消除2个集合的差集<ul>
+<li>语法：集合1.difference_update(集合2)</li>
+<li>功能：对比集合1和集合2，在集合1中删除和集合2相同的元素</li>
+<li>结果：集合1被修改，集合2不变</li>
+</ul>
+</li>
+<li>合并两个集合<ul>
+<li>语法：集合1.union(集合2)</li>
+</ul>
+</li>
+<li>统计元素个数<ul>
+<li>语法“len（集合）</li>
+</ul>
+</li>
+<li>遍历集合<ul>
+<li>不支持while循环，支持for循环</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>dict字典</p>
+<ul>
+<li><pre><code class="python"># 定义字典字面量
+&#123;key:value,key:value...&#125;
+
+# 定义字典变量
+变量名称=&#123;key:value，key:value，...&#125;
+
+# 定义空字典
+变量名称=dict()
+字典名称=&#123;&#125;
+</code></pre>
+</li>
+<li></li>
 </ul>
 </li>
 </ul>

@@ -4,19 +4,238 @@
     <title>Hello World</title>
     <url>/2023/06/19/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>python</title>
+    <url>/2023/07/11/python/</url>
+    <content><![CDATA[<h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><h2 id="基础内容"><a href="#基础内容" class="headerlink" title="基础内容"></a>基础内容</h2><ul>
+<li><p>常用的快捷键</p>
+<ul>
+<li>ctrl + alt +s:打开软件设置</li>
+<li>ctrl+d：复制当前行代码</li>
+<li>shift+alt+上\下：将当前的行代码上移或下移</li>
+<li>ctrl+shift+f10：运行当前代码文件</li>
+<li>shift+f6:重命名文件</li>
+<li>ctrl+f：搜索</li>
+</ul>
+</li>
+<li><p>print 语句中加end&#x3D;’’可以不换行</p>
+<ul>
+<li><pre><code class="hljs">print(&quot;hellow&quot;,end=&#39;&#39;)
+<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">+</span> \t 效果等于 tab键<br><br><span class="hljs-bullet">+</span> ctrl+/快速注释<br><br><span class="hljs-bullet">+</span> 注释<br><br><span class="hljs-bullet">  +</span> 单行注释<br><span class="hljs-bullet">    +</span> 以#开头(一般#号和注释内容一般建议以一个空格隔开)<br><br><span class="hljs-bullet">  +</span> 多行注释<br><span class="hljs-bullet">    +</span> 以一对三个双引号引起来来接受说明一段代码的作用和使用方法<br><br><br><span class="hljs-bullet">+</span> 数据类型<br><br><span class="hljs-bullet">  +</span> type（）语句可以输出类型信息<br><br><span class="hljs-bullet">+</span> 数据类型转换<br><br><span class="hljs-bullet">  +</span> str（）转换为字符串<br><span class="hljs-bullet">  +</span> int（）转换为整数<br><span class="hljs-bullet">  +</span> float（）转换为数字     <br><br><span class="hljs-bullet">+</span> 标识符命名规则<br><br><span class="hljs-bullet">  +</span> 只能出现<br><span class="hljs-bullet">    +</span> 英文<br><span class="hljs-bullet">    +</span> 中文<br><span class="hljs-bullet">    +</span> 数字<br><span class="hljs-bullet">    +</span> 下划线<br><span class="hljs-bullet">  +</span> 大小写敏感<br><span class="hljs-bullet">  +</span> 不可使用关键词   <br><br><span class="hljs-bullet">+</span> 算术运算符<br><br><span class="hljs-bullet">  +</span> +<br><span class="hljs-bullet">  +</span> -<br><span class="hljs-bullet">  +</span> *<br><span class="hljs-bullet">  +</span> /<br><span class="hljs-bullet">  +</span> //（取整除）<br><span class="hljs-bullet">  +</span> %(取余)<br><span class="hljs-bullet">  +</span> <span class="hljs-strong">**（指数 ）</span><br><span class="hljs-strong"></span><br><span class="hljs-strong">+ 使用转义字符\接触引号的效用</span><br><span class="hljs-strong"></span><br><span class="hljs-strong">  + 例如&quot; \&quot;111 &quot;输出&quot;111（格式为name=“\“111”）</span><br><span class="hljs-strong"></span><br><span class="hljs-strong">+ 字符串格式化 </span><br><span class="hljs-strong"></span><br><span class="hljs-strong">  + 字符串拼接%s占位拼接</span><br><span class="hljs-strong"></span><br><span class="hljs-strong">    + ```python</span><br><span class="hljs-strong">      name = &quot;董佬&quot;</span><br><span class="hljs-strong">      message =&quot;卷王 %s&quot; % name</span><br><span class="hljs-strong">      print (message) </span><br></code></pre></td></tr></table></figure>
+
++ %s 将内容转换为字符串，放入占位位置
+
++ %d 将内容转换成1整数，放入占位位置
+
++ %f将内容转换成浮点型，放入占位位置
+</code></pre>
+</li>
+<li><p>数字精度控制(和java差不多)</p>
+<ul>
+<li>例如%5.2f：表示将宽度控制为5，将小数点精度设置为2</li>
+<li>%.2f小数点精度设置为2</li>
+</ul>
+</li>
+<li><p>快速拼接f” {占位内容}”</p>
+</li>
+</ul>
+</li>
+<li><p>数据输入</p>
+<ul>
+<li>input()获取用户输入</li>
+<li>获取的数据永远都是字符串类型的</li>
+</ul>
+</li>
+</ul>
+<h3 id="判断语句"><a href="#判断语句" class="headerlink" title="判断语句"></a>判断语句</h3><ul>
+<li>if （和java略微不同，python里是：结尾例如 if age &gt;18: 满足条件应该做的事）</li>
+<li>if else（和java相同）</li>
+<li>if  条件1：elif 条件2： …… else ：</li>
+</ul>
+<h3 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h3><ul>
+<li><p>while</p>
+<ul>
+<li>while 条件: (其他跟java一样)</li>
+<li>while循环的循环条件是自定义的，自行控制循环条件</li>
+<li>for循环是一种“轮询”机制，1是对一批内容进行逐个处理</li>
+</ul>
+</li>
+<li><p>for</p>
+<ul>
+<li><pre><code class="python">for 临时变量 in 待处理的数据集：循环满足时执行的代码
+<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">  +</span> 也称遍历循环<br><br><span class="hljs-bullet">  +</span> 临时变量，在编程规范上，作用范围，只限定在for内部<br><br><span class="hljs-bullet">    +</span> 实际上可以访问到<br><span class="hljs-bullet">    +</span> 但是编程规范上不允许，不建议这么使用<br><br><span class="hljs-bullet">+</span> range语句<br><br><span class="hljs-bullet">  +</span> range（num）表示获取一个从0开始，到num结束的数字序列不包含num<br><span class="hljs-bullet">  +</span> range（num1，num2）从num1到num2不包含num2<br><span class="hljs-bullet">    +</span> 例如range（5,10）   [5,6,7,8,9]<br><span class="hljs-bullet">  +</span> range（num1，num2，step）<br><span class="hljs-bullet">    +</span> 例如range（5,10,2）  [5,7,9]<br><br><span class="hljs-bullet">+</span> continue<br><br><span class="hljs-bullet">  +</span> 类似java中的<br><span class="hljs-bullet">  +</span> break<br><span class="hljs-bullet">    +</span> 类似java中的<br><br><span class="hljs-section">### 函数</span><br><br><span class="hljs-bullet">+</span> 函数是：组织好的、可重复使用的、用来实现特定功能的代码段<br><br><span class="hljs-bullet">  +</span> 函数的定义	<br><br><span class="hljs-bullet">    +</span> <span class="hljs-code">```python</span><br><span class="hljs-code">      def 函数名(传入参数)：</span><br><span class="hljs-code">      	函数体</span><br><span class="hljs-code">      	return 返回值</span><br><span class="hljs-code">      调用函数</span><br></code></pre></td></tr></table></figure>
+</code></pre>
+</li>
+<li><p>函数的传入参数</p>
+<ul>
+<li><pre><code class="python">def 函数名(x,y)：
+    函数体
+    return 返回值
+调用函数(a,b)
+<figure class="highlight css"><table><tr><td class="code"><pre><code class="hljs css"><br>  + x,y为形式参数，<span class="hljs-selector-tag">a</span>，<span class="hljs-selector-tag">b</span>为实际参数<br><br>+ 函数的返回值<br><br>  + ```python<br>    def 函数名(x,y)：<br>    	函数体<br>    	return 返回值<br>    调用函数(<span class="hljs-selector-tag">a</span>,<span class="hljs-selector-tag">b</span>)<br></code></pre></td></tr></table></figure>
+</code></pre>
+</li>
+<li><p>可以直接用一个变量接受返回值</p>
+</li>
+</ul>
+</li>
+<li><p>None字面量</p>
+<ul>
+<li>None是类型‘NoneType’的字面量，用于表示空的、无意义的</li>
+<li>不使用return返回none</li>
+</ul>
+</li>
+<li><p>函数说明文档</p>
+<ul>
+<li><pre><code class="python">def add (x,y):
+    &quot;&quot;&quot;
+
+    :param x: 参数x说明
+    :param y:参数y的说明
+    :return:返回值的说明
+    &quot;&quot;&quot;
+    return x+y
+
+add(1,2)
+<figure class="highlight clean"><table><tr><td class="code"><pre><code class="hljs clean"><br>  + 局部变量：只能在函数体内生效的变量<br><br>  + 全局变量：在函数体内和外部都能生效的变量<br><br>  + global：可以将局部变量设置为全局变量<br><br>### 数据容器<br><br>+ 数据容器：List<br><br>  + ```python<br>    # 字面量<br>    [元素<span class="hljs-number">1</span>，元素<span class="hljs-number">2</span>，元素<span class="hljs-number">3</span>，元素<span class="hljs-number">4</span>，...]<br>    <br>    # 定义变量<br>    变量名称=[元素<span class="hljs-number">1</span>，元素<span class="hljs-number">2</span>，...]<br>    <br>    # 定义空列表<br>    变量名称=[]<br>    变量名称=list()<br>    <br></code></pre></td></tr></table></figure>
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>列表下标索引类似java中的数组</p>
+<ul>
+<li><p>从前向后的方向，编号从0开始递增</p>
+</li>
+<li><p>从后向前的方向，编号从-1开始递减</p>
+</li>
+<li><p>嵌套列表中的数据例如</p>
+<ul>
+<li><pre><code class="python">my_list=[[1,2,3],[2,3,666]]
+print(my_list[1][2])
+<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">  +</span> 查找某元素的下标<br><br><span class="hljs-bullet">    +</span> 语法：列表.index(元素)<br><br><span class="hljs-bullet">  +</span> 修改特定下标索引的值<br><br><span class="hljs-bullet">    +</span> 只需取到对应下标然后=所需要改变成的值进行<br><br><span class="hljs-bullet">  +</span> 在指定位置插入新元素<br><br><span class="hljs-bullet">    +</span> 语法：列表.insert(下标，元素 )<br><br><span class="hljs-bullet">  +</span> 将指定元素，追加到列表的尾部<br><br><span class="hljs-bullet">    +</span> 语法：列表.append(元素)<br><span class="hljs-bullet">    +</span> 语法2：列表.extend(其他数据容器)，将其他数据容器内容取出，依次追加到列表尾部<br><br><span class="hljs-bullet">  +</span> 删除元素<br><br><span class="hljs-bullet">    +</span> 语法1：del列表（下标）<br><span class="hljs-bullet">    +</span> 语法2：列表.pop(下标)<br><br><span class="hljs-bullet">  +</span> 删除某元素在列表中的第一个匹配项<br><br><span class="hljs-bullet">    +</span> 语法：列表.remove(元素)<br><br><span class="hljs-bullet">  +</span> 清空列表内容<br><br><span class="hljs-bullet">    +</span> 语法：列表.clear()<br><br><span class="hljs-bullet">  +</span> 统计某元素在列表内的数量<br><br><span class="hljs-bullet">    +</span> 语法：列表.count(元素)<br><br><span class="hljs-bullet">  +</span> 统计列表元素数量<br><br><span class="hljs-bullet">    +</span> len(列表)<br><br><span class="hljs-bullet">+</span> 元组：tuple(不可修改)<br><br><span class="hljs-bullet">  +</span> <span class="hljs-code">```python</span><br><span class="hljs-code">    # 元组字面量</span><br><span class="hljs-code">    (元素1，元素2，元素3，元素4，...)</span><br><span class="hljs-code">    </span><br><span class="hljs-code">    # 定义元组变量</span><br><span class="hljs-code">    变量名称=(元素1，元素2，...)</span><br><span class="hljs-code">    </span><br><span class="hljs-code">    # 定义空元组</span><br><span class="hljs-code">    变量名称=()# 方式1</span><br><span class="hljs-code">    变量名称=tuple() #方式2</span><br><span class="hljs-code">    </span><br></code></pre></td></tr></table></figure>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>定义单独元素需要在后面加一个逗号</p>
+<ul>
+<li><pre><code class="python">t1=(&quot;hello&quot;,)
+<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">  +</span> 相关操作<br><br><span class="hljs-bullet">    +</span> index()<br><span class="hljs-bullet">      +</span> 查找某个数据的下标，如果没有则报错<br><span class="hljs-bullet">    +</span> count()<br><span class="hljs-bullet">      +</span> 统计某个数据出现在当前元组的次数<br><span class="hljs-bullet">    +</span> len(元组)<br><span class="hljs-bullet">      +</span> 统计元素个数<br><br><span class="hljs-bullet">  +</span> 可以修改元组中list中的内容<br><br><span class="hljs-bullet">+</span> 字符串（str）<br><br><span class="hljs-bullet">  +</span> 字符串不支持修改<br><span class="hljs-bullet">  +</span> 相关操作<br><span class="hljs-bullet">    +</span> index()方法<br><span class="hljs-bullet">      +</span> 语法：字符串.index(a)<br><span class="hljs-bullet">      +</span> 和list中的用法相似<br><span class="hljs-bullet">    +</span> replace方法<br><span class="hljs-bullet">      +</span> 语法：字符串.replace(a,b)<br><span class="hljs-bullet">      +</span> 功能：replace(a,b)生成一个新的字符串将字符串中的b替换成a<br><span class="hljs-bullet">    +</span> spilt方法<br><span class="hljs-bullet">      +</span> 语法:字符串.spilt(分割字符串)<br><span class="hljs-bullet">      +</span> 功能：按照指定的分割字符串，将字符串划分为多个字符串，并存入列表对象中<br><span class="hljs-bullet">    +</span> strip方法<br><span class="hljs-bullet">      +</span> 语法1：字符串.strip()  (去除前后空格)<br><span class="hljs-bullet">      +</span> 语法2：字符串.strip(字符串)（去除前后指定字符串）<br><span class="hljs-bullet">        +</span> 传入的如果是&quot;12&quot;就是&quot;1&quot;和&quot;2&quot;都会移除，是按照单个字符<br><span class="hljs-bullet">    +</span> count方法<br><span class="hljs-bullet">      +</span> 用法和list中相似<br><span class="hljs-bullet">    +</span> len方法<br><span class="hljs-bullet">      +</span> 同上<br><br><span class="hljs-bullet">+</span> 切片：从一个序列中取出一个子序列<br><br><span class="hljs-bullet">  +</span> 语法：序列[起始下标：结束下标：步长]<br><span class="hljs-bullet">  +</span> 起始下标可以留空，表示从头开始<br><span class="hljs-bullet">  +</span> 结束下标（不包含），可以留空，表示截取到结尾<br><span class="hljs-bullet">  +</span> [::-1]等同于将序列反转<br><br><span class="hljs-bullet">+</span> set集合<br><br><span class="hljs-bullet">  +</span> <span class="hljs-code">```python</span><br><span class="hljs-code">    # 定义集合字面量</span><br><span class="hljs-code">    &#123;元素，元素，元素，元素，...&#125;</span><br><span class="hljs-code">    </span><br><span class="hljs-code">    # 定义集合变量</span><br><span class="hljs-code">    变量名称=&#123;元素，元素，...&#125;</span><br><span class="hljs-code">    </span><br><span class="hljs-code">    # 定义空集合</span><br><span class="hljs-code">    变量名称=set()</span><br><span class="hljs-code">    </span><br></code></pre></td></tr></table></figure>
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>集合是无序的，不支持下标索引访问，会去重</p>
+</li>
+<li><p>相关操作</p>
+<ul>
+<li>添加元素<ul>
+<li>语法：集合.add（元素）</li>
+</ul>
+</li>
+<li>移除元素<ul>
+<li>语法：集合.remove(元素)</li>
+</ul>
+</li>
+<li>随机取出一个元素<ul>
+<li>语法：集合.pop() </li>
+<li>结果：会得到一个元素的结果。同时集合本身被修改，元素被移除</li>
+</ul>
+</li>
+<li>清空集合<ul>
+<li>语法：集合.clear()</li>
+</ul>
+</li>
+<li>取出两个集合的差集<ul>
+<li>语法：集合1.difference(集合2)</li>
+<li>结果：得到一个新集合，集合1和2不变</li>
+</ul>
+</li>
+<li>消除2个集合的差集<ul>
+<li>语法：集合1.difference_update(集合2)</li>
+<li>功能：对比集合1和集合2，在集合1中删除和集合2相同的元素</li>
+<li>结果：集合1被修改，集合2不变</li>
+</ul>
+</li>
+<li>合并两个集合<ul>
+<li>语法：集合1.union(集合2)</li>
+</ul>
+</li>
+<li>统计元素个数<ul>
+<li>语法“len（集合）</li>
+</ul>
+</li>
+<li>遍历集合<ul>
+<li>不支持while循环，支持for循环</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>dict字典</p>
+<ul>
+<li><pre><code class="python"># 定义字典字面量
+&#123;key:value,key:value...&#125;
+
+# 定义字典变量
+变量名称=&#123;key:value，key:value，...&#125;
+
+# 定义空字典
+变量名称=dict()
+字典名称=&#123;&#125;
+<figure class="highlight q"><table><tr><td class="code"><pre><code class="hljs q"><br>+ 相关操作<br><br>  + 更新元素<br><br>    + 语法：字典[<span class="hljs-built_in">key</span>]=Value<br><br>  + 删除元素<br><br>    + 语法：字典.pop(<span class="hljs-built_in">key</span>)<br>    + 结果：获取指定<span class="hljs-built_in">key</span>的值，同时指定<span class="hljs-built_in">key</span>的数据被修改<br><br>  + 清空字典<br><br>    + 语法：字典.clear()<br><br>  + 获取全部的<span class="hljs-built_in">key</span><br><br>    + 语法：字典.<span class="hljs-built_in">keys</span>()<br><br>  + 遍历字典<br><br>    + ```python<br>      my_dict=&#123;<span class="hljs-string">&quot;dzr&quot;</span>:<span class="hljs-number">100</span>,<span class="hljs-string">&quot;gsh&quot;</span>:<span class="hljs-number">100</span>,<span class="hljs-string">&quot;zcr&quot;</span>:<span class="hljs-number">100</span>,<span class="hljs-string">&quot;wsy&quot;</span>:<span class="hljs-number">100</span>,<span class="hljs-string">&quot;lxm&quot;</span>:<span class="hljs-number">100</span>&#125;<br>      <span class="hljs-built_in">keys</span>=my_dict.<span class="hljs-built_in">keys</span>()<br>      for <span class="hljs-built_in">key</span> in <span class="hljs-built_in">keys</span>:<br>          print(f<span class="hljs-string">&quot;字典的key是：&#123;key&#125;&quot;</span>)<br>          print(f<span class="hljs-string">&quot;value&#123;keys&#125;&quot;</span>)<br></code></pre></td></tr></table></figure>
+
++ 统计元素个数
+
+  + len(字典)
+</code></pre>
+</li>
+<li><p>key不可重复（重复会覆盖）</p>
+</li>
+</ul>
+</li>
+<li><p>数据容器的通用操作</p>
+<ul>
+<li>max()<ul>
+<li>找出最大的元素</li>
+</ul>
+</li>
+<li>min()<ul>
+<li>找出最小的元素</li>
+</ul>
+</li>
+<li>len()<ul>
+<li>统计容器元素个数</li>
+</ul>
+</li>
+<li>sorted(容器[reverse&#x3D;True])（默认是FALSE是正向排序）<ul>
+<li>给容器进行排序（排序完之后变成列表对象）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>python</tag>
+      </tags>
   </entry>
   <entry>
     <title>servlet</title>
@@ -202,7 +421,7 @@
 
 &lt;/web-app&gt;
 
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">  + 第六步：编写一个java程序，该java程序需要实现Servlet接口。</span><br><span class="line"></span><br><span class="line">  + 第七步：编译写的java程序</span><br><span class="line"></span><br><span class="line">    + 注：配置环境变量CLASSPATH</span><br><span class="line"></span><br><span class="line">  + 第八步：将以上的编译之后的.class文件拷到WEB-INF\classes目录下</span><br><span class="line"></span><br><span class="line">  + 第九步：在web.xml文件中配置信息（该步骤专业称为：在web.xml文件中注册Servlet类）</span><br><span class="line"></span><br><span class="line">  + 第十步：启动Tomcat服务器</span><br><span class="line"></span><br><span class="line">  + 第十一步：打开浏览器</span><br><span class="line"></span><br><span class="line">    + 注：浏览器上的请求路径要和web.xml文件中的url.pattern一致</span><br><span class="line">    + 注：浏览器上的请求路径和web.xml文件中的url.pattern的唯一区别就是：浏览器上带项目名：/crm</span><br><span class="line"></span><br><span class="line">## 解决Tomcat服务器在DOS命令窗口中的乱码问题（控制台乱码）</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">## 使用IDEA开发Servlet</span><br><span class="line"></span><br><span class="line">```java</span><br><span class="line"> // 设置响应体的内容类型：普通文本或html</span><br><span class="line">    response.setContentType(&quot;text/html;charset=utf-8&quot;);</span><br><span class="line"></span><br><span class="line">    //将信息输出到浏览器上需要使用ServletResponse接口：response</span><br><span class="line">    //response表示从服务器向浏览器发送数据叫做响应</span><br><span class="line">    PrintWriter out = response.getWriter();</span><br><span class="line">    out.print(&quot;hello servlet, you are my first servlet!!!&quot;);</span><br><span class="line">    </span><br><span class="line">    // 向浏览器中响应一段html代码</span><br><span class="line">    out.print(&quot;&lt;h1&gt;hello world!&lt;/h1&gt;&lt;br&gt;&lt;h1&gt;这是我第一个webapp！&lt;/h1&gt;&quot;);</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight stata"><table><tr><td class="code"><pre><code class="hljs stata"><br>  + 第六步：编写一个java程序，该java程序需要实现Servlet接口。<br><br>  + 第七步：编译写的java程序<br><br>    + 注：配置环境变量CLASSPATH<br><br>  + 第八步：将以上的编译之后的.<span class="hljs-keyword">class</span>文件拷到WEB-<span class="hljs-keyword">INF</span>\classes目录下<br><br>  + 第九步：在web.xml文件中配置信息（该步骤专业称为：在web.xml文件中注册Servlet类）<br><br>  + 第十步：启动Tomcat服务器<br><br>  + 第十一步：打开浏览器<br><br>    + 注：浏览器上的请求路径要和web.xml文件中的url.pattern一致<br>    + 注：浏览器上的请求路径和web.xml文件中的url.pattern的唯一区别就是：浏览器上带项目名：/crm<br><br>## 解决Tomcat服务器在DOS命令窗口中的乱码问题（控制台乱码）<br><br><br><br>## 使用IDEA开发Servlet<br><br>```java<br> <span class="hljs-comment">// 设置响应体的内容类型：普通文本或html</span><br>    response.setContentType(<span class="hljs-string">&quot;text/html;charset=utf-8&quot;</span>);<br><br>    <span class="hljs-comment">//将信息输出到浏览器上需要使用ServletResponse接口：response</span><br>    <span class="hljs-comment">//response表示从服务器向浏览器发送数据叫做响应</span><br>    PrintWriter <span class="hljs-keyword">out</span> = response.getWriter();<br>    <span class="hljs-keyword">out</span>.<span class="hljs-keyword">print</span>(<span class="hljs-string">&quot;hello servlet, you are my first servlet!!!&quot;</span>);<br>    <br>    <span class="hljs-comment">// 向浏览器中响应一段html代码</span><br>    <span class="hljs-keyword">out</span>.<span class="hljs-keyword">print</span>(<span class="hljs-string">&quot;&lt;h1&gt;hello world!&lt;/h1&gt;&lt;br&gt;&lt;h1&gt;这是我第一个webapp！&lt;/h1&gt;&quot;</span>);<br><br><br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
 </ul>
@@ -259,7 +478,7 @@
        &lt;url-pattern&gt;/a&lt;/url-pattern&gt;
    &lt;/servlet-mapping&gt;
  
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">+ Servlet对象的生命周期</span><br><span class="line"></span><br><span class="line">  + 用户发送第一次发送请求的时候，init方法执行后，Tomcat服务器马上调用Aservlet对象的service方法</span><br><span class="line">  + Servlet对象是单例的（单实例的。Servlet对象是单实例的，但是Servlet类不符合单实例模式，我们称之为假单例）</span><br><span class="line">  + 无参数方法，init方法只在第一次用户发送请求的时候执行（无参数构造方法只执行一次，init方法也只被Tomcat服务器调用一次）</span><br><span class="line">  + 只要用户发送请求service方法比被执行一次</span><br><span class="line">  + destroy方法只在服务器关闭的时候被调用</span><br><span class="line">    + destroy方法执行的时候对象还在，方法结束时，对象的内存才会被Tomcat服务器释放</span><br><span class="line"></span><br><span class="line">+ Servlet类中方法执行的次数</span><br><span class="line"></span><br><span class="line">  + 构造方法只执行一次</span><br><span class="line">  + init方法只执行一次</span><br><span class="line">  + service方法：用户请求几次就执行几次</span><br><span class="line">  + destroy方法执行一次</span><br><span class="line"></span><br><span class="line">+ 编写一个genericServlet类，这个类是一个抽象类，其中有一个抽象方法service</span><br><span class="line"></span><br><span class="line">  + genericServlet实现Servlet接口</span><br><span class="line">  + genericServlet是一个适配器</span><br><span class="line">  + 以后编写所有Servlet类继承genericServlet,重写service</span><br><span class="line"></span><br><span class="line">## ServletConfig</span><br><span class="line"></span><br><span class="line">+ ServletConfig是</span><br><span class="line"></span><br><span class="line">  + Servlet规范中的一员</span><br><span class="line">  + 是一个接口</span><br><span class="line">  + ServletConfig接口是由Tomcat服务器实现</span><br><span class="line">  + 一个Servlet对象对应一个ServletConfig对象</span><br><span class="line">  + ServletConfig对象中封装的&lt;servlet&gt;&lt;servlet&gt;标签中的配置信息</span><br><span class="line">  + ServletConfig对象被翻译为Servlet对象的配置信息对象</span><br><span class="line"></span><br><span class="line">+ ServletConfig接口的方法</span><br><span class="line"></span><br><span class="line">  + ```java</span><br><span class="line">    public String getInitParameter(String name);//通过初始化参数的name获取Value</span><br><span class="line">    public Enumeration&lt;String&gt; getInitParameterNames();//获取所有的初始化参数names</span><br><span class="line">    public ServletContext getServletContext();//获取ServletContext对象</span><br><span class="line">    public String getServletName();//获取Servlet的name</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">+</span> Servlet对象的生命周期<br><br><span class="hljs-bullet">  +</span> 用户发送第一次发送请求的时候，init方法执行后，Tomcat服务器马上调用Aservlet对象的service方法<br><span class="hljs-bullet">  +</span> Servlet对象是单例的（单实例的。Servlet对象是单实例的，但是Servlet类不符合单实例模式，我们称之为假单例）<br><span class="hljs-bullet">  +</span> 无参数方法，init方法只在第一次用户发送请求的时候执行（无参数构造方法只执行一次，init方法也只被Tomcat服务器调用一次）<br><span class="hljs-bullet">  +</span> 只要用户发送请求service方法比被执行一次<br><span class="hljs-bullet">  +</span> destroy方法只在服务器关闭的时候被调用<br><span class="hljs-bullet">    +</span> destroy方法执行的时候对象还在，方法结束时，对象的内存才会被Tomcat服务器释放<br><br><span class="hljs-bullet">+</span> Servlet类中方法执行的次数<br><br><span class="hljs-bullet">  +</span> 构造方法只执行一次<br><span class="hljs-bullet">  +</span> init方法只执行一次<br><span class="hljs-bullet">  +</span> service方法：用户请求几次就执行几次<br><span class="hljs-bullet">  +</span> destroy方法执行一次<br><br><span class="hljs-bullet">+</span> 编写一个genericServlet类，这个类是一个抽象类，其中有一个抽象方法service<br><br><span class="hljs-bullet">  +</span> genericServlet实现Servlet接口<br><span class="hljs-bullet">  +</span> genericServlet是一个适配器<br><span class="hljs-bullet">  +</span> 以后编写所有Servlet类继承genericServlet,重写service<br><br><span class="hljs-section">## ServletConfig</span><br><br><span class="hljs-bullet">+</span> ServletConfig是<br><br><span class="hljs-bullet">  +</span> Servlet规范中的一员<br><span class="hljs-bullet">  +</span> 是一个接口<br><span class="hljs-bullet">  +</span> ServletConfig接口是由Tomcat服务器实现<br><span class="hljs-bullet">  +</span> 一个Servlet对象对应一个ServletConfig对象<br><span class="hljs-bullet">  +</span> ServletConfig对象中封装的<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">servlet</span>&gt;</span></span><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">servlet</span>&gt;</span></span>标签中的配置信息<br><span class="hljs-bullet">  +</span> ServletConfig对象被翻译为Servlet对象的配置信息对象<br><br><span class="hljs-bullet">+</span> ServletConfig接口的方法<br><br><span class="hljs-bullet">  +</span> <span class="hljs-code">```java</span><br><span class="hljs-code">    public String getInitParameter(String name);//通过初始化参数的name获取Value</span><br><span class="hljs-code">    public Enumeration&lt;String&gt; getInitParameterNames();//获取所有的初始化参数names</span><br><span class="hljs-code">    public ServletContext getServletContext();//获取ServletContext对象</span><br><span class="hljs-code">    public String getServletName();//获取Servlet的name</span><br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
 <li><p>以上的方法在Servlet类当中，都可以用this调用</p>
@@ -287,12 +506,12 @@
 <li><pre><code class="java">public String getInitParameter(String name);//通过初始化参数的name获取value
 public Enumeration&lt;String&gt; getInitParameterNames();//获取所有的初始化参数的name
 
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">+ ```java</span><br><span class="line">  //以上两个方法是ServletContext对象的方法，这个方法获取配置信息</span><br><span class="line">    &lt;context-param&gt;</span><br><span class="line">          &lt;param-name&gt;pageSize&lt;/param-name&gt;</span><br><span class="line">          &lt;param-value&gt;10&lt;/param-value&gt;</span><br><span class="line">      &lt;/context-param&gt;</span><br><span class="line">      &lt;context-param&gt;</span><br><span class="line">          &lt;param-name&gt;startIndex&lt;/param-name&gt;</span><br><span class="line">          &lt;param-value&gt;0&lt;/param-value&gt;</span><br><span class="line">      &lt;/context-param&gt;</span><br><span class="line">   //以上配置信息可以在一个项目中共享</span><br><span class="line">   //如果只是想给某一个Servlet配置信息，可以配置在Servlet标签中，使用ServletConfig对象来获取</span><br></pre></td></tr></table></figure>
+<figure class="highlight sqf"><table><tr><td class="code"><pre><code class="hljs sqf"><br>+ ```java<br>  <span class="hljs-comment">//以上两个方法是ServletContext对象的方法，这个方法获取配置信息</span><br>    &lt;context-<span class="hljs-built_in">param</span>&gt;<br>          &lt;<span class="hljs-built_in">param</span>-<span class="hljs-built_in">name</span>&gt;pageSize&lt;/<span class="hljs-built_in">param</span>-<span class="hljs-built_in">name</span>&gt;<br>          &lt;<span class="hljs-built_in">param</span>-value&gt;<span class="hljs-number">10</span>&lt;/<span class="hljs-built_in">param</span>-value&gt;<br>      &lt;/context-<span class="hljs-built_in">param</span>&gt;<br>      &lt;context-<span class="hljs-built_in">param</span>&gt;<br>          &lt;<span class="hljs-built_in">param</span>-<span class="hljs-built_in">name</span>&gt;startIndex&lt;/<span class="hljs-built_in">param</span>-<span class="hljs-built_in">name</span>&gt;<br>          &lt;<span class="hljs-built_in">param</span>-value&gt;<span class="hljs-number">0</span>&lt;/<span class="hljs-built_in">param</span>-value&gt;<br>      &lt;/context-<span class="hljs-built_in">param</span>&gt;<br>   <span class="hljs-comment">//以上配置信息可以在一个项目中共享</span><br>   <span class="hljs-comment">//如果只是想给某一个Servlet配置信息，可以配置在Servlet标签中，使用ServletConfig对象来获取</span><br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
 <li><pre><code class="java">//获取文件的绝对路径（真实路径）
 public String getRealPath(String path);
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">+ ```java</span><br><span class="line">  //ServletContext对象还有另一个名字：应用域</span><br><span class="line">  //数据量小、所有用户共享、又不修改，这样的数据放在ServletContext这个应用域中，会大大提升效率</span><br></pre></td></tr></table></figure>
+<figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk"><br>+ ```java<br>  <span class="hljs-regexp">//</span>ServletContext对象还有另一个名字：应用域<br>  <span class="hljs-regexp">//</span>数据量小、所有用户共享、又不修改，这样的数据放在ServletContext这个应用域中，会大大提升效率<br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
 </ul>
@@ -404,7 +623,7 @@ public String getRealPath(String path);
 <li>HttpServlet类是专门为HTTP协议准备的</li>
 </ul>
 <p>​      </p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloServlet</span> <span class="keyword">extends</span> <span class="title class_">HttpServlet</span> &#123;</span><br><span class="line">	<span class="comment">// 用户第一次请求，创建HelloServlet对象的时候，会执行这个无参数构造方法。</span></span><br><span class="line">	<span class="keyword">public</span> <span class="title function_">HelloServlet</span><span class="params">()</span> &#123;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//override 重写 doGet方法</span></span><br><span class="line">    <span class="comment">//override 重写 doPost方法</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title class_">GenericServlet</span> <span class="keyword">implements</span> <span class="title class_">Servlet</span>, ServletConfig,</span><br><span class="line">        java.io.Serializable &#123;</span><br><span class="line">           </span><br><span class="line">	<span class="comment">// 用户第一次请求的时候，HelloServlet对象第一次被创建之后，这个init方法会执行。</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">init</span><span class="params">(ServletConfig config)</span> <span class="keyword">throws</span> ServletException &#123;</span><br><span class="line">        <span class="built_in">this</span>.config = config;</span><br><span class="line">        <span class="built_in">this</span>.init();</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="comment">// 用户第一次请求的时候，带有参数的init(ServletConfig config)执行之后，会执行这个没有参数的init()</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">init</span><span class="params">()</span> <span class="keyword">throws</span> ServletException &#123;</span><br><span class="line">        <span class="comment">// NOOP by default</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloServlet</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">HttpServlet</span> &#123;<br>	<span class="hljs-comment">// 用户第一次请求，创建HelloServlet对象的时候，会执行这个无参数构造方法。</span><br>	<span class="hljs-keyword">public</span> <span class="hljs-title function_">HelloServlet</span><span class="hljs-params">()</span> &#123;<br>    &#125;<br>    <br>    <span class="hljs-comment">//override 重写 doGet方法</span><br>    <span class="hljs-comment">//override 重写 doPost方法</span><br>&#125;<br><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">GenericServlet</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">Servlet</span>, ServletConfig,<br>        java.io.Serializable &#123;<br>           <br>	<span class="hljs-comment">// 用户第一次请求的时候，HelloServlet对象第一次被创建之后，这个init方法会执行。</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">init</span><span class="hljs-params">(ServletConfig config)</span> <span class="hljs-keyword">throws</span> ServletException &#123;<br>        <span class="hljs-built_in">this</span>.config = config;<br>        <span class="hljs-built_in">this</span>.init();<br>    &#125;<br>	<span class="hljs-comment">// 用户第一次请求的时候，带有参数的init(ServletConfig config)执行之后，会执行这个没有参数的init()</span><br>	<span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">init</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> ServletException &#123;<br>        <span class="hljs-comment">// NOOP by default</span><br>    &#125;<br><br><br></code></pre></td></tr></table></figure>
 
 <ul>
 <li>后端重写doGet方法，前端用get请求</li>
@@ -429,7 +648,7 @@ public String getRealPath(String path);
 <li><pre><code class="xml">    &lt;welcome-file-list&gt;
         &lt;welcome-file&gt;login.html&lt;/welcome-file&gt;
     &lt;/welcome-file-list&gt;
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">  + 第三步：启动服务器输入地址</span><br><span class="line"></span><br><span class="line">+ 绕过在webapp的根目录下新建一个目录，目录中再建一个文件</span><br><span class="line"></span><br><span class="line">  + webapp下新建page1</span><br><span class="line"></span><br><span class="line">  + page1下新建page2目录</span><br><span class="line"></span><br><span class="line">  + page2里新建page.html</span><br><span class="line"></span><br><span class="line">    + 只需这样配</span><br><span class="line"></span><br><span class="line">    + ```xml</span><br><span class="line">      &lt;welcome-file-list&gt;</span><br><span class="line">              &lt;welcome-file&gt;page1/page2/page.html&lt;/welcome-file&gt;</span><br><span class="line">          &lt;/welcome-file-list&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">  +</span> 第三步：启动服务器输入地址<br><br><span class="hljs-bullet">+</span> 绕过在webapp的根目录下新建一个目录，目录中再建一个文件<br><br><span class="hljs-bullet">  +</span> webapp下新建page1<br><br><span class="hljs-bullet">  +</span> page1下新建page2目录<br><br><span class="hljs-bullet">  +</span> page2里新建page.html<br><br><span class="hljs-bullet">    +</span> 只需这样配<br><br><span class="hljs-bullet">    +</span> <span class="hljs-code">```xml</span><br><span class="hljs-code">      &lt;welcome-file-list&gt;</span><br><span class="hljs-code">              &lt;welcome-file&gt;page1/page2/page.html&lt;/welcome-file&gt;</span><br><span class="hljs-code">          &lt;/welcome-file-list&gt;</span><br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
 <li><p>路径不用以”&#x2F;“开始</p>
@@ -464,7 +683,7 @@ public String getRealPath(String path);
     &#125;
 
 &#125;
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">+ 第二步：在web.xml中配置Servlet</span><br><span class="line"></span><br><span class="line">  + ```xml</span><br><span class="line">    &lt;servlet&gt;</span><br><span class="line">          &lt;servlet-name&gt;welcomeservlet&lt;/servlet-name&gt;</span><br><span class="line">          &lt;servlet-class&gt;com.bjpowernode.javaweb.servlet.WelcomeServlet&lt;/servlet-class&gt;</span><br><span class="line">      &lt;/servlet&gt;</span><br><span class="line">      &lt;servlet-mapping&gt;</span><br><span class="line">          &lt;servlet-name&gt;welcomeservlet&lt;/servlet-name&gt;</span><br><span class="line">          &lt;url-pattern&gt;/welcome&lt;/url-pattern&gt;</span><br><span class="line">      &lt;/servlet-mapping&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="code"><pre><code class="hljs xml"><br>+ 第二步：在web.xml中配置Servlet<br><br>  + ```xml<br>    <span class="hljs-tag">&lt;<span class="hljs-name">servlet</span>&gt;</span><br>          <span class="hljs-tag">&lt;<span class="hljs-name">servlet-name</span>&gt;</span>welcomeservlet<span class="hljs-tag">&lt;/<span class="hljs-name">servlet-name</span>&gt;</span><br>          <span class="hljs-tag">&lt;<span class="hljs-name">servlet-class</span>&gt;</span>com.bjpowernode.javaweb.servlet.WelcomeServlet<span class="hljs-tag">&lt;/<span class="hljs-name">servlet-class</span>&gt;</span><br>      <span class="hljs-tag">&lt;/<span class="hljs-name">servlet</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-name">servlet-mapping</span>&gt;</span><br>          <span class="hljs-tag">&lt;<span class="hljs-name">servlet-name</span>&gt;</span>welcomeservlet<span class="hljs-tag">&lt;/<span class="hljs-name">servlet-name</span>&gt;</span><br>          <span class="hljs-tag">&lt;<span class="hljs-name">url-pattern</span>&gt;</span>/welcome<span class="hljs-tag">&lt;/<span class="hljs-name">url-pattern</span>&gt;</span><br>      <span class="hljs-tag">&lt;/<span class="hljs-name">servlet-mapping</span>&gt;</span><br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
 </ul>
@@ -474,7 +693,7 @@ public String getRealPath(String path);
 <li><pre><code class="xml">&lt;welcome-file-list&gt;
         &lt;welcome-file&gt;welcome&lt;/welcome-file&gt;
     &lt;/welcome-file-list&gt;
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">## 关于WEB-INF目录</span><br><span class="line"></span><br><span class="line">+ 因为放在WEB-INF目录中的资源是受保护的，在浏览器上不可直接访问，所有像HTML,CSS,JS,image等静态资源放在WEB-INF目录外</span><br><span class="line"></span><br><span class="line">## HttpServletRequest接口详解</span><br><span class="line"></span><br><span class="line">+ HttpServletRequest是一个接口，全限定名称：org.apache.catalina.connector.RequestFacade@6bd33ab6</span><br><span class="line"></span><br><span class="line">+ HttpServletRequest接口是Servlet规范中的一员</span><br><span class="line"></span><br><span class="line">+ HttpServletRquest接口的父接口是：ServletRequest</span><br><span class="line"></span><br><span class="line">+ HttpServletRequest接口中的常用方法</span><br><span class="line"></span><br><span class="line">  + 获取前端浏览器用户提交数据的方法</span><br><span class="line"></span><br><span class="line">    + ```java</span><br><span class="line">      String getParameter(String name)//获取value数组中的一维数组第一个元素</span><br><span class="line">      Map&lt;String,String[]&gt;getParameterMap()//获取Map</span><br><span class="line">      Enumeration&lt;String&gt;getParameterNames()//获取Map中的所有key</span><br><span class="line">      String[] getParameterValuse(String.name)//根据key获取Map集合中的value</span><br><span class="line">          //以上四个方法，和获取用户提交数据有关</span><br></pre></td></tr></table></figure>
+<figure class="highlight coffeescript"><table><tr><td class="code"><pre><code class="hljs coffeescript"><br><span class="hljs-comment">## 关于WEB-INF目录</span><br><br>+ 因为放在WEB-INF目录中的资源是受保护的，在浏览器上不可直接访问，所有像HTML,CSS,JS,image等静态资源放在WEB-INF目录外<br><br><span class="hljs-comment">## HttpServletRequest接口详解</span><br><br>+ HttpServletRequest是一个接口，全限定名称：org.apache.catalina.connector.RequestFacade@<span class="hljs-number">6</span>bd33ab6<br><br>+ HttpServletRequest接口是Servlet规范中的一员<br><br>+ HttpServletRquest接口的父接口是：ServletRequest<br><br>+ HttpServletRequest接口中的常用方法<br><br>  + 获取前端浏览器用户提交数据的方法<br><br>    + ```<span class="language-javascript">java</span><br><span class="language-javascript">      <span class="hljs-title class_">String</span> <span class="hljs-title function_">getParameter</span>(<span class="hljs-title class_">String</span> name)<span class="hljs-comment">//获取value数组中的一维数组第一个元素</span></span><br><span class="language-javascript">      <span class="hljs-title class_">Map</span>&lt;<span class="hljs-title class_">String</span>,<span class="hljs-title class_">String</span>[]&gt;<span class="hljs-title function_">getParameterMap</span>()<span class="hljs-comment">//获取Map</span></span><br><span class="language-javascript">      <span class="hljs-title class_">Enumeration</span>&lt;<span class="hljs-title class_">String</span>&gt;<span class="hljs-title function_">getParameterNames</span>()<span class="hljs-comment">//获取Map中的所有key</span></span><br><span class="language-javascript">      <span class="hljs-title class_">String</span>[] <span class="hljs-title function_">getParameterValuse</span>(<span class="hljs-title class_">String</span>.<span class="hljs-property">name</span>)<span class="hljs-comment">//根据key获取Map集合中的value</span></span><br><span class="language-javascript">          <span class="hljs-comment">//以上四个方法，和获取用户提交数据有关</span></span><br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
 </ul>
@@ -487,7 +706,7 @@ public String getRealPath(String path);
 Object getAttribute(String name);//从域当中根据name获取数据
 void removeAttribute(String name);//将域当中绑定数据移除
 //以上操作类似Map集合的操作
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">+ 请求域对象</span><br><span class="line"></span><br><span class="line">  + 一个请求对象对应一个请求域</span><br><span class="line"></span><br><span class="line">  + 请求域对象比应用域对象范围小且生命周期短</span><br><span class="line"></span><br><span class="line">  + 请求域也有三个对象</span><br><span class="line"></span><br><span class="line">    + ```java</span><br><span class="line">      void setAttribute (String name,Object obj);//向域中绑定数据</span><br><span class="line">      Object getAttribute(String name);//从域当中根据name获取数据</span><br><span class="line">      void removeAttribute(String name);//将域当中绑定数据移除</span><br></pre></td></tr></table></figure>
+<figure class="highlight arduino"><table><tr><td class="code"><pre><code class="hljs arduino"><br>+ 请求域对象<br><br>  + 一个请求对象对应一个请求域<br><br>  + 请求域对象比应用域对象范围小且生命周期短<br><br>  + 请求域也有三个对象<br><br>    + ```<span class="hljs-function">java</span><br><span class="hljs-function">      <span class="hljs-type">void</span> <span class="hljs-title">setAttribute</span> <span class="hljs-params">(<span class="hljs-type">String</span> name,Object obj)</span></span>;<span class="hljs-comment">//向域中绑定数据</span><br>      <span class="hljs-function">Object <span class="hljs-title">getAttribute</span><span class="hljs-params">(<span class="hljs-type">String</span> name)</span></span>;<span class="hljs-comment">//从域当中根据name获取数据</span><br>      <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">removeAttribute</span><span class="hljs-params">(<span class="hljs-type">String</span> name)</span></span>;<span class="hljs-comment">//将域当中绑定数据移除</span><br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
 </ul>
@@ -502,7 +721,7 @@ RequestDispatcher dispatcher =request.getRequestDispatcher(&quot;/b&quot;)
     dispatcher.forward(request,response)
     //一二可以合并
     request.getRequestDispatcher(&quot;/b&quot;).forward(request,response)
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">+ request对象中容易混淆的两个方法</span><br><span class="line"></span><br><span class="line">  + ```java</span><br><span class="line">    String username =request.getParameter(&quot;username&quot;);</span><br><span class="line">    </span><br><span class="line">    Object obj =request.getAttribute(&quot;name&quot;);</span><br><span class="line">    //第一个方法是获取用户在浏览器上提交的数据</span><br><span class="line">    //第二个是请求域中绑定的数据</span><br></pre></td></tr></table></figure>
+<figure class="highlight awk"><table><tr><td class="code"><pre><code class="hljs awk"><br>+ request对象中容易混淆的两个方法<br><br>  + ```java<br>    String username =request.getParameter(<span class="hljs-string">&quot;username&quot;</span>);<br>    <br>    Object obj =request.getAttribute(<span class="hljs-string">&quot;name&quot;</span>);<br>    <span class="hljs-regexp">//</span>第一个方法是获取用户在浏览器上提交的数据<br>    <span class="hljs-regexp">//</span>第二个是请求域中绑定的数据<br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
 </ul>
@@ -533,7 +752,7 @@ String uri =request.getRequestURI();  // //aa/test
 
 //获取servlet path
 String servletPath =request.getServletPath(); //不用文件目录
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">## 使用纯Servlet做一个单表的CRUD操作</span><br><span class="line"></span><br><span class="line">+ 使用纯粹的Servlet完成单表【对部门的】增删改查操作（B/S结构）</span><br><span class="line"></span><br><span class="line">  + 第一步准备一张数据表</span><br><span class="line"></span><br><span class="line">    + ```mysql</span><br><span class="line">      drop table if exists dept;</span><br><span class="line">      create table dept(</span><br><span class="line">      	deptno int primary key,</span><br><span class="line">      		dname varchar(255),</span><br><span class="line">      		loc varchar(255)</span><br><span class="line">      );</span><br><span class="line">      insert into dept(deptno,dname,loc) values(10,&#x27;销售部&#x27;,&#x27;北京&#x27;);</span><br><span class="line">      insert into dept(deptno,dname,loc) values(20,&#x27;研发部&#x27;,&#x27;上海&#x27;);</span><br><span class="line">      insert into dept(deptno,dname,loc) values(30,&#x27;技术部&#x27;,&#x27;广州&#x27;);</span><br><span class="line">      insert into dept(deptno,dname,loc) values(40,&#x27;媒体部&#x27;,&#x27;深圳&#x27;);</span><br><span class="line">      commit;</span><br><span class="line">      select * from dept;</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="code"><pre><code class="hljs sql"><br><br>## 使用纯Servlet做一个单表的CRUD操作<br><br><span class="hljs-operator">+</span> 使用纯粹的Servlet完成单表【对部门的】增删改查操作（B<span class="hljs-operator">/</span>S结构）<br><br>  <span class="hljs-operator">+</span> 第一步准备一张数据表<br><br>    <span class="hljs-operator">+</span> ```mysql<br>      <span class="hljs-keyword">drop</span> <span class="hljs-keyword">table</span> if <span class="hljs-keyword">exists</span> dept;<br>      <span class="hljs-keyword">create</span> <span class="hljs-keyword">table</span> dept(<br>      	deptno <span class="hljs-type">int</span> <span class="hljs-keyword">primary</span> key,<br>      		dname <span class="hljs-type">varchar</span>(<span class="hljs-number">255</span>),<br>      		loc <span class="hljs-type">varchar</span>(<span class="hljs-number">255</span>)<br>      );<br>      <span class="hljs-keyword">insert</span> <span class="hljs-keyword">into</span> dept(deptno,dname,loc) <span class="hljs-keyword">values</span>(<span class="hljs-number">10</span>,<span class="hljs-string">&#x27;销售部&#x27;</span>,<span class="hljs-string">&#x27;北京&#x27;</span>);<br>      <span class="hljs-keyword">insert</span> <span class="hljs-keyword">into</span> dept(deptno,dname,loc) <span class="hljs-keyword">values</span>(<span class="hljs-number">20</span>,<span class="hljs-string">&#x27;研发部&#x27;</span>,<span class="hljs-string">&#x27;上海&#x27;</span>);<br>      <span class="hljs-keyword">insert</span> <span class="hljs-keyword">into</span> dept(deptno,dname,loc) <span class="hljs-keyword">values</span>(<span class="hljs-number">30</span>,<span class="hljs-string">&#x27;技术部&#x27;</span>,<span class="hljs-string">&#x27;广州&#x27;</span>);<br>      <span class="hljs-keyword">insert</span> <span class="hljs-keyword">into</span> dept(deptno,dname,loc) <span class="hljs-keyword">values</span>(<span class="hljs-number">40</span>,<span class="hljs-string">&#x27;媒体部&#x27;</span>,<span class="hljs-string">&#x27;深圳&#x27;</span>);<br>      <span class="hljs-keyword">commit</span>;<br>      <span class="hljs-keyword">select</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">from</span> dept;<br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
 </ul>
@@ -573,7 +792,7 @@ String servletPath =request.getServletPath(); //不用文件目录
 <li><p>第一：先修改前端页面的超链接</p>
 <ul>
 <li><pre><code class="html">    &lt;a href=&quot;/oa/dept/list&quot;&gt;查看部门列表&lt;/a&gt;
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">+ 第二：编写xml文件</span><br><span class="line"></span><br><span class="line">  + ```xml</span><br><span class="line">    &lt;servlet&gt;</span><br><span class="line">          &lt;servlet-name&gt;list&lt;/servlet-name&gt;</span><br><span class="line">          &lt;servlet-class&gt;com.bjpowernode.OA.web.action.DeptListServlet&lt;/servlet-class&gt;</span><br><span class="line">      &lt;/servlet&gt;</span><br><span class="line">      &lt;servlet-mapping&gt;</span><br><span class="line">          &lt;servlet-name&gt;list&lt;/servlet-name&gt;</span><br><span class="line">          &lt;url-pattern&gt;/dept/list&lt;/url-pattern&gt;</span><br><span class="line">      &lt;/servlet-mapping&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="code"><pre><code class="hljs xml"><br>+ 第二：编写xml文件<br><br>  + ```xml<br>    <span class="hljs-tag">&lt;<span class="hljs-name">servlet</span>&gt;</span><br>          <span class="hljs-tag">&lt;<span class="hljs-name">servlet-name</span>&gt;</span>list<span class="hljs-tag">&lt;/<span class="hljs-name">servlet-name</span>&gt;</span><br>          <span class="hljs-tag">&lt;<span class="hljs-name">servlet-class</span>&gt;</span>com.bjpowernode.OA.web.action.DeptListServlet<span class="hljs-tag">&lt;/<span class="hljs-name">servlet-class</span>&gt;</span><br>      <span class="hljs-tag">&lt;/<span class="hljs-name">servlet</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-name">servlet-mapping</span>&gt;</span><br>          <span class="hljs-tag">&lt;<span class="hljs-name">servlet-name</span>&gt;</span>list<span class="hljs-tag">&lt;/<span class="hljs-name">servlet-name</span>&gt;</span><br>          <span class="hljs-tag">&lt;<span class="hljs-name">url-pattern</span>&gt;</span>/dept/list<span class="hljs-tag">&lt;/<span class="hljs-name">url-pattern</span>&gt;</span><br>      <span class="hljs-tag">&lt;/<span class="hljs-name">servlet-mapping</span>&gt;</span><br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
 </ul>
@@ -598,7 +817,7 @@ public class DeptListServlet extends HttpServlet &#123;
     &#125;
 &#125;
 
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">  + 第四：在doGet方法中链接数据库，查询所有部门</span><br><span class="line"></span><br><span class="line">    + 所有双引号变成单引号</span><br><span class="line"></span><br><span class="line">+ 第六步：查看部门详情</span><br><span class="line"></span><br><span class="line">  + 详情，连接数据库</span><br><span class="line"></span><br><span class="line">    + ```java</span><br><span class="line">      &lt;a href=&#x27;&quot;+contextPath+&quot;/dept/list?deptno=&quot;+deptno+&quot;&#x27;&gt;详情&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">  +</span> 第四：在doGet方法中链接数据库，查询所有部门<br><br><span class="hljs-bullet">    +</span> 所有双引号变成单引号<br><br><span class="hljs-bullet">+</span> 第六步：查看部门详情<br><br><span class="hljs-bullet">  +</span> 详情，连接数据库<br><br><span class="hljs-bullet">    +</span> <span class="hljs-code">```java</span><br><span class="hljs-code">      &lt;a href=&#x27;&quot;+contextPath+&quot;/dept/list?deptno=&quot;+deptno+&quot;&#x27;&gt;详情&lt;/a&gt;</span><br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
 </ul>
@@ -615,7 +834,7 @@ public class DeptListServlet extends HttpServlet &#123;
         &lt;servlet-name&gt;detail&lt;/servlet-name&gt;
         &lt;url-pattern&gt;/dept/detail&lt;/url-pattern&gt;
     &lt;/servlet-mapping&gt;
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">+ 编写一个类 重写doGet方法</span><br><span class="line"></span><br><span class="line">  + ```java</span><br><span class="line">    package com.bjpowernode.oa.web.action;</span><br><span class="line">    </span><br><span class="line">    import jakarta.servlet.ServletException;</span><br><span class="line">    import jakarta.servlet.http.HttpServlet;</span><br><span class="line">    import jakarta.servlet.http.HttpServletRequest;</span><br><span class="line">    import jakarta.servlet.http.HttpServletResponse;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    import java.io.IOException;</span><br><span class="line">    </span><br><span class="line">    public class DeptDetailServlet extends HttpServlet &#123;</span><br><span class="line">        @Override</span><br><span class="line">        protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException &#123;</span><br><span class="line">    </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+<figure class="highlight scala"><table><tr><td class="code"><pre><code class="hljs scala"><br>+ 编写一个类 重写doGet方法<br><br>  + ```java<br>    <span class="hljs-keyword">package</span> com.bjpowernode.oa.web.action;<br>    <br>    <span class="hljs-keyword">import</span> jakarta.servlet.<span class="hljs-type">ServletException</span>;<br>    <span class="hljs-keyword">import</span> jakarta.servlet.http.<span class="hljs-type">HttpServlet</span>;<br>    <span class="hljs-keyword">import</span> jakarta.servlet.http.<span class="hljs-type">HttpServletRequest</span>;<br>    <span class="hljs-keyword">import</span> jakarta.servlet.http.<span class="hljs-type">HttpServletResponse</span>;<br>    <br>    <br>    <span class="hljs-keyword">import</span> java.io.<span class="hljs-type">IOException</span>;<br>    <br>    public <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DeptDetailServlet</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">HttpServlet</span> </span>&#123;<br>        <span class="hljs-meta">@Override</span><br>        <span class="hljs-keyword">protected</span> void doGet(<span class="hljs-type">HttpServletRequest</span> request, <span class="hljs-type">HttpServletResponse</span> response) <span class="hljs-keyword">throws</span> <span class="hljs-type">ServletException</span>, <span class="hljs-type">IOException</span> &#123;<br>    <br>        &#125;<br>    &#125;<br>    <br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
 <li><p>在doGet中连接数据库，根据部门编号查询该部门信息</p>
@@ -636,7 +855,7 @@ public class DeptListServlet extends HttpServlet &#123;
    out.print(&quot;&#125;&quot;);
    out.print(&quot;&lt;/script&gt;&quot;);
  
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">+ 解决404问题</span><br><span class="line"></span><br><span class="line">+ 配置xml文件</span><br><span class="line"></span><br><span class="line">  + ```xml</span><br><span class="line">        &lt;servlet&gt;</span><br><span class="line">            &lt;servlet-name&gt;delete&lt;/servlet-name&gt;</span><br><span class="line">            &lt;servlet-class&gt;com.bjpowernode.oa.web.action.DeptDeleteServlet&lt;/servlet-class&gt;</span><br><span class="line">        &lt;/servlet&gt;</span><br><span class="line">        &lt;servlet-mapping&gt;</span><br><span class="line">            &lt;servlet-name&gt;delete&lt;/servlet-name&gt;</span><br><span class="line">            &lt;url-pattern&gt;/dept/delete&lt;/url-pattern&gt;</span><br><span class="line">        &lt;/servlet-mapping&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight pgsql"><table><tr><td class="code"><pre><code class="hljs pgsql"><br>+ 解决<span class="hljs-number">404</span>问题<br><br>+ 配置<span class="hljs-type">xml</span>文件<br><br>  + ```<span class="hljs-type">xml</span><br>        &lt;servlet&gt;<br>            &lt;servlet-<span class="hljs-type">name</span>&gt;<span class="hljs-keyword">delete</span>&lt;/servlet-<span class="hljs-type">name</span>&gt;<br>            &lt;servlet-<span class="hljs-keyword">class</span>&gt;com.bjpowernode.oa.web.action.DeptDeleteServlet&lt;/servlet-<span class="hljs-keyword">class</span>&gt;<br>        &lt;/servlet&gt;<br>        &lt;servlet-<span class="hljs-keyword">mapping</span>&gt;<br>            &lt;servlet-<span class="hljs-type">name</span>&gt;<span class="hljs-keyword">delete</span>&lt;/servlet-<span class="hljs-type">name</span>&gt;<br>            &lt;url-pattern&gt;/dept/<span class="hljs-keyword">delete</span>&lt;/url-pattern&gt;<br>        &lt;/servlet-<span class="hljs-keyword">mapping</span>&gt;<br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
 </ul>
@@ -661,7 +880,7 @@ public class DeptDeleteServlet extends HttpServlet &#123;
 
 &#125;
 
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">  + 第八步：新增部门</span><br><span class="line"></span><br><span class="line">    + 注意：最后保存到/dept/list会出现405以为保存是post请求，底层要doGEt方法</span><br><span class="line">    + 解决方法</span><br><span class="line">      + 第一种在/dept/list Servlet中添加doPost方法，然后在doPost方法中调用doGet方法</span><br><span class="line">      + 重定向</span><br><span class="line"></span><br><span class="line">  + 第九步：跳转到修改部门</span><br><span class="line"></span><br><span class="line">  + 第十步：修改部门</span><br><span class="line"></span><br><span class="line">## 在一个web应用中应该如何完成资源的跳转</span><br><span class="line"></span><br><span class="line">+ web应用中通过两种方式，可以完成资源的跳转</span><br><span class="line"></span><br><span class="line">  + 第一种：转发</span><br><span class="line">  + 第二种：重定向</span><br><span class="line"></span><br><span class="line">+ 转发和重定向的区别</span><br><span class="line"></span><br><span class="line">  + 代码上区别</span><br><span class="line"></span><br><span class="line">    + 转发</span><br><span class="line"></span><br><span class="line">      + ```java</span><br><span class="line">         </span><br><span class="line">        //获取请求转发器对象</span><br><span class="line">        request.getRequestDispatcher(&quot;/dept/list&quot;).forward(request,response);</span><br><span class="line">        //调用请求转发器对象的forward方法完成转发</span><br><span class="line">        dispacher.forward(request,response);</span><br><span class="line">        </span><br><span class="line">        //合并一行代码</span><br><span class="line">        request.getRequestDispatcher(&quot;/dept/list&quot;).forward(request.response);</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">  +</span> 第八步：新增部门<br><br><span class="hljs-bullet">    +</span> 注意：最后保存到/dept/list会出现405以为保存是post请求，底层要doGEt方法<br><span class="hljs-bullet">    +</span> 解决方法<br><span class="hljs-bullet">      +</span> 第一种在/dept/list Servlet中添加doPost方法，然后在doPost方法中调用doGet方法<br><span class="hljs-bullet">      +</span> 重定向<br><br><span class="hljs-bullet">  +</span> 第九步：跳转到修改部门<br><br><span class="hljs-bullet">  +</span> 第十步：修改部门<br><br><span class="hljs-section">## 在一个web应用中应该如何完成资源的跳转</span><br><br><span class="hljs-bullet">+</span> web应用中通过两种方式，可以完成资源的跳转<br><br><span class="hljs-bullet">  +</span> 第一种：转发<br><span class="hljs-bullet">  +</span> 第二种：重定向<br><br><span class="hljs-bullet">+</span> 转发和重定向的区别<br><br><span class="hljs-bullet">  +</span> 代码上区别<br><br><span class="hljs-bullet">    +</span> 转发<br><br><span class="hljs-bullet">      +</span> <span class="hljs-code">```java</span><br><span class="hljs-code">         </span><br><span class="hljs-code">        //获取请求转发器对象</span><br><span class="hljs-code">        request.getRequestDispatcher(&quot;/dept/list&quot;).forward(request,response);</span><br><span class="hljs-code">        //调用请求转发器对象的forward方法完成转发</span><br><span class="hljs-code">        dispacher.forward(request,response);</span><br><span class="hljs-code">        </span><br><span class="hljs-code">        //合并一行代码</span><br><span class="hljs-code">        request.getRequestDispatcher(&quot;/dept/list&quot;).forward(request.response);</span><br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
 </ul>
@@ -670,7 +889,7 @@ public class DeptDeleteServlet extends HttpServlet &#123;
 <ul>
 <li><pre><code class="java">response.sendRedirect(request.getContextPath()+&quot;/b&quot;);
 //路径上要加项目名
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">  + 重定向和转发的本质区别</span><br><span class="line"></span><br><span class="line">    + 转发由web服务器来控制（转发请求一次）</span><br><span class="line">    + 重定向：是浏览器完成的（重定向请求两次）</span><br><span class="line">    + 如果需要从其他Servlet 的</span><br><span class="line"></span><br><span class="line">## Servlet注解，简化配置</span><br><span class="line"></span><br><span class="line">+ Servlet注解的优点</span><br><span class="line">  + 开发效率高</span><br><span class="line">  + web.xml文件体积变小</span><br><span class="line">+ @WebServlet注解的属性</span><br><span class="line">  + name属性:用来指定Servlet的名字等同于&lt;servlet-name&gt;</span><br><span class="line">  + urlPatterns属性：用来指定Servlet的映射路径，可以指定多个字符串。&lt;url-pattern&gt;</span><br><span class="line">  + loadOnStartUp属性：用来指定在服务器启动阶段是否加载该Servlet</span><br><span class="line">  + value属性：当前注解的属性名是value的时候，value属性名可以省略</span><br><span class="line"></span><br><span class="line">## 关于B/S结构系统的会话机制（session机制）</span><br><span class="line"></span><br><span class="line">+ session就是会话</span><br><span class="line"></span><br><span class="line">+ 用户打开浏览器，经过一系列操作，然后关闭浏览器就是一次会话</span><br><span class="line"></span><br><span class="line">+ session机制属于B/S结构的一部分,session机制实际上一种规范</span><br><span class="line"></span><br><span class="line">+ session对象主要作用是：保存会话状态</span><br><span class="line"></span><br><span class="line">+ session对象的实现原理</span><br><span class="line"></span><br><span class="line">  + HttpSession session =request.getSession();</span><br><span class="line">  + JSESSION=XXXXX.这个是以cookie的形式保存在浏览器内存中，浏览器关闭cookie就没了</span><br><span class="line">  + session列表是一个Map，map的key是sessionid，map 的value是session对象</span><br><span class="line"></span><br><span class="line">+ 总结目前所学到的域对象</span><br><span class="line"></span><br><span class="line">  + request（请求域）（请求级别）</span><br><span class="line">  + session（会话域）（用户级别）</span><br><span class="line">  + application（应用域）（项目级别）</span><br><span class="line"></span><br><span class="line">+ 三个域对象的大小关系</span><br><span class="line"></span><br><span class="line">  + request&lt;session&lt;application</span><br><span class="line"></span><br><span class="line">+ 三个域都有的公共方法</span><br><span class="line"></span><br><span class="line">  + setAttribute（向域中绑定数据）</span><br><span class="line">  + getAttribute（向域中获取数据）</span><br><span class="line">  + removeAttribute（删除域中的数据）</span><br><span class="line">  + 使用原则：尽量使用小的域</span><br><span class="line"></span><br><span class="line">+ session销毁</span><br><span class="line"></span><br><span class="line">  + ```java</span><br><span class="line">    session.invalidate();</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">  +</span> 重定向和转发的本质区别<br><br><span class="hljs-bullet">    +</span> 转发由web服务器来控制（转发请求一次）<br><span class="hljs-bullet">    +</span> 重定向：是浏览器完成的（重定向请求两次）<br><span class="hljs-bullet">    +</span> 如果需要从其他Servlet 的<br><br><span class="hljs-section">## Servlet注解，简化配置</span><br><br><span class="hljs-bullet">+</span> Servlet注解的优点<br><span class="hljs-bullet">  +</span> 开发效率高<br><span class="hljs-bullet">  +</span> web.xml文件体积变小<br><span class="hljs-bullet">+</span> @WebServlet注解的属性<br><span class="hljs-bullet">  +</span> name属性:用来指定Servlet的名字等同于<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">servlet-name</span>&gt;</span></span><br><span class="hljs-bullet">  +</span> urlPatterns属性：用来指定Servlet的映射路径，可以指定多个字符串。<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">url-pattern</span>&gt;</span></span><br><span class="hljs-bullet">  +</span> loadOnStartUp属性：用来指定在服务器启动阶段是否加载该Servlet<br><span class="hljs-bullet">  +</span> value属性：当前注解的属性名是value的时候，value属性名可以省略<br><br><span class="hljs-section">## 关于B/S结构系统的会话机制（session机制）</span><br><br><span class="hljs-bullet">+</span> session就是会话<br><br><span class="hljs-bullet">+</span> 用户打开浏览器，经过一系列操作，然后关闭浏览器就是一次会话<br><br><span class="hljs-bullet">+</span> session机制属于B/S结构的一部分,session机制实际上一种规范<br><br><span class="hljs-bullet">+</span> session对象主要作用是：保存会话状态<br><br><span class="hljs-bullet">+</span> session对象的实现原理<br><br><span class="hljs-bullet">  +</span> HttpSession session =request.getSession();<br><span class="hljs-bullet">  +</span> JSESSION=XXXXX.这个是以cookie的形式保存在浏览器内存中，浏览器关闭cookie就没了<br><span class="hljs-bullet">  +</span> session列表是一个Map，map的key是sessionid，map 的value是session对象<br><br><span class="hljs-bullet">+</span> 总结目前所学到的域对象<br><br><span class="hljs-bullet">  +</span> request（请求域）（请求级别）<br><span class="hljs-bullet">  +</span> session（会话域）（用户级别）<br><span class="hljs-bullet">  +</span> application（应用域）（项目级别）<br><br><span class="hljs-bullet">+</span> 三个域对象的大小关系<br><br><span class="hljs-bullet">  +</span> request<span class="language-xml">&lt;session<span class="hljs-tag">&lt;<span class="hljs-name">application</span></span></span><br><span class="hljs-tag"><span class="language-xml"></span></span><br><span class="hljs-tag"><span class="language-xml">+ <span class="hljs-attr">三个域都有的公共方法</span></span></span><br><span class="hljs-tag"><span class="language-xml"></span></span><br><span class="hljs-tag"><span class="language-xml">  + <span class="hljs-attr">setAttribute</span>（<span class="hljs-attr">向域中绑定数据</span>）</span></span><br><span class="hljs-tag"><span class="language-xml">  + <span class="hljs-attr">getAttribute</span>（<span class="hljs-attr">向域中获取数据</span>）</span></span><br><span class="hljs-tag"><span class="language-xml">  + <span class="hljs-attr">removeAttribute</span>（<span class="hljs-attr">删除域中的数据</span>）</span></span><br><span class="hljs-tag"><span class="language-xml">  + <span class="hljs-attr">使用原则</span>：<span class="hljs-attr">尽量使用小的域</span></span></span><br><span class="hljs-tag"><span class="language-xml"></span></span><br><span class="hljs-tag"><span class="language-xml">+ <span class="hljs-attr">session销毁</span></span></span><br><span class="hljs-tag"><span class="language-xml"></span></span><br><span class="hljs-tag"><span class="language-xml">  + ```<span class="hljs-attr">java</span></span></span><br><span class="hljs-tag"><span class="language-xml">    <span class="hljs-attr">session.invalidate</span>();</span></span><br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
 </ul>
@@ -713,7 +932,7 @@ if(cookies!=null)&#123;
     String value =cookie.getValue();
     &#125;
 &#125;
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">      </span><br><span class="line"></span><br><span class="line"># JSP</span><br><span class="line"></span><br><span class="line">+ jsp实际上就是一个Servlet</span><br><span class="line"></span><br><span class="line">+ JSP</span><br><span class="line"></span><br><span class="line">  + jsp是java程</span><br><span class="line">  + JSP也是javaEE的13个子规范之一</span><br><span class="line"></span><br><span class="line">+ JSP的基础语法</span><br><span class="line"></span><br><span class="line">  + jsp的page指令解决中文乱码问题</span><br><span class="line"></span><br><span class="line">    + ```jsp</span><br><span class="line">      &lt;%@page contentType=&quot;text/html;charset=UTF-8&quot;%&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-code">      </span><br><span class="hljs-code"></span><br><span class="hljs-section"># JSP</span><br><br><span class="hljs-bullet">+</span> jsp实际上就是一个Servlet<br><br><span class="hljs-bullet">+</span> JSP<br><br><span class="hljs-bullet">  +</span> jsp是java程<br><span class="hljs-bullet">  +</span> JSP也是javaEE的13个子规范之一<br><br><span class="hljs-bullet">+</span> JSP的基础语法<br><br><span class="hljs-bullet">  +</span> jsp的page指令解决中文乱码问题<br><br><span class="hljs-bullet">    +</span> <span class="hljs-code">```jsp</span><br><span class="hljs-code">      &lt;%@page contentType=&quot;text/html;charset=UTF-8&quot;%&gt;</span><br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
 </ul>
@@ -727,25 +946,25 @@ if(cookies!=null)&#123;
 <li><p>jsp的注释</p>
 <ul>
 <li><pre><code class="jsp">&lt;%-- JSP的专业注释--%&gt;
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">  + jsp的输出语句</span><br><span class="line"></span><br><span class="line">    + out.write(),因为out是JSP的九大内置对象之一，可以直接用，只能正在service方法内部使用  </span><br><span class="line">    + &lt;% String name =&quot;jack&quot;;out.write(&quot;name =&quot;+name);%&gt;</span><br><span class="line">    + 输出无java代码直接在jsp编写就行</span><br><span class="line">    + 如果输出的内容有java代码，这个时候可以用</span><br><span class="line">      + &lt;%=%&gt;  在=后面编写要输出的内容</span><br><span class="line">      + &lt;% =%&gt;在java代码中翻译为 out.print();</span><br><span class="line"></span><br><span class="line">  + &lt;%!  %&gt;</span><br><span class="line"></span><br><span class="line">    + 这个符号内编写的java程序会自动翻译到service方法外</span><br><span class="line"></span><br><span class="line">  + 用jsp和Servlet完成oa项目</span><br><span class="line"></span><br><span class="line">    + 使用Servlet处理业务，收集数据</span><br><span class="line">    + 将原先的html文件改为jsp文件，并且在jsp文件头添加page指令（指定contentType防止中文乱码），将jsp放在WEB根目录下</span><br><span class="line">    + 完成跳转</span><br><span class="line">    + Servlet中连接数据库了，遍历结果集</span><br><span class="line">      + ​	将遍历的结果集封装成java对象</span><br><span class="line">      + 将java对象放在List集合中</span><br><span class="line">      + 将List集合存储到request域中</span><br><span class="line">      + 转发forward到jsp</span><br><span class="line">    + 在jsp中</span><br><span class="line">      + 从域中取出List集合</span><br><span class="line">      + 遍历集合</span><br><span class="line">    + JSP文件的扩展名可以不是jsp</span><br><span class="line">      + 在CATALINA_HOME/conf/web.xml，可以配置jsp文件的扩展名</span><br><span class="line"></span><br><span class="line">  + 实现登入功能</span><br><span class="line"></span><br><span class="line">    + 步骤1：在数据库中添加用户表</span><br><span class="line">    + 步骤2：先实现登录页面</span><br><span class="line"></span><br><span class="line">+ JSP的指令</span><br><span class="line"></span><br><span class="line">  + 指令的作用：指导jsp的翻译工作</span><br><span class="line"></span><br><span class="line">  + 指令</span><br><span class="line"></span><br><span class="line">    + include：包含指令，在jsp中完成静态包含</span><br><span class="line">    + taglib：引入标签库指令</span><br><span class="line">    + page</span><br><span class="line"></span><br><span class="line">  + 指令的使用语法</span><br><span class="line"></span><br><span class="line">    + &lt;%@指令名 属性名=属性值 属性名=属性值 ...%&gt;</span><br><span class="line"></span><br><span class="line">  + page指令常用的属性</span><br><span class="line"></span><br><span class="line">    + ```</span><br><span class="line">      &lt;%@page session =&quot;true|false&quot;%&gt;</span><br><span class="line">      true表示启动JSP的内置对象session，表示一定启动session对象 ，默认值就是session =true</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">  +</span> jsp的输出语句<br><br><span class="hljs-bullet">    +</span> out.write(),因为out是JSP的九大内置对象之一，可以直接用，只能正在service方法内部使用  <br><span class="hljs-bullet">    +</span> &lt;% String name =&quot;jack&quot;;out.write(&quot;name =&quot;+name);%&gt;<br><span class="hljs-bullet">    +</span> 输出无java代码直接在jsp编写就行<br><span class="hljs-bullet">    +</span> 如果输出的内容有java代码，这个时候可以用<br><span class="hljs-bullet">      +</span> &lt;%=%&gt;  在=后面编写要输出的内容<br><span class="hljs-bullet">      +</span> &lt;% =%&gt;在java代码中翻译为 out.print();<br><br><span class="hljs-bullet">  +</span> &lt;%!  %&gt;<br><br><span class="hljs-bullet">    +</span> 这个符号内编写的java程序会自动翻译到service方法外<br><br><span class="hljs-bullet">  +</span> 用jsp和Servlet完成oa项目<br><br><span class="hljs-bullet">    +</span> 使用Servlet处理业务，收集数据<br><span class="hljs-bullet">    +</span> 将原先的html文件改为jsp文件，并且在jsp文件头添加page指令（指定contentType防止中文乱码），将jsp放在WEB根目录下<br><span class="hljs-bullet">    +</span> 完成跳转<br><span class="hljs-bullet">    +</span> Servlet中连接数据库了，遍历结果集<br><span class="hljs-bullet">      +</span> ​	将遍历的结果集封装成java对象<br><span class="hljs-bullet">      +</span> 将java对象放在List集合中<br><span class="hljs-bullet">      +</span> 将List集合存储到request域中<br><span class="hljs-bullet">      +</span> 转发forward到jsp<br><span class="hljs-bullet">    +</span> 在jsp中<br><span class="hljs-bullet">      +</span> 从域中取出List集合<br><span class="hljs-bullet">      +</span> 遍历集合<br><span class="hljs-bullet">    +</span> JSP文件的扩展名可以不是jsp<br><span class="hljs-bullet">      +</span> 在CATALINA<span class="hljs-emphasis">_HOME/conf/web.xml，可以配置jsp文件的扩展名</span><br><span class="hljs-emphasis"></span><br><span class="hljs-emphasis">  + 实现登入功能</span><br><span class="hljs-emphasis"></span><br><span class="hljs-emphasis">    + 步骤1：在数据库中添加用户表</span><br><span class="hljs-emphasis">    + 步骤2：先实现登录页面</span><br><span class="hljs-emphasis"></span><br><span class="hljs-emphasis">+ JSP的指令</span><br><span class="hljs-emphasis"></span><br><span class="hljs-emphasis">  + 指令的作用：指导jsp的翻译工作</span><br><span class="hljs-emphasis"></span><br><span class="hljs-emphasis">  + 指令</span><br><span class="hljs-emphasis"></span><br><span class="hljs-emphasis">    + include：包含指令，在jsp中完成静态包含</span><br><span class="hljs-emphasis">    + taglib：引入标签库指令</span><br><span class="hljs-emphasis">    + page</span><br><span class="hljs-emphasis"></span><br><span class="hljs-emphasis">  + 指令的使用语法</span><br><span class="hljs-emphasis"></span><br><span class="hljs-emphasis">    + &lt;%@指令名 属性名=属性值 属性名=属性值 ...%&gt;</span><br><span class="hljs-emphasis"></span><br><span class="hljs-emphasis">  + page指令常用的属性</span><br><span class="hljs-emphasis"></span><br><span class="hljs-emphasis">    + ```</span><br><span class="hljs-emphasis">      &lt;%@page session =&quot;true|false&quot;%&gt;</span><br><span class="hljs-emphasis">      true表示启动JSP的内置对象session，表示一定启动session对象 ，默认值就是session =true</span><br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
-<li><pre><code>&lt;%@page contentType=&quot;text/json&quot;%&gt;
+<li><pre><code class="hljs">&lt;%@page contentType=&quot;text/json&quot;%&gt;
 contentType属性用来设置响应的内容类型
 同时也可以设置字符集
 &lt;%page contentType=&quot;text/json:charset=UTF_8&quot;%&gt;
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">+ ```</span><br><span class="line">  &lt;%@page pageEncoding =&quot;UTF-8&quot;%&gt;</span><br><span class="line">  pageEncoding =&quot;UTF-8&quot;表示设置响应时采用的字符集</span><br></pre></td></tr></table></figure>
+<figure class="highlight autohotkey"><table><tr><td class="code"><pre><code class="hljs autohotkey"><br>+ ```<br>  &lt;%@page pageEncoding =<span class="hljs-string">&quot;UTF-8&quot;</span>%&gt;<br>  pageEncoding =<span class="hljs-string">&quot;UTF-8&quot;</span>表示设置响应时采用的字符集<br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
-<li><pre><code>&lt;%@page import=&quot;java.util&quot;%&gt;
+<li><pre><code class="hljs">&lt;%@page import=&quot;java.util&quot;%&gt;
 导包语句
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">+ ```</span><br><span class="line">  &lt;%@page errorPage=&quot;error/jsp&quot;%&gt;</span><br><span class="line">  当页面出现异常用户，跳转到error.jsp</span><br><span class="line">  errorPage属性用来指定当前出错之后跳转位置</span><br></pre></td></tr></table></figure>
+<figure class="highlight aspectj"><table><tr><td class="code"><pre><code class="hljs aspectj"><br>+ ```<br>  &lt;%<span class="hljs-meta">@page</span> errorPage=<span class="hljs-string">&quot;error/jsp&quot;</span>%&gt;<br>  当页面出现异常用户，跳转到<span class="hljs-keyword">error</span>.jsp<br>  errorPage属性用来指定当前出错之后跳转位置<br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
-<li><pre><code>&lt;%@page isErrorPage =&quot;true&quot;%&gt;
+<li><pre><code class="hljs">&lt;%@page isErrorPage =&quot;true&quot;%&gt;
 表示启用JSP的九大内置对象:exception
 默认值是false
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">      </span><br><span class="line"></span><br><span class="line">+ JSP的九大内置对象</span><br><span class="line"></span><br><span class="line">  + jakarta.servlet.jsp.PageContext pageContext 页面作用域</span><br><span class="line">  + jakarta.servlet.http.HttpServletRequest request 请求作用域</span><br><span class="line">  + jakarta.servlet.http.HttpSession session 会话作用域</span><br><span class="line">  + jakarta.servlet.ServletContext application 应用作用域</span><br><span class="line">    - pageContext &lt; request &lt; session &lt; application</span><br><span class="line">    - 以上四个作用域都有：setAttribute、getAttribute、removeAttribute方法</span><br><span class="line">    - 以上作用域的使用原则：尽可能使用小的域</span><br><span class="line">  + java.lang.Throwable exception</span><br><span class="line">  + jakarta.servlet.ServletConfig config</span><br><span class="line">  + java.lang.Object page （其实是this，当前的servlet对象）</span><br><span class="line">  + jakarta.servlet.jsp.JspWriter out （负责输出）</span><br><span class="line">  + jakarta.servlet.http.HttpServletResponse response （负责响应）</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">## EL表达式</span><br><span class="line"></span><br><span class="line">+ EL表达式</span><br><span class="line"></span><br><span class="line">  + Expression Language</span><br><span class="line">  + EL表达式可以代替jsp中的java代码 </span><br><span class="line">  + 从每个作用域中取数据，然后将其转换成字符串。然后将其输出到浏览器。这就是EL表达式的三大功效</span><br><span class="line">    + 第一功效：从某个域中取数据</span><br><span class="line">      + 四个域</span><br><span class="line">        + pageContext</span><br><span class="line">        + request</span><br><span class="line">        + session</span><br><span class="line">        + application</span><br><span class="line">    + 第二功效：将取出的数据转成字符串</span><br><span class="line">      + 如果</span><br><span class="line">    + 第三功效：将字符串输出到浏览器 </span><br><span class="line"></span><br><span class="line">+ EL表达的基本语法</span><br><span class="line"></span><br><span class="line">  + $&#123;表达式&#125;</span><br><span class="line"></span><br><span class="line">+ EL表达式获取 </span><br><span class="line"></span><br><span class="line">  + $&#123;需要获取的&#125;</span><br><span class="line">  + EL表达式调用了底层getxxx()方法 </span><br><span class="line"></span><br><span class="line">+ 没指定范围的前提下，EL表达式优先从小范围中读取数据</span><br><span class="line"></span><br><span class="line">  ```java</span><br><span class="line">  JSP//范围指定</span><br><span class="line">  $&#123;pageContext.data&#125;</span><br><span class="line">  $&#123;requestScope.data&#125;</span><br><span class="line">  $&#123;sessionScope.data&#125;</span><br><span class="line">  $&#123;applicationScope.data&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-code">      </span><br><span class="hljs-code"></span><br><span class="hljs-bullet">+</span> JSP的九大内置对象<br><br><span class="hljs-bullet">  +</span> jakarta.servlet.jsp.PageContext pageContext 页面作用域<br><span class="hljs-bullet">  +</span> jakarta.servlet.http.HttpServletRequest request 请求作用域<br><span class="hljs-bullet">  +</span> jakarta.servlet.http.HttpSession session 会话作用域<br><span class="hljs-bullet">  +</span> jakarta.servlet.ServletContext application 应用作用域<br><span class="hljs-bullet">    -</span> pageContext &lt; request &lt; session &lt; application<br><span class="hljs-bullet">    -</span> 以上四个作用域都有：setAttribute、getAttribute、removeAttribute方法<br><span class="hljs-bullet">    -</span> 以上作用域的使用原则：尽可能使用小的域<br><span class="hljs-bullet">  +</span> java.lang.Throwable exception<br><span class="hljs-bullet">  +</span> jakarta.servlet.ServletConfig config<br><span class="hljs-bullet">  +</span> java.lang.Object page （其实是this，当前的servlet对象）<br><span class="hljs-bullet">  +</span> jakarta.servlet.jsp.JspWriter out （负责输出）<br><span class="hljs-bullet">  +</span> jakarta.servlet.http.HttpServletResponse response （负责响应）<br><br><br><span class="hljs-section">## EL表达式</span><br><br><span class="hljs-bullet">+</span> EL表达式<br><br><span class="hljs-bullet">  +</span> Expression Language<br><span class="hljs-bullet">  +</span> EL表达式可以代替jsp中的java代码 <br><span class="hljs-bullet">  +</span> 从每个作用域中取数据，然后将其转换成字符串。然后将其输出到浏览器。这就是EL表达式的三大功效<br><span class="hljs-bullet">    +</span> 第一功效：从某个域中取数据<br><span class="hljs-bullet">      +</span> 四个域<br><span class="hljs-bullet">        +</span> pageContext<br><span class="hljs-bullet">        +</span> request<br><span class="hljs-bullet">        +</span> session<br><span class="hljs-bullet">        +</span> application<br><span class="hljs-bullet">    +</span> 第二功效：将取出的数据转成字符串<br><span class="hljs-bullet">      +</span> 如果<br><span class="hljs-bullet">    +</span> 第三功效：将字符串输出到浏览器 <br><br><span class="hljs-bullet">+</span> EL表达的基本语法<br><br><span class="hljs-bullet">  +</span> $&#123;表达式&#125;<br><br><span class="hljs-bullet">+</span> EL表达式获取 <br><br><span class="hljs-bullet">  +</span> $&#123;需要获取的&#125;<br><span class="hljs-bullet">  +</span> EL表达式调用了底层getxxx()方法 <br><br><span class="hljs-bullet">+</span> 没指定范围的前提下，EL表达式优先从小范围中读取数据<br><br>  <span class="hljs-code">```java</span><br><span class="hljs-code">  JSP//范围指定</span><br><span class="hljs-code">  $&#123;pageContext.data&#125;</span><br><span class="hljs-code">  $&#123;requestScope.data&#125;</span><br><span class="hljs-code">  $&#123;sessionScope.data&#125;</span><br><span class="hljs-code">  $&#123;applicationScope.data&#125;</span><br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
 </ul>
@@ -777,7 +996,7 @@ contentType属性用来设置响应的内容类型
 </ul>
 </li>
 <li><p>page指令当中，有一个属性，可以忽略EL表达式</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">JSP&lt;%@page contentType=&quot;text/html;charset=UTF-8&quot; isELIgnored=&quot;true&quot; %&gt; 全局控制忽略EL表达式</span><br><span class="line">局部控制：\$&#123;username&#125; 也可以忽略EL表达式</span><br></pre></td></tr></table></figure>
+<figure class="highlight mel"><table><tr><td class="code"><pre><code class="hljs mel">JSP&lt;%@page contentType=<span class="hljs-string">&quot;text/html;charset=UTF-8&quot;</span> isELIgnored=<span class="hljs-string">&quot;true&quot;</span> %&gt; 全局控制忽略EL表达式<br>局部控制：\$&#123;username&#125; 也可以忽略EL表达式<br></code></pre></td></tr></table></figure>
 </li>
 <li><p>EL表达式获取应用的根：</p>
 <ul>
@@ -856,9 +1075,9 @@ contentType属性用来设置响应的内容类型
 </li>
 <li><p>第二步：在JSP中引入标签库</p>
 <ul>
-<li><pre><code>&lt;%@taglib prefix=&quot;&quot; uri=&quot;http://java.sun.com/jsp/jstl/core&quot; %&gt;
+<li><pre><code class="hljs">&lt;%@taglib prefix=&quot;&quot; uri=&quot;http://java.sun.com/jsp/jstl/core&quot; %&gt;
 核心标签库
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">  + 第三步：在需要使用标签的位置使用就可以了</span><br><span class="line"></span><br><span class="line">+ tld配置文件解析</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">  +</span> 第三步：在需要使用标签的位置使用就可以了<br><br><span class="hljs-bullet">+</span> tld配置文件解析<br><br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
 </ul>
@@ -866,8 +1085,8 @@ contentType属性用来设置响应的内容类型
 </ul>
 <p>MARKUP<tag><br>    <description>对该标签的描述</description><br>    <name>catch</name> 标签的名字<br>    <tag-class>org.apache.taglibs.standard.tag.common.core.CatchTag</tag-class> 标签对应的java类。<br>    <body-content>JSP</body-content> 标签体当中可以出现的内容，如果是JSP，就表示标签体中可以出现符合JSP所有语法的代码。例如EL表达式。<br>    <attribute><br>        <description><br>            对这个属性的描述<br>        </description><br>        <name>var</name> 属性名<br>        <required>false</required> false表示该属性不是必须的。true表示该属性是必须的。<br>        <rtexprvalue>false</rtexprvalue> 这个描述说明了该属性是否支持EL表达式。false表示不支持。true表示支持EL表达式。<br>    </attribute><br>  </tag></p>
 <p>&lt;c:catch var&#x3D;””&gt;<br>    JSP….<br></c:catch></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">+ core标签库中常用的标签</span><br><span class="line"></span><br><span class="line">  - `c:if`</span><br><span class="line"></span><br><span class="line">    - &lt;c:if test=“boolean类型，支持EL表达式”&gt;&lt;/c: if&gt;</span><br><span class="line"></span><br><span class="line">  - `c:forEach`</span><br><span class="line"></span><br><span class="line">    - &lt;c:forEach items=“集合，支持EL表达式” var=“集合中的元素” varStatus=“元素状态对象”&gt; $&#123;元素状态对象.count&#125; &lt;/c: forEach&gt;</span><br><span class="line">    - &lt;c:forEach var=“i” begin=“1” end=“10” step=“2”&gt; $&#123;i&#125; &lt;/c: forEach&gt;</span><br><span class="line"></span><br><span class="line">  - `c:choose c:when c:otherwise`</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>  JSP&lt;c:choose&gt;<br>      &lt;c:when test&#x3D;”${param.age &lt; 18}”&gt;<br>          青少年<br>      </c:when><br>      &lt;c:when test&#x3D;”${param.age &lt; 35}”&gt;<br>          青年<br>      </c:when><br>      &lt;c:when test&#x3D;”${param.age &lt; 55}”&gt;<br>          中年<br>      </c:when><br>      &lt;c:otherwise&gt;<br>          老年<br>      </c:otherwise><br>  </c:choose><br>  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">## Filter过滤器</span><br><span class="line"></span><br><span class="line">+ Filter是过滤器</span><br><span class="line">  + Filter可以在Servlet这个目标执行之前添加代码。也可以在目标Servlet执行之后添加代码。</span><br><span class="line">  + 一般情况下都是在过滤器中编写公共代码</span><br><span class="line">+ 过滤器的编写过程</span><br><span class="line">  + 第一步：编写一个java类 实现接口：jarkata.servlet.Filter。并实现这个接口当中的方法</span><br><span class="line">    + init方法：在Filter对象第一次被创建之后调用，并且只调用一次</span><br><span class="line">    + doFilter方法： 只要用户发送一次请求就执行一次</span><br><span class="line">    + destroy方法：在Filter对象被释放/销毁之前调用，并且只调用一次</span><br><span class="line">  + 第二步：在web.xml文件中对Filter进行配置</span><br><span class="line">  + `Servlet`对象默认情况下，在服务器启动的时候是不会新建对象的</span><br><span class="line">  + `Filter`对象默认情况下，在服务器启动的时候会新建对象</span><br><span class="line">  + `Servlet`是单例的。`Filter`也是单例的（单实例）</span><br><span class="line">+ 目标`Servlet`是否执行，取决于两个条件：</span><br><span class="line">  - 在过滤器当中是否编写了：`chain.doFilter(request, response);`</span><br><span class="line">  - 用户发送的请求路径是否和`Servlet`的请求路径一致。</span><br><span class="line">+ `chain.doFilter(request, response);` 的作用</span><br><span class="line">  - 执行下一个过滤器，如果下面没有过滤器了，执行最终的`Servlet`</span><br><span class="line">+ `Filter`的生命周期</span><br><span class="line">  - 和`Servlet`对象生命周期一致</span><br><span class="line">  - 区别在`Filter`默认情况下，在服务器启动阶段就实例化</span><br><span class="line">+ 路径配置</span><br><span class="line">  - 关于`Filter`的配置路径：</span><br><span class="line">    - `/a.do`、`/b.do`、`/dept/save`。这些配置方式都是精确匹配</span><br><span class="line">    - `/*` 匹配所有路径</span><br><span class="line">    - `*.do` 后缀匹配，不要以 `/` 开始（模糊匹配的扩展匹配）</span><br><span class="line">    - `/dept/*` 前缀匹配</span><br><span class="line">+ 执行顺序</span><br><span class="line">  - `Filter`的优先级，天生的就比`Servlet`优先级高</span><br><span class="line">    - `/a.do` 对应一个`Filter`，也对应一个`Servlet`。那么一定是先执行`Filter`，然后再执行`Servlet`</span><br><span class="line">  - 在`web.xml`文件中进行配置的时候，`Filter`的执行顺序</span><br><span class="line">    - 依靠`filter-mapping`标签的配置位置，越靠上优先级越高</span><br><span class="line">    - 过滤器的调用顺序，遵循栈数据结构</span><br><span class="line">  - 使用`@WebFilter`的时候，`Filter`的执行顺序</span><br><span class="line">    - 在字典中比较`Filter`类名</span><br><span class="line">    - 但是一般情况都是使用`web.xml`进行配置</span><br><span class="line">+ 责任链设计模式</span><br><span class="line">  + 核心思想：在程序的运行阶段，动态的组合程序的调用顺序</span><br><span class="line">+ 过滤器最大的优点就是在程序的编译阶段不会确定调用顺序</span><br><span class="line">+ 使用过滤器改造OA项目</span><br><span class="line">  - 注意在`Filter`中的`req`和`response`需要进行强制类型转换</span><br><span class="line"></span><br><span class="line">## Listener</span><br><span class="line"></span><br><span class="line">+ 监听器是Servlet中的一员，是Servlet规范的一员</span><br><span class="line"></span><br><span class="line">+ 有哪些监听器</span><br><span class="line"></span><br><span class="line">  - ```</span><br><span class="line">    jakarta.servlet</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight dust"><table><tr><td class="code"><pre><code class="hljs dust"><span class="language-xml"></span><br><span class="language-xml">+ core标签库中常用的标签</span><br><span class="language-xml"></span><br><span class="language-xml">  - `c:if`</span><br><span class="language-xml"></span><br><span class="language-xml">    - <span class="hljs-tag">&lt;<span class="hljs-name">c:if</span> <span class="hljs-attr">test</span>=<span class="hljs-string">“boolean类型，支持EL表达式”</span>&gt;</span>&lt;/c: if&gt;</span><br><span class="language-xml"></span><br><span class="language-xml">  - `c:forEach`</span><br><span class="language-xml"></span><br><span class="language-xml">    - <span class="hljs-tag">&lt;<span class="hljs-name">c:forEach</span> <span class="hljs-attr">items</span>=<span class="hljs-string">“集合，支持EL表达式”</span> <span class="hljs-attr">var</span>=<span class="hljs-string">“集合中的元素”</span> <span class="hljs-attr">varStatus</span>=<span class="hljs-string">“元素状态对象”</span>&gt;</span> $</span><span class="hljs-template-variable">&#123;元素状态对象.count&#125;</span><span class="language-xml"> &lt;/c: forEach&gt;</span><br><span class="language-xml">    - <span class="hljs-tag">&lt;<span class="hljs-name">c:forEach</span> <span class="hljs-attr">var</span>=<span class="hljs-string">“i”</span> <span class="hljs-attr">begin</span>=<span class="hljs-string">“1”</span> <span class="hljs-attr">end</span>=<span class="hljs-string">“10”</span> <span class="hljs-attr">step</span>=<span class="hljs-string">“2”</span>&gt;</span> $</span><span class="hljs-template-variable">&#123;i&#125;</span><span class="language-xml"> &lt;/c: forEach&gt;</span><br><span class="language-xml"></span><br><span class="language-xml">  - `c:choose c:when c:otherwise`</span><br><span class="language-xml"></span><br></code></pre></td></tr></table></figure>
+<p>  JSP&lt;c:choose&gt;<br>      &lt;c:when test&#x3D;”${param.age &lt; 18}”&gt;<br>          青少年<br>      </c:when><br>      &lt;c:when test&#x3D;”${param.age &lt; 35}”&gt;<br>          青年<br>      </c:when><br>      &lt;c:when test&#x3D;”${param.age &lt; 55}”&gt;<br>          中年<br>      </c:when><br>      &lt;c:otherwise&gt;<br>          老年<br>      </c:otherwise><br>  </c:choose><br>  <figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-section">## Filter过滤器</span><br><br><span class="hljs-bullet">+</span> Filter是过滤器<br><span class="hljs-bullet">  +</span> Filter可以在Servlet这个目标执行之前添加代码。也可以在目标Servlet执行之后添加代码。<br><span class="hljs-bullet">  +</span> 一般情况下都是在过滤器中编写公共代码<br><span class="hljs-bullet">+</span> 过滤器的编写过程<br><span class="hljs-bullet">  +</span> 第一步：编写一个java类 实现接口：jarkata.servlet.Filter。并实现这个接口当中的方法<br><span class="hljs-bullet">    +</span> init方法：在Filter对象第一次被创建之后调用，并且只调用一次<br><span class="hljs-bullet">    +</span> doFilter方法： 只要用户发送一次请求就执行一次<br><span class="hljs-bullet">    +</span> destroy方法：在Filter对象被释放/销毁之前调用，并且只调用一次<br><span class="hljs-bullet">  +</span> 第二步：在web.xml文件中对Filter进行配置<br><span class="hljs-bullet">  +</span> <span class="hljs-code">`Servlet`</span>对象默认情况下，在服务器启动的时候是不会新建对象的<br><span class="hljs-bullet">  +</span> <span class="hljs-code">`Filter`</span>对象默认情况下，在服务器启动的时候会新建对象<br><span class="hljs-bullet">  +</span> <span class="hljs-code">`Servlet`</span>是单例的。<span class="hljs-code">`Filter`</span>也是单例的（单实例）<br><span class="hljs-bullet">+</span> 目标<span class="hljs-code">`Servlet`</span>是否执行，取决于两个条件：<br><span class="hljs-bullet">  -</span> 在过滤器当中是否编写了：<span class="hljs-code">`chain.doFilter(request, response);`</span><br><span class="hljs-bullet">  -</span> 用户发送的请求路径是否和<span class="hljs-code">`Servlet`</span>的请求路径一致。<br><span class="hljs-bullet">+</span> <span class="hljs-code">`chain.doFilter(request, response);`</span> 的作用<br><span class="hljs-bullet">  -</span> 执行下一个过滤器，如果下面没有过滤器了，执行最终的<span class="hljs-code">`Servlet`</span><br><span class="hljs-bullet">+</span> <span class="hljs-code">`Filter`</span>的生命周期<br><span class="hljs-bullet">  -</span> 和<span class="hljs-code">`Servlet`</span>对象生命周期一致<br><span class="hljs-bullet">  -</span> 区别在<span class="hljs-code">`Filter`</span>默认情况下，在服务器启动阶段就实例化<br><span class="hljs-bullet">+</span> 路径配置<br><span class="hljs-bullet">  -</span> 关于<span class="hljs-code">`Filter`</span>的配置路径：<br><span class="hljs-bullet">    -</span> <span class="hljs-code">`/a.do`</span>、<span class="hljs-code">`/b.do`</span>、<span class="hljs-code">`/dept/save`</span>。这些配置方式都是精确匹配<br><span class="hljs-bullet">    -</span> <span class="hljs-code">`/*`</span> 匹配所有路径<br><span class="hljs-bullet">    -</span> <span class="hljs-code">`*.do`</span> 后缀匹配，不要以 <span class="hljs-code">`/`</span> 开始（模糊匹配的扩展匹配）<br><span class="hljs-bullet">    -</span> <span class="hljs-code">`/dept/*`</span> 前缀匹配<br><span class="hljs-bullet">+</span> 执行顺序<br><span class="hljs-bullet">  -</span> <span class="hljs-code">`Filter`</span>的优先级，天生的就比<span class="hljs-code">`Servlet`</span>优先级高<br><span class="hljs-bullet">    -</span> <span class="hljs-code">`/a.do`</span> 对应一个<span class="hljs-code">`Filter`</span>，也对应一个<span class="hljs-code">`Servlet`</span>。那么一定是先执行<span class="hljs-code">`Filter`</span>，然后再执行<span class="hljs-code">`Servlet`</span><br><span class="hljs-bullet">  -</span> 在<span class="hljs-code">`web.xml`</span>文件中进行配置的时候，<span class="hljs-code">`Filter`</span>的执行顺序<br><span class="hljs-bullet">    -</span> 依靠<span class="hljs-code">`filter-mapping`</span>标签的配置位置，越靠上优先级越高<br><span class="hljs-bullet">    -</span> 过滤器的调用顺序，遵循栈数据结构<br><span class="hljs-bullet">  -</span> 使用<span class="hljs-code">`@WebFilter`</span>的时候，<span class="hljs-code">`Filter`</span>的执行顺序<br><span class="hljs-bullet">    -</span> 在字典中比较<span class="hljs-code">`Filter`</span>类名<br><span class="hljs-bullet">    -</span> 但是一般情况都是使用<span class="hljs-code">`web.xml`</span>进行配置<br><span class="hljs-bullet">+</span> 责任链设计模式<br><span class="hljs-bullet">  +</span> 核心思想：在程序的运行阶段，动态的组合程序的调用顺序<br><span class="hljs-bullet">+</span> 过滤器最大的优点就是在程序的编译阶段不会确定调用顺序<br><span class="hljs-bullet">+</span> 使用过滤器改造OA项目<br><span class="hljs-bullet">  -</span> 注意在<span class="hljs-code">`Filter`</span>中的<span class="hljs-code">`req`</span>和<span class="hljs-code">`response`</span>需要进行强制类型转换<br><br><span class="hljs-section">## Listener</span><br><br><span class="hljs-bullet">+</span> 监听器是Servlet中的一员，是Servlet规范的一员<br><br><span class="hljs-bullet">+</span> 有哪些监听器<br><br><span class="hljs-bullet">  -</span> <span class="hljs-code">```</span><br><span class="hljs-code">    jakarta.servlet</span><br></code></pre></td></tr></table></figure></p>
 <p>  包下：</p>
 <ul>
 <li><p><code>ServletContextListener</code> 监听ServletContext的状态</p>
@@ -878,24 +1097,24 @@ contentType属性用来设置响应的内容类型
 </li>
 <li><p><code>ServletRequestAttributeListener</code></p>
 </li>
-<li><pre><code>jakarta.servlet.http
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">包下：</span><br><span class="line"></span><br><span class="line">- `HttpSessionListener`</span><br><span class="line"></span><br><span class="line">- ```</span><br><span class="line">  HttpSessionAttributeListener</span><br></pre></td></tr></table></figure>
+<li><pre><code class="hljs">jakarta.servlet.http
+<figure class="highlight autohotkey"><table><tr><td class="code"><pre><code class="hljs autohotkey"><br>包下：<br><br>- `HttpSessionListener`<br><br>- ```<br>  HttpSessionAttributeListener<br></code></pre></td></tr></table></figure>
 
   - 该监听器需要使用`@WebListener`注解进行标注
   - 该监听器监听`session`域中数据的变化（添加、删除、替换）
 
 - ```
   HttpSessionBindingListener
-  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">  - 该监听器不需要使用`@WebListener`进行标注</span><br><span class="line">  - 假设`User`类实现了该监听器，那么`User`对象在被放入`session`的时候触发`bind`事件，`User`对象从`session`中删除的时候，触发`unbind`事件</span><br><span class="line">  - 假设`Customer`类没有实现该监听器，那么`Customer`对象放入`session`或者从`session`删除的时候，不会触发`bind`和`unbind`事件</span><br><span class="line"></span><br><span class="line">- ```</span><br><span class="line">  HttpSessionIdListener</span><br></pre></td></tr></table></figure>
+  <figure class="highlight autohotkey"><table><tr><td class="code"><pre><code class="hljs autohotkey"><br>  - 该监听器不需要使用`@WebListener`进行标注<br>  - 假设`User`类实现了该监听器，那么`User`对象在被放入`session`的时候触发`bind`事件，`User`对象从`session`中删除的时候，触发`unbind`事件<br>  - 假设`Customer`类没有实现该监听器，那么`Customer`对象放入`session`或者从`session`删除的时候，不会触发`bind`和`unbind`事件<br><br>- ```<br>  HttpSessionIdListener<br></code></pre></td></tr></table></figure>
 
   - `session`的`id`发生改变的时候，监听器被调用
 
 - ```
   HttpSessionActivationListener
-  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">      - 监听`session`对象的钝化和活化</span><br><span class="line">      - 钝化：`session`对象从内存存储到硬盘文件</span><br><span class="line">      - 活化：从硬盘文件把`session`恢复到内存</span><br><span class="line"></span><br><span class="line">+ </span><br><span class="line"></span><br><span class="line">  + 编写一个类实现ServletContextListener接口，并实现方法</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+  <figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">      -</span> 监听<span class="hljs-code">`session`</span>对象的钝化和活化<br><span class="hljs-bullet">      -</span> 钝化：<span class="hljs-code">`session`</span>对象从内存存储到硬盘文件<br><span class="hljs-bullet">      -</span> 活化：从硬盘文件把<span class="hljs-code">`session`</span>恢复到内存<br><br><span class="hljs-bullet">+</span> <br><br>  + 编写一个类实现ServletContextListener接口，并实现方法<br><br></code></pre></td></tr></table></figure>
 void contextInitialized(ServletContextEvent event)
 void contextDestroyed(ServletContextEvent event)
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">+ 在web.xml文件中对ServletContextListener进行配置</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">+</span> 在web.xml文件中对ServletContextListener进行配置<br><br></code></pre></td></tr></table></figure>
 MARKUP&lt;listener&gt;
     &lt;listener-class&gt;top.zhengru.javaweb.listener.MyServletContextListener&lt;/listener-class&gt;
 &lt;/listener&gt;
@@ -907,218 +1126,6 @@ MARKUP&lt;listener&gt;
 ]]></content>
       <tags>
         <tag>servlet</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python</title>
-    <url>/2023/06/19/python/</url>
-    <content><![CDATA[<h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><h2 id="基础内容"><a href="#基础内容" class="headerlink" title="基础内容"></a>基础内容</h2><ul>
-<li><p>常用的快捷键</p>
-<ul>
-<li>ctrl + alt +s:打开软件设置</li>
-<li>ctrl+d：复制当前行代码</li>
-<li>shift+alt+上\下：将当前的行代码上移或下移</li>
-<li>ctrl+shift+f10：运行当前代码文件</li>
-<li>shift+f6:重命名文件</li>
-<li>ctrl+f：搜索</li>
-</ul>
-</li>
-<li><p>print 语句中加end&#x3D;’’可以不换行</p>
-<ul>
-<li><pre><code class="hljs">print(&quot;hellow&quot;,end=&#39;&#39;)
-<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">+</span> \t 效果等于 tab键<br><br><span class="hljs-bullet">+</span> ctrl+/快速注释<br><br><span class="hljs-bullet">+</span> 注释<br><br><span class="hljs-bullet">  +</span> 单行注释<br><span class="hljs-bullet">    +</span> 以#开头(一般#号和注释内容一般建议以一个空格隔开)<br><br><span class="hljs-bullet">  +</span> 多行注释<br><span class="hljs-bullet">    +</span> 以一对三个双引号引起来来接受说明一段代码的作用和使用方法<br><br><br><span class="hljs-bullet">+</span> 数据类型<br><br><span class="hljs-bullet">  +</span> type（）语句可以输出类型信息<br><br><span class="hljs-bullet">+</span> 数据类型转换<br><br><span class="hljs-bullet">  +</span> str（）转换为字符串<br><span class="hljs-bullet">  +</span> int（）转换为整数<br><span class="hljs-bullet">  +</span> float（）转换为数字     <br><br><span class="hljs-bullet">+</span> 标识符命名规则<br><br><span class="hljs-bullet">  +</span> 只能出现<br><span class="hljs-bullet">    +</span> 英文<br><span class="hljs-bullet">    +</span> 中文<br><span class="hljs-bullet">    +</span> 数字<br><span class="hljs-bullet">    +</span> 下划线<br><span class="hljs-bullet">  +</span> 大小写敏感<br><span class="hljs-bullet">  +</span> 不可使用关键词   <br><br><span class="hljs-bullet">+</span> 算术运算符<br><br><span class="hljs-bullet">  +</span> +<br><span class="hljs-bullet">  +</span> -<br><span class="hljs-bullet">  +</span> *<br><span class="hljs-bullet">  +</span> /<br><span class="hljs-bullet">  +</span> //（取整除）<br><span class="hljs-bullet">  +</span> %(取余)<br><span class="hljs-bullet">  +</span> <span class="hljs-strong">**（指数 ）</span><br><span class="hljs-strong"></span><br><span class="hljs-strong">+ 使用转义字符\接触引号的效用</span><br><span class="hljs-strong"></span><br><span class="hljs-strong">  + 例如&quot; \&quot;111 &quot;输出&quot;111（格式为name=“\“111”）</span><br><span class="hljs-strong"></span><br><span class="hljs-strong">+ 字符串格式化 </span><br><span class="hljs-strong"></span><br><span class="hljs-strong">  + 字符串拼接%s占位拼接</span><br><span class="hljs-strong"></span><br><span class="hljs-strong">    + ```python</span><br><span class="hljs-strong">      name = &quot;董佬&quot;</span><br><span class="hljs-strong">      message =&quot;卷王 %s&quot; % name</span><br><span class="hljs-strong">      print (message) </span><br></code></pre></td></tr></table></figure>
-
-+ %s 将内容转换为字符串，放入占位位置
-
-+ %d 将内容转换成1整数，放入占位位置
-
-+ %f将内容转换成浮点型，放入占位位置
-</code></pre>
-</li>
-<li><p>数字精度控制(和java差不多)</p>
-<ul>
-<li>例如%5.2f：表示将宽度控制为5，将小数点精度设置为2</li>
-<li>%.2f小数点精度设置为2</li>
-</ul>
-</li>
-<li><p>快速拼接f” {占位内容}”</p>
-</li>
-</ul>
-</li>
-<li><p>数据输入</p>
-<ul>
-<li>input()获取用户输入</li>
-<li>获取的数据永远都是字符串类型的</li>
-</ul>
-</li>
-</ul>
-<h3 id="判断语句"><a href="#判断语句" class="headerlink" title="判断语句"></a>判断语句</h3><ul>
-<li>if （和java略微不同，python里是：结尾例如 if age &gt;18: 满足条件应该做的事）</li>
-<li>if else（和java相同）</li>
-<li>if  条件1：elif 条件2： …… else ：</li>
-</ul>
-<h3 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h3><ul>
-<li><p>while</p>
-<ul>
-<li>while 条件: (其他跟java一样)</li>
-<li>while循环的循环条件是自定义的，自行控制循环条件</li>
-<li>for循环是一种“轮询”机制，1是对一批内容进行逐个处理</li>
-</ul>
-</li>
-<li><p>for</p>
-<ul>
-<li><pre><code class="python">for 临时变量 in 待处理的数据集：循环满足时执行的代码
-<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">  +</span> 也称遍历循环<br><br><span class="hljs-bullet">  +</span> 临时变量，在编程规范上，作用范围，只限定在for内部<br><br><span class="hljs-bullet">    +</span> 实际上可以访问到<br><span class="hljs-bullet">    +</span> 但是编程规范上不允许，不建议这么使用<br><br><span class="hljs-bullet">+</span> range语句<br><br><span class="hljs-bullet">  +</span> range（num）表示获取一个从0开始，到num结束的数字序列不包含num<br><span class="hljs-bullet">  +</span> range（num1，num2）从num1到num2不包含num2<br><span class="hljs-bullet">    +</span> 例如range（5,10）   [5,6,7,8,9]<br><span class="hljs-bullet">  +</span> range（num1，num2，step）<br><span class="hljs-bullet">    +</span> 例如range（5,10,2）  [5,7,9]<br><br><span class="hljs-bullet">+</span> continue<br><br><span class="hljs-bullet">  +</span> 类似java中的<br><span class="hljs-bullet">  +</span> break<br><span class="hljs-bullet">    +</span> 类似java中的<br><br><span class="hljs-section">### 函数</span><br><br><span class="hljs-bullet">+</span> 函数是：组织好的、可重复使用的、用来实现特定功能的代码段<br><br><span class="hljs-bullet">  +</span> 函数的定义	<br><br><span class="hljs-bullet">    +</span> <span class="hljs-code">```python</span><br><span class="hljs-code">      def 函数名(传入参数)：</span><br><span class="hljs-code">      	函数体</span><br><span class="hljs-code">      	return 返回值</span><br><span class="hljs-code">      调用函数</span><br></code></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><p>函数的传入参数</p>
-<ul>
-<li><pre><code class="python">def 函数名(x,y)：
-    函数体
-    return 返回值
-调用函数(a,b)
-<figure class="highlight css"><table><tr><td class="code"><pre><code class="hljs css"><br>  + x,y为形式参数，<span class="hljs-selector-tag">a</span>，<span class="hljs-selector-tag">b</span>为实际参数<br><br>+ 函数的返回值<br><br>  + ```python<br>    def 函数名(x,y)：<br>    	函数体<br>    	return 返回值<br>    调用函数(<span class="hljs-selector-tag">a</span>,<span class="hljs-selector-tag">b</span>)<br></code></pre></td></tr></table></figure>
-</code></pre>
-</li>
-<li><p>可以直接用一个变量接受返回值</p>
-</li>
-</ul>
-</li>
-<li><p>None字面量</p>
-<ul>
-<li>None是类型‘NoneType’的字面量，用于表示空的、无意义的</li>
-<li>不使用return返回none</li>
-</ul>
-</li>
-<li><p>函数说明文档</p>
-<ul>
-<li><pre><code class="python">def add (x,y):
-    &quot;&quot;&quot;
-
-    :param x: 参数x说明
-    :param y:参数y的说明
-    :return:返回值的说明
-    &quot;&quot;&quot;
-    return x+y
-
-add(1,2)
-<figure class="highlight clean"><table><tr><td class="code"><pre><code class="hljs clean"><br>  + 局部变量：只能在函数体内生效的变量<br><br>  + 全局变量：在函数体内和外部都能生效的变量<br><br>  + global：可以将局部变量设置为全局变量<br><br>### 数据容器<br><br>+ 数据容器：List<br><br>  + ```python<br>    # 字面量<br>    [元素<span class="hljs-number">1</span>，元素<span class="hljs-number">2</span>，元素<span class="hljs-number">3</span>，元素<span class="hljs-number">4</span>，...]<br>    <br>    # 定义变量<br>    变量名称=[元素<span class="hljs-number">1</span>，元素<span class="hljs-number">2</span>，...]<br>    <br>    # 定义空列表<br>    变量名称=[]<br>    变量名称=list()<br>    <br></code></pre></td></tr></table></figure>
-</code></pre>
-</li>
-</ul>
-</li>
-<li><p>列表下标索引类似java中的数组</p>
-<ul>
-<li><p>从前向后的方向，编号从0开始递增</p>
-</li>
-<li><p>从后向前的方向，编号从-1开始递减</p>
-</li>
-<li><p>嵌套列表中的数据例如</p>
-<ul>
-<li><pre><code class="python">my_list=[[1,2,3],[2,3,666]]
-print(my_list[1][2])
-<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">  +</span> 查找某元素的下标<br><br><span class="hljs-bullet">    +</span> 语法：列表.index(元素)<br><br><span class="hljs-bullet">  +</span> 修改特定下标索引的值<br><br><span class="hljs-bullet">    +</span> 只需取到对应下标然后=所需要改变成的值进行<br><br><span class="hljs-bullet">  +</span> 在指定位置插入新元素<br><br><span class="hljs-bullet">    +</span> 语法：列表.insert(下标，元素 )<br><br><span class="hljs-bullet">  +</span> 将指定元素，追加到列表的尾部<br><br><span class="hljs-bullet">    +</span> 语法：列表.append(元素)<br><span class="hljs-bullet">    +</span> 语法2：列表.extend(其他数据容器)，将其他数据容器内容取出，依次追加到列表尾部<br><br><span class="hljs-bullet">  +</span> 删除元素<br><br><span class="hljs-bullet">    +</span> 语法1：del列表（下标）<br><span class="hljs-bullet">    +</span> 语法2：列表.pop(下标)<br><br><span class="hljs-bullet">  +</span> 删除某元素在列表中的第一个匹配项<br><br><span class="hljs-bullet">    +</span> 语法：列表.remove(元素)<br><br><span class="hljs-bullet">  +</span> 清空列表内容<br><br><span class="hljs-bullet">    +</span> 语法：列表.clear()<br><br><span class="hljs-bullet">  +</span> 统计某元素在列表内的数量<br><br><span class="hljs-bullet">    +</span> 语法：列表.count(元素)<br><br><span class="hljs-bullet">  +</span> 统计列表元素数量<br><br><span class="hljs-bullet">    +</span> len(列表)<br><br><span class="hljs-bullet">+</span> 元组：tuple(不可修改)<br><br><span class="hljs-bullet">  +</span> <span class="hljs-code">```python</span><br><span class="hljs-code">    # 元组字面量</span><br><span class="hljs-code">    (元素1，元素2，元素3，元素4，...)</span><br><span class="hljs-code">    </span><br><span class="hljs-code">    # 定义元组变量</span><br><span class="hljs-code">    变量名称=(元素1，元素2，...)</span><br><span class="hljs-code">    </span><br><span class="hljs-code">    # 定义空元组</span><br><span class="hljs-code">    变量名称=()# 方式1</span><br><span class="hljs-code">    变量名称=tuple() #方式2</span><br><span class="hljs-code">    </span><br></code></pre></td></tr></table></figure>
-</code></pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>定义单独元素需要在后面加一个逗号</p>
-<ul>
-<li><pre><code class="python">t1=(&quot;hello&quot;,)
-<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">  +</span> 相关操作<br><br><span class="hljs-bullet">    +</span> index()<br><span class="hljs-bullet">      +</span> 查找某个数据的下标，如果没有则报错<br><span class="hljs-bullet">    +</span> count()<br><span class="hljs-bullet">      +</span> 统计某个数据出现在当前元组的次数<br><span class="hljs-bullet">    +</span> len(元组)<br><span class="hljs-bullet">      +</span> 统计元素个数<br><br><span class="hljs-bullet">  +</span> 可以修改元组中list中的内容<br><br><span class="hljs-bullet">+</span> 字符串（str）<br><br><span class="hljs-bullet">  +</span> 字符串不支持修改<br><span class="hljs-bullet">  +</span> 相关操作<br><span class="hljs-bullet">    +</span> index()方法<br><span class="hljs-bullet">      +</span> 语法：字符串.index(a)<br><span class="hljs-bullet">      +</span> 和list中的用法相似<br><span class="hljs-bullet">    +</span> replace方法<br><span class="hljs-bullet">      +</span> 语法：字符串.replace(a,b)<br><span class="hljs-bullet">      +</span> 功能：replace(a,b)生成一个新的字符串将字符串中的b替换成a<br><span class="hljs-bullet">    +</span> spilt方法<br><span class="hljs-bullet">      +</span> 语法:字符串.spilt(分割字符串)<br><span class="hljs-bullet">      +</span> 功能：按照指定的分割字符串，将字符串划分为多个字符串，并存入列表对象中<br><span class="hljs-bullet">    +</span> strip方法<br><span class="hljs-bullet">      +</span> 语法1：字符串.strip()  (去除前后空格)<br><span class="hljs-bullet">      +</span> 语法2：字符串.strip(字符串)（去除前后指定字符串）<br><span class="hljs-bullet">        +</span> 传入的如果是&quot;12&quot;就是&quot;1&quot;和&quot;2&quot;都会移除，是按照单个字符<br><span class="hljs-bullet">    +</span> count方法<br><span class="hljs-bullet">      +</span> 用法和list中相似<br><span class="hljs-bullet">    +</span> len方法<br><span class="hljs-bullet">      +</span> 同上<br><br><span class="hljs-bullet">+</span> 切片：从一个序列中取出一个子序列<br><br><span class="hljs-bullet">  +</span> 语法：序列[起始下标：结束下标：步长]<br><span class="hljs-bullet">  +</span> 起始下标可以留空，表示从头开始<br><span class="hljs-bullet">  +</span> 结束下标（不包含），可以留空，表示截取到结尾<br><span class="hljs-bullet">  +</span> [::-1]等同于将序列反转<br><br><span class="hljs-bullet">+</span> set集合<br><br><span class="hljs-bullet">  +</span> <span class="hljs-code">```python</span><br><span class="hljs-code">    # 定义集合字面量</span><br><span class="hljs-code">    &#123;元素，元素，元素，元素，...&#125;</span><br><span class="hljs-code">    </span><br><span class="hljs-code">    # 定义集合变量</span><br><span class="hljs-code">    变量名称=&#123;元素，元素，...&#125;</span><br><span class="hljs-code">    </span><br><span class="hljs-code">    # 定义空集合</span><br><span class="hljs-code">    变量名称=set()</span><br><span class="hljs-code">    </span><br></code></pre></td></tr></table></figure>
-</code></pre>
-</li>
-</ul>
-</li>
-<li><p>集合是无序的，不支持下标索引访问，会去重</p>
-</li>
-<li><p>相关操作</p>
-<ul>
-<li>添加元素<ul>
-<li>语法：集合.add（元素）</li>
-</ul>
-</li>
-<li>移除元素<ul>
-<li>语法：集合.remove(元素)</li>
-</ul>
-</li>
-<li>随机取出一个元素<ul>
-<li>语法：集合.pop() </li>
-<li>结果：会得到一个元素的结果。同时集合本身被修改，元素被移除</li>
-</ul>
-</li>
-<li>清空集合<ul>
-<li>语法：集合.clear()</li>
-</ul>
-</li>
-<li>取出两个集合的差集<ul>
-<li>语法：集合1.difference(集合2)</li>
-<li>结果：得到一个新集合，集合1和2不变</li>
-</ul>
-</li>
-<li>消除2个集合的差集<ul>
-<li>语法：集合1.difference_update(集合2)</li>
-<li>功能：对比集合1和集合2，在集合1中删除和集合2相同的元素</li>
-<li>结果：集合1被修改，集合2不变</li>
-</ul>
-</li>
-<li>合并两个集合<ul>
-<li>语法：集合1.union(集合2)</li>
-</ul>
-</li>
-<li>统计元素个数<ul>
-<li>语法“len（集合）</li>
-</ul>
-</li>
-<li>遍历集合<ul>
-<li>不支持while循环，支持for循环</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>dict字典</p>
-<ul>
-<li><pre><code class="python"># 定义字典字面量
-&#123;key:value,key:value...&#125;
-
-# 定义字典变量
-变量名称=&#123;key:value，key:value，...&#125;
-
-# 定义空字典
-变量名称=dict()
-字典名称=&#123;&#125;
-</code></pre>
-</li>
-<li><p>相关操作</p>
-<ul>
-<li><p>更新元素</p>
-<ul>
-<li>语法：字典[key]&#x3D;Value</li>
-</ul>
-</li>
-<li><p>删除元素</p>
-<ul>
-<li>语法：字典.pop(key)</li>
-<li>结果：获取指定key的值，同时指定key的数据被修改</li>
-</ul>
-</li>
-<li><p>清空字典</p>
-<ul>
-<li>语法：字典.clear()</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>python</tag>
       </tags>
   </entry>
 </search>

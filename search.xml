@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/06/19/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>python</title>
     <url>/2023/07/11/python/</url>
     <content><![CDATA[<h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><h2 id="基础内容"><a href="#基础内容" class="headerlink" title="基础内容"></a>基础内容</h2><ul>
@@ -76,136 +58,332 @@
 </li>
 <li><p>for</p>
 <ul>
-<li><pre><code class="python">for 临时变量 in 待处理的数据集：循环满足时执行的代码
-<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">  +</span> 也称遍历循环<br><br><span class="hljs-bullet">  +</span> 临时变量，在编程规范上，作用范围，只限定在for内部<br><br><span class="hljs-bullet">    +</span> 实际上可以访问到<br><span class="hljs-bullet">    +</span> 但是编程规范上不允许，不建议这么使用<br><br><span class="hljs-bullet">+</span> range语句<br><br><span class="hljs-bullet">  +</span> range（num）表示获取一个从0开始，到num结束的数字序列不包含num<br><span class="hljs-bullet">  +</span> range（num1，num2）从num1到num2不包含num2<br><span class="hljs-bullet">    +</span> 例如range（5,10）   [5,6,7,8,9]<br><span class="hljs-bullet">  +</span> range（num1，num2，step）<br><span class="hljs-bullet">    +</span> 例如range（5,10,2）  [5,7,9]<br><br><span class="hljs-bullet">+</span> continue<br><br><span class="hljs-bullet">  +</span> 类似java中的<br><span class="hljs-bullet">  +</span> break<br><span class="hljs-bullet">    +</span> 类似java中的<br><br><span class="hljs-section">### 函数</span><br><br><span class="hljs-bullet">+</span> 函数是：组织好的、可重复使用的、用来实现特定功能的代码段<br><br><span class="hljs-bullet">  +</span> 函数的定义	<br><br><span class="hljs-bullet">    +</span> <span class="hljs-code">```python</span><br><span class="hljs-code">      def 函数名(传入参数)：</span><br><span class="hljs-code">      	函数体</span><br><span class="hljs-code">      	return 返回值</span><br><span class="hljs-code">      调用函数</span><br></code></pre></td></tr></table></figure>
+<li><p>for 临时变量 in 待处理的数据集：循环满足时执行的代码</p>
+</li>
+<li><p>也称遍历循环</p>
+</li>
+<li><p>临时变量，在编程规范上，作用范围，只限定在for内部</p>
+<ul>
+<li>实际上可以访问到</li>
+<li>但是编程规范上不允许，不建议这么使用</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>range语句</p>
+<ul>
+<li>range（num）表示获取一个从0开始，到num结束的数字序列不包含num</li>
+<li>range（num1，num2）从num1到num2不包含num2<ul>
+<li>例如range（5,10）   [5,6,7,8,9]</li>
+</ul>
+</li>
+<li>range（num1，num2，step）<ul>
+<li>例如range（5,10,2）  [5,7,9]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>continue</p>
+<ul>
+<li>类似java中的</li>
+<li>break<ul>
+<li>类似java中的</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><ul>
+<li><p>函数是：组织好的、可重复使用的、用来实现特定功能的代码段</p>
+<ul>
+<li><p>函数的定义	</p>
+<ul>
+<li><pre><code class="python">def 函数名(传入参数)：
+    函数体
+    return 返回值
+调用函数
+<figure class="highlight autohotkey"><table><tr><td class="code"><pre><code class="hljs autohotkey"><br>+ 函数的传入参数<br><br>  + ```python<br>    def 函数名(x,y)：<br>    	函数体<br>    	<span class="hljs-keyword">return</span> 返回值<br>    调用函数(a,b)<br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
-<li><p>函数的传入参数</p>
+<li><p>x,y为形式参数，a，b为实际参数</p>
+</li>
+</ul>
+</li>
+<li><p>函数的返回值</p>
 <ul>
 <li><pre><code class="python">def 函数名(x,y)：
     函数体
     return 返回值
 调用函数(a,b)
-<figure class="highlight css"><table><tr><td class="code"><pre><code class="hljs css"><br>  + x,y为形式参数，<span class="hljs-selector-tag">a</span>，<span class="hljs-selector-tag">b</span>为实际参数<br><br>+ 函数的返回值<br><br>  + ```python<br>    def 函数名(x,y)：<br>    	函数体<br>    	return 返回值<br>    调用函数(<span class="hljs-selector-tag">a</span>,<span class="hljs-selector-tag">b</span>)<br></code></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><br>  + 可以直接用一个变量接受返回值<br><br>+ <span class="hljs-literal">None</span>字面量<br><br>  + <span class="hljs-literal">None</span>是类型‘NoneType’的字面量，用于表示空的、无意义的<br>  + 不使用<span class="hljs-keyword">return</span>返回none<br><br>+ 函数说明文档<br><br>  + ```python<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">add</span> (x,y):<br>        <span class="hljs-string">&quot;&quot;&quot;</span><br><span class="hljs-string">    </span><br><span class="hljs-string">        :param x: 参数x说明</span><br><span class="hljs-string">        :param y:参数y的说明</span><br><span class="hljs-string">        :return:返回值的说明</span><br><span class="hljs-string">        &quot;&quot;&quot;</span><br>        <span class="hljs-keyword">return</span> x+y<br>    <br>    add(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>)<br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
-<li><p>可以直接用一个变量接受返回值</p>
+</ul>
+</li>
+<li><p>局部变量：只能在函数体内生效的变量</p>
+</li>
+<li><p>全局变量：在函数体内和外部都能生效的变量</p>
+</li>
+<li><p>global：可以将局部变量设置为全局变量</p>
 </li>
 </ul>
 </li>
-<li><p>None字面量</p>
+<li><p>函数的参数种类</p>
 <ul>
-<li>None是类型‘NoneType’的字面量，用于表示空的、无意义的</li>
-<li>不使用return返回none</li>
+<li><p>位置参数</p>
+<ul>
+<li>就是按位置</li>
 </ul>
 </li>
-<li><p>函数说明文档</p>
+<li><p>关键字参数</p>
 <ul>
-<li><pre><code class="python">def add (x,y):
-    &quot;&quot;&quot;
+<li>调用函数的时候通过“键&#x3D;值”形式传递参数</li>
+</ul>
+</li>
+<li><p>缺省参数</p>
+<ul>
+<li>也叫默认参数，竞赛为参数提供默认值</li>
+</ul>
+</li>
+<li><p>不定长参数</p>
+<ul>
+<li><p>也叫可变参数，可以传多个参数</p>
+</li>
+<li><p>分为</p>
+<ul>
+<li><p>位置传递</p>
+<ul>
+<li><p>单个*，形式参数做为元组存在，接受不定长度的参数传入</p>
+</li>
+<li><p>例如</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">user</span>(<span class="hljs-params">*args</span>)<br></code></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>关键字传递</p>
+<ul>
+<li><p>两个**，形式参数做完字典存在,以字典形式接收</p>
+</li>
+<li><p>例如</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">user</span>(<span class="hljs-params">**kwargs</span>)<br></code></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>匿名函数</p>
+<ul>
+<li><p>语法：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">lambda</span> 传入参数:函数体(一行代码)<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>只能使用一次</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="数据容器"><a href="#数据容器" class="headerlink" title="数据容器"></a>数据容器</h3><ul>
+<li><p>数据容器：List</p>
+<ul>
+<li><pre><code class="python"># 字面量
+[元素1，元素2，元素3，元素4，...]
 
-    :param x: 参数x说明
-    :param y:参数y的说明
-    :return:返回值的说明
-    &quot;&quot;&quot;
-    return x+y
+# 定义变量
+变量名称=[元素1，元素2，...]
 
-add(1,2)
-<figure class="highlight clean"><table><tr><td class="code"><pre><code class="hljs clean"><br>  + 局部变量：只能在函数体内生效的变量<br><br>  + 全局变量：在函数体内和外部都能生效的变量<br><br>  + global：可以将局部变量设置为全局变量<br><br>### 数据容器<br><br>+ 数据容器：List<br><br>  + ```python<br>    # 字面量<br>    [元素<span class="hljs-number">1</span>，元素<span class="hljs-number">2</span>，元素<span class="hljs-number">3</span>，元素<span class="hljs-number">4</span>，...]<br>    <br>    # 定义变量<br>    变量名称=[元素<span class="hljs-number">1</span>，元素<span class="hljs-number">2</span>，...]<br>    <br>    # 定义空列表<br>    变量名称=[]<br>    变量名称=list()<br>    <br></code></pre></td></tr></table></figure>
+# 定义空列表
+变量名称=[]
+变量名称=list()
+
+<figure class="highlight lua"><table><tr><td class="code"><pre><code class="hljs lua"><br>+ 列表下标索引类似java中的数组<br><br>  + 从前向后的方向，编号从<span class="hljs-number">0</span>开始递增<br><br>  + 从后向前的方向，编号从<span class="hljs-number">-1</span>开始递减<br><br>  + 嵌套列表中的数据例如<br><br>    + ```python<br>      my_list=<span class="hljs-string">[[1,2,3],[2,3,666]]</span><br>      <span class="hljs-built_in">print</span>(my_list[<span class="hljs-number">1</span>][<span class="hljs-number">2</span>])<br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
+<li><p>查找某元素的下标</p>
+<ul>
+<li>语法：列表.index(元素)</li>
 </ul>
 </li>
-<li><p>列表下标索引类似java中的数组</p>
+<li><p>修改特定下标索引的值</p>
 <ul>
-<li><p>从前向后的方向，编号从0开始递增</p>
+<li>只需取到对应下标然后&#x3D;所需要改变成的值进行</li>
+</ul>
 </li>
-<li><p>从后向前的方向，编号从-1开始递减</p>
-</li>
-<li><p>嵌套列表中的数据例如</p>
+<li><p>在指定位置插入新元素</p>
 <ul>
-<li><pre><code class="python">my_list=[[1,2,3],[2,3,666]]
-print(my_list[1][2])
-<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">  +</span> 查找某元素的下标<br><br><span class="hljs-bullet">    +</span> 语法：列表.index(元素)<br><br><span class="hljs-bullet">  +</span> 修改特定下标索引的值<br><br><span class="hljs-bullet">    +</span> 只需取到对应下标然后=所需要改变成的值进行<br><br><span class="hljs-bullet">  +</span> 在指定位置插入新元素<br><br><span class="hljs-bullet">    +</span> 语法：列表.insert(下标，元素 )<br><br><span class="hljs-bullet">  +</span> 将指定元素，追加到列表的尾部<br><br><span class="hljs-bullet">    +</span> 语法：列表.append(元素)<br><span class="hljs-bullet">    +</span> 语法2：列表.extend(其他数据容器)，将其他数据容器内容取出，依次追加到列表尾部<br><br><span class="hljs-bullet">  +</span> 删除元素<br><br><span class="hljs-bullet">    +</span> 语法1：del列表（下标）<br><span class="hljs-bullet">    +</span> 语法2：列表.pop(下标)<br><br><span class="hljs-bullet">  +</span> 删除某元素在列表中的第一个匹配项<br><br><span class="hljs-bullet">    +</span> 语法：列表.remove(元素)<br><br><span class="hljs-bullet">  +</span> 清空列表内容<br><br><span class="hljs-bullet">    +</span> 语法：列表.clear()<br><br><span class="hljs-bullet">  +</span> 统计某元素在列表内的数量<br><br><span class="hljs-bullet">    +</span> 语法：列表.count(元素)<br><br><span class="hljs-bullet">  +</span> 统计列表元素数量<br><br><span class="hljs-bullet">    +</span> len(列表)<br><br><span class="hljs-bullet">+</span> 元组：tuple(不可修改)<br><br><span class="hljs-bullet">  +</span> <span class="hljs-code">```python</span><br><span class="hljs-code">    # 元组字面量</span><br><span class="hljs-code">    (元素1，元素2，元素3，元素4，...)</span><br><span class="hljs-code">    </span><br><span class="hljs-code">    # 定义元组变量</span><br><span class="hljs-code">    变量名称=(元素1，元素2，...)</span><br><span class="hljs-code">    </span><br><span class="hljs-code">    # 定义空元组</span><br><span class="hljs-code">    变量名称=()# 方式1</span><br><span class="hljs-code">    变量名称=tuple() #方式2</span><br><span class="hljs-code">    </span><br></code></pre></td></tr></table></figure>
+<li>语法：列表.insert(下标，元素 )</li>
+</ul>
+</li>
+<li><p>将指定元素，追加到列表的尾部</p>
+<ul>
+<li>语法：列表.append(元素)</li>
+<li>语法2：列表.extend(其他数据容器)，将其他数据容器内容取出，依次追加到列表尾部</li>
+</ul>
+</li>
+<li><p>删除元素</p>
+<ul>
+<li>语法1：del列表（下标）</li>
+<li>语法2：列表.pop(下标)</li>
+</ul>
+</li>
+<li><p>删除某元素在列表中的第一个匹配项</p>
+<ul>
+<li>语法：列表.remove(元素)</li>
+</ul>
+</li>
+<li><p>清空列表内容</p>
+<ul>
+<li>语法：列表.clear()</li>
+</ul>
+</li>
+<li><p>统计某元素在列表内的数量</p>
+<ul>
+<li>语法：列表.count(元素)</li>
+</ul>
+</li>
+<li><p>统计列表元素数量</p>
+<ul>
+<li>len(列表)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>元组：tuple(不可修改)</p>
+<ul>
+<li><pre><code class="python"># 元组字面量
+(元素1，元素2，元素3，元素4，...)
+
+# 定义元组变量
+变量名称=(元素1，元素2，...)
+
+# 定义空元组
+变量名称=()# 方式1
+变量名称=tuple() #方式2
+
+<figure class="highlight autohotkey"><table><tr><td class="code"><pre><code class="hljs autohotkey"><br>+ 定义单独元素需要在后面加一个逗号<br><br>  + ```python<br>    t1=(<span class="hljs-string">&quot;hello&quot;</span>,)<br></code></pre></td></tr></table></figure>
 </code></pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>定义单独元素需要在后面加一个逗号</p>
-<ul>
-<li><pre><code class="python">t1=(&quot;hello&quot;,)
-<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">  +</span> 相关操作<br><br><span class="hljs-bullet">    +</span> index()<br><span class="hljs-bullet">      +</span> 查找某个数据的下标，如果没有则报错<br><span class="hljs-bullet">    +</span> count()<br><span class="hljs-bullet">      +</span> 统计某个数据出现在当前元组的次数<br><span class="hljs-bullet">    +</span> len(元组)<br><span class="hljs-bullet">      +</span> 统计元素个数<br><br><span class="hljs-bullet">  +</span> 可以修改元组中list中的内容<br><br><span class="hljs-bullet">+</span> 字符串（str）<br><br><span class="hljs-bullet">  +</span> 字符串不支持修改<br><span class="hljs-bullet">  +</span> 相关操作<br><span class="hljs-bullet">    +</span> index()方法<br><span class="hljs-bullet">      +</span> 语法：字符串.index(a)<br><span class="hljs-bullet">      +</span> 和list中的用法相似<br><span class="hljs-bullet">    +</span> replace方法<br><span class="hljs-bullet">      +</span> 语法：字符串.replace(a,b)<br><span class="hljs-bullet">      +</span> 功能：replace(a,b)生成一个新的字符串将字符串中的b替换成a<br><span class="hljs-bullet">    +</span> spilt方法<br><span class="hljs-bullet">      +</span> 语法:字符串.spilt(分割字符串)<br><span class="hljs-bullet">      +</span> 功能：按照指定的分割字符串，将字符串划分为多个字符串，并存入列表对象中<br><span class="hljs-bullet">    +</span> strip方法<br><span class="hljs-bullet">      +</span> 语法1：字符串.strip()  (去除前后空格)<br><span class="hljs-bullet">      +</span> 语法2：字符串.strip(字符串)（去除前后指定字符串）<br><span class="hljs-bullet">        +</span> 传入的如果是&quot;12&quot;就是&quot;1&quot;和&quot;2&quot;都会移除，是按照单个字符<br><span class="hljs-bullet">    +</span> count方法<br><span class="hljs-bullet">      +</span> 用法和list中相似<br><span class="hljs-bullet">    +</span> len方法<br><span class="hljs-bullet">      +</span> 同上<br><br><span class="hljs-bullet">+</span> 切片：从一个序列中取出一个子序列<br><br><span class="hljs-bullet">  +</span> 语法：序列[起始下标：结束下标：步长]<br><span class="hljs-bullet">  +</span> 起始下标可以留空，表示从头开始<br><span class="hljs-bullet">  +</span> 结束下标（不包含），可以留空，表示截取到结尾<br><span class="hljs-bullet">  +</span> [::-1]等同于将序列反转<br><br><span class="hljs-bullet">+</span> set集合<br><br><span class="hljs-bullet">  +</span> <span class="hljs-code">```python</span><br><span class="hljs-code">    # 定义集合字面量</span><br><span class="hljs-code">    &#123;元素，元素，元素，元素，...&#125;</span><br><span class="hljs-code">    </span><br><span class="hljs-code">    # 定义集合变量</span><br><span class="hljs-code">    变量名称=&#123;元素，元素，...&#125;</span><br><span class="hljs-code">    </span><br><span class="hljs-code">    # 定义空集合</span><br><span class="hljs-code">    变量名称=set()</span><br><span class="hljs-code">    </span><br></code></pre></td></tr></table></figure>
-</code></pre>
-</li>
-</ul>
-</li>
-<li><p>集合是无序的，不支持下标索引访问，会去重</p>
 </li>
 <li><p>相关操作</p>
 <ul>
-<li>添加元素<ul>
-<li>语法：集合.add（元素）</li>
+<li>index()<ul>
+<li>查找某个数据的下标，如果没有则报错</li>
 </ul>
 </li>
-<li>移除元素<ul>
-<li>语法：集合.remove(元素)</li>
+<li>count()<ul>
+<li>统计某个数据出现在当前元组的次数</li>
 </ul>
 </li>
-<li>随机取出一个元素<ul>
-<li>语法：集合.pop() </li>
-<li>结果：会得到一个元素的结果。同时集合本身被修改，元素被移除</li>
-</ul>
-</li>
-<li>清空集合<ul>
-<li>语法：集合.clear()</li>
-</ul>
-</li>
-<li>取出两个集合的差集<ul>
-<li>语法：集合1.difference(集合2)</li>
-<li>结果：得到一个新集合，集合1和2不变</li>
-</ul>
-</li>
-<li>消除2个集合的差集<ul>
-<li>语法：集合1.difference_update(集合2)</li>
-<li>功能：对比集合1和集合2，在集合1中删除和集合2相同的元素</li>
-<li>结果：集合1被修改，集合2不变</li>
-</ul>
-</li>
-<li>合并两个集合<ul>
-<li>语法：集合1.union(集合2)</li>
-</ul>
-</li>
-<li>统计元素个数<ul>
-<li>语法“len（集合）</li>
-</ul>
-</li>
-<li>遍历集合<ul>
-<li>不支持while循环，支持for循环</li>
+<li>len(元组)<ul>
+<li>统计元素个数</li>
 </ul>
 </li>
 </ul>
 </li>
+<li><p>可以修改元组中list中的内容</p>
+</li>
 </ul>
 </li>
-<li><p>dict字典</p>
+<li><p>字符串（str）</p>
 <ul>
-<li><pre><code class="python"># 定义字典字面量
-&#123;key:value,key:value...&#125;
+<li>字符串不支持修改</li>
+<li>相关操作<ul>
+<li>index()方法<ul>
+<li>语法：字符串.index(a)</li>
+<li>和list中的用法相似</li>
+</ul>
+</li>
+<li>replace方法<ul>
+<li>语法：字符串.replace(a,b)</li>
+<li>功能：replace(a,b)生成一个新的字符串将字符串中的b替换成a</li>
+</ul>
+</li>
+<li>spilt方法<ul>
+<li>语法:字符串.spilt(分割字符串)</li>
+<li>功能：按照指定的分割字符串，将字符串划分为多个字符串，并存入列表对象中</li>
+</ul>
+</li>
+<li>strip方法<ul>
+<li>语法1：字符串.strip()  (去除前后空格)</li>
+<li>语法2：字符串.strip(字符串)（去除前后指定字符串）<ul>
+<li>传入的如果是”12”就是”1”和”2”都会移除，是按照单个字符</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>count方法<ul>
+<li>用法和list中相似</li>
+</ul>
+</li>
+<li>len方法<ul>
+<li>同上</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>切片：从一个序列中取出一个子序列</p>
+<ul>
+<li>语法：序列[起始下标：结束下标：步长]</li>
+<li>起始下标可以留空，表示从头开始</li>
+<li>结束下标（不包含），可以留空，表示截取到结尾</li>
+<li>[::-1]等同于将序列反转</li>
+</ul>
+</li>
+<li><p>set集合</p>
+<ul>
+<li><pre><code class="python"># 定义集合字面量
+&#123;元素，元素，元素，元素，...&#125;
 
-# 定义字典变量
-变量名称=&#123;key:value，key:value，...&#125;
+# 定义集合变量
+变量名称=&#123;元素，元素，...&#125;
 
-# 定义空字典
-变量名称=dict()
-字典名称=&#123;&#125;
-<figure class="highlight q"><table><tr><td class="code"><pre><code class="hljs q"><br>+ 相关操作<br><br>  + 更新元素<br><br>    + 语法：字典[<span class="hljs-built_in">key</span>]=Value<br><br>  + 删除元素<br><br>    + 语法：字典.pop(<span class="hljs-built_in">key</span>)<br>    + 结果：获取指定<span class="hljs-built_in">key</span>的值，同时指定<span class="hljs-built_in">key</span>的数据被修改<br><br>  + 清空字典<br><br>    + 语法：字典.clear()<br><br>  + 获取全部的<span class="hljs-built_in">key</span><br><br>    + 语法：字典.<span class="hljs-built_in">keys</span>()<br><br>  + 遍历字典<br><br>    + ```python<br>      my_dict=&#123;<span class="hljs-string">&quot;dzr&quot;</span>:<span class="hljs-number">100</span>,<span class="hljs-string">&quot;gsh&quot;</span>:<span class="hljs-number">100</span>,<span class="hljs-string">&quot;zcr&quot;</span>:<span class="hljs-number">100</span>,<span class="hljs-string">&quot;wsy&quot;</span>:<span class="hljs-number">100</span>,<span class="hljs-string">&quot;lxm&quot;</span>:<span class="hljs-number">100</span>&#125;<br>      <span class="hljs-built_in">keys</span>=my_dict.<span class="hljs-built_in">keys</span>()<br>      for <span class="hljs-built_in">key</span> in <span class="hljs-built_in">keys</span>:<br>          print(f<span class="hljs-string">&quot;字典的key是：&#123;key&#125;&quot;</span>)<br>          print(f<span class="hljs-string">&quot;value&#123;keys&#125;&quot;</span>)<br></code></pre></td></tr></table></figure>
+# 定义空集合
+变量名称=set()
 
-+ 统计元素个数
-
-  + len(字典)
+<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">  +</span> 集合是无序的，不支持下标索引访问，会去重<br><br><span class="hljs-bullet">  +</span> 相关操作<br><br><span class="hljs-bullet">    +</span> 添加元素<br><span class="hljs-bullet">      +</span> 语法：集合.add（元素）<br><span class="hljs-bullet">    +</span> 移除元素<br><span class="hljs-bullet">      +</span> 语法：集合.remove(元素)<br><span class="hljs-bullet">    +</span> 随机取出一个元素<br><span class="hljs-bullet">      +</span> 语法：集合.pop() <br><span class="hljs-bullet">      +</span> 结果：会得到一个元素的结果。同时集合本身被修改，元素被移除<br><span class="hljs-bullet">    +</span> 清空集合<br><span class="hljs-bullet">      +</span> 语法：集合.clear()<br><span class="hljs-bullet">    +</span> 取出两个集合的差集<br><span class="hljs-bullet">      +</span> 语法：集合1.difference(集合2)<br><span class="hljs-bullet">      +</span> 结果：得到一个新集合，集合1和2不变<br><span class="hljs-bullet">    +</span> 消除2个集合的差集<br><span class="hljs-bullet">      +</span> 语法：集合1.difference<span class="hljs-emphasis">_update(集合2)</span><br><span class="hljs-emphasis">      + 功能：对比集合1和集合2，在集合1中删除和集合2相同的元素</span><br><span class="hljs-emphasis">      + 结果：集合1被修改，集合2不变</span><br><span class="hljs-emphasis">    + 合并两个集合</span><br><span class="hljs-emphasis">      + 语法：集合1.union(集合2)</span><br><span class="hljs-emphasis">    + 统计元素个数</span><br><span class="hljs-emphasis">      + 语法“len（集合）</span><br><span class="hljs-emphasis">    + 遍历集合</span><br><span class="hljs-emphasis">      + 不支持while循环，支持for循环</span><br><span class="hljs-emphasis"></span><br><span class="hljs-emphasis">+ dict字典</span><br><span class="hljs-emphasis"></span><br><span class="hljs-emphasis">  + ```python</span><br><span class="hljs-emphasis">    # 定义字典字面量</span><br><span class="hljs-emphasis">    &#123;key:value,key:value...&#125;</span><br><span class="hljs-emphasis">    </span><br><span class="hljs-emphasis">    # 定义字典变量</span><br><span class="hljs-emphasis">    变量名称=&#123;key:value，key:value，...&#125;</span><br><span class="hljs-emphasis">    </span><br><span class="hljs-emphasis">    # 定义空字典</span><br><span class="hljs-emphasis">    变量名称=dict()</span><br><span class="hljs-emphasis">    字典名称=&#123;&#125;</span><br></code></pre></td></tr></table></figure>
 </code></pre>
+</li>
+<li><p>相关操作</p>
+<ul>
+<li><p>更新元素</p>
+<ul>
+<li>语法：字典[key]&#x3D;Value</li>
+</ul>
+</li>
+<li><p>删除元素</p>
+<ul>
+<li>语法：字典.pop(key)</li>
+<li>结果：获取指定key的值，同时指定key的数据被修改</li>
+</ul>
+</li>
+<li><p>清空字典</p>
+<ul>
+<li>语法：字典.clear()</li>
+</ul>
+</li>
+<li><p>获取全部的key</p>
+<ul>
+<li>语法：字典.keys()</li>
+</ul>
+</li>
+<li><p>遍历字典</p>
+<ul>
+<li><pre><code class="python">my_dict=&#123;&quot;dzr&quot;:100,&quot;gsh&quot;:100,&quot;zcr&quot;:100,&quot;wsy&quot;:100,&quot;lxm&quot;:100&#125;
+keys=my_dict.keys()
+for key in keys:
+    print(f&quot;字典的key是：&#123;key&#125;&quot;)
+    print(f&quot;value&#123;keys&#125;&quot;)
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>统计元素个数</p>
+<ul>
+<li>len(字典)</li>
+</ul>
+</li>
+</ul>
 </li>
 <li><p>key不可重复（重复会覆盖）</p>
 </li>

@@ -374,38 +374,224 @@ keys=my_dict.keys()
 for key in keys:
     print(f&quot;字典的key是：&#123;key&#125;&quot;)
     print(f&quot;value&#123;keys&#125;&quot;)
+<figure class="highlight stylus"><table><tr><td class="code"><pre><code class="hljs stylus"><br>    + 统计元素个数<br><br>      + <span class="hljs-built_in">len</span>(字典)<br><br>  + key不可重复（重复会覆盖）<br><br>+ 数据容器的通用操作<br><br>  + <span class="hljs-built_in">max</span>()<br>    + 找出最大的元素<br>  + <span class="hljs-built_in">min</span>()<br>    + 找出最小的元素<br>  + <span class="hljs-built_in">len</span>()<br>    + 统计容器元素个数<br>  + <span class="hljs-built_in">sorted</span>(容器<span class="hljs-selector-attr">[reverse=True]</span>)（默认是FALSE是正向排序）<br>    + 给容器进行排序（排序完之后变成列表对象）<br>    <br>    + 基于lambda函数进行排序<br>    <br>      + 例如<br>    <br>        ```python<br>        my_list=<span class="hljs-selector-attr">[[<span class="hljs-string">&quot;a&quot;</span>,11]</span>,<span class="hljs-selector-attr">[<span class="hljs-string">&quot;c&quot;</span>,22]</span>,<span class="hljs-selector-attr">[<span class="hljs-string">&quot;b&quot;</span>,12]</span>]<br>        my_list<span class="hljs-selector-class">.sort</span>(key=lambda element:element<span class="hljs-selector-attr">[1]</span>,reverse=True)<br>        <span class="hljs-built_in">print</span>(my_list)<br></code></pre></td></tr></table></figure>
 </code></pre>
 </li>
 </ul>
 </li>
-<li><p>统计元素个数</p>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h3><ul>
+<li><p>文件编码（目前主流一般默认UTF-8）</p>
+</li>
+<li><p>文件操作</p>
 <ul>
-<li>len(字典)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>key不可重复（重复会覆盖）</p>
-</li>
-</ul>
-</li>
-<li><p>数据容器的通用操作</p>
+<li><p>open（）打开函数</p>
 <ul>
-<li>max()<ul>
-<li>找出最大的元素</li>
+<li><p>语法：open（name,mode,encoding）</p>
+</li>
+<li><p>name:是要打开的目标文件名的字符串(可以包含文件所在的具体路径)</p>
+</li>
+<li><p>mode:设置打开文件的模式：只读（r）、写入(w)、追加(a)</p>
+<ul>
+<li>r:以只读方式打开文件，这是默认模式</li>
+<li>w:打开一个文件只用于写入，如果该文件已存在则打开文件，并从开头开始编辑，原有内容会被删除。如果该文件不存在，创建新文件</li>
+<li>a：打开一个文件用于追加。如果文件已经存在，新内容将会被写入到已有内容之后，如果该文件不存在，创建新文件</li>
 </ul>
 </li>
-<li>min()<ul>
-<li>找出最小的元素</li>
+<li><p>encoding:编码格式</p>
+</li>
 </ul>
 </li>
-<li>len()<ul>
-<li>统计容器元素个数</li>
+<li><p>read()方法读取</p>
+<ul>
+<li>语法：文件对象.read(num)<ul>
+<li>num表示从文件中读取的数据长度（单位是字节），如果没传入则表示读取文件中的所有数据</li>
+<li>注：如果连续使用read()读取同一个文件，下一个read会从上一个read的结尾处开始读取</li>
 </ul>
 </li>
-<li>sorted(容器[reverse&#x3D;True])（默认是FALSE是正向排序）<ul>
-<li>给容器进行排序（排序完之后变成列表对象）</li>
 </ul>
+</li>
+<li><p>readlines（）方法读取</p>
+<ul>
+<li>读取全部内容，返回一个list列表，每一行数据为一个元素</li>
+</ul>
+</li>
+<li><p>readline（）方法读取</p>
+<ul>
+<li>读取一行数据</li>
+</ul>
+</li>
+<li><p>for循环读取数据</p>
+<ul>
+<li><pre><code class="python">for line in open(&quot;D:/python爬虫/11.txt&quot;,&quot;r&quot;,encoding=&quot;UTF-8&quot;):
+    print(line)
+<figure class="highlight livecodeserver"><table><tr><td class="code"><pre><code class="hljs livecodeserver"><br>+ <span class="hljs-built_in">close</span>()方法关闭文件对象<br><br>  + 语法:文件对象.<span class="hljs-built_in">close</span>()<br>  + 作用：解除对文件的占有<br><br>+ <span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>()<br><br>  + 作用：可以自动将文件关闭<br><br>  + ```python<br>    <span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;D:/python爬虫/11.txt&quot;</span>,<span class="hljs-string">&quot;r&quot;</span>,encoding=<span class="hljs-string">&quot;UTF-8&quot;</span>) <span class="hljs-keyword">as</span> f:<br>        <span class="hljs-keyword">for</span> <span class="hljs-built_in">line</span> <span class="hljs-keyword">in</span> f:<br>            print(<span class="hljs-built_in">line</span>)<br>    <br>    <br></code></pre></td></tr></table></figure>
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>write（文件写入）</p>
+<ul>
+<li>语法：文件对象.write()</li>
+<li>直接调用write，是将内容写入缓冲区中，直到调用flush或者close的时候才会写入硬盘中</li>
+</ul>
+</li>
+<li><p>flush()内容刷新</p>
+<ul>
+<li>语法:文件对象.flush()</li>
+<li>注：close方法自带flush方法</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h3><ul>
+<li><p>异常的捕获的方法</p>
+<ul>
+<li><p>捕获常规异常</p>
+<ul>
+<li><p>语法：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">try</span>：<br>	可能发送错误的代码<br><span class="hljs-keyword">except</span>：<br>	如果出现异常执行的代码<br></code></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>捕获指定异常</p>
+<ul>
+<li><p>语法：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">try</span>:<br>    <span class="hljs-built_in">print</span>(name)<br><span class="hljs-keyword">except</span> NameError <span class="hljs-keyword">as</span> e:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;出现变量未定义&quot;</span>)<br>	<br></code></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>捕获多个异常</p>
+<ul>
+<li><p>语法：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"> <span class="hljs-keyword">try</span>:<br>    <span class="hljs-built_in">print</span>(name)<br><span class="hljs-keyword">except</span> (NameError,ZeroDivisionError) <span class="hljs-keyword">as</span> e:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;出现变量未定义&quot;</span>)<br></code></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>捕获所有异常(使用exception较为多)</p>
+<ul>
+<li><p>语法：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">try</span>:<br>    <span class="hljs-built_in">print</span>(name)<br><span class="hljs-keyword">except</span> 	Exception <span class="hljs-keyword">as</span> e:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;出现异常&quot;</span>)<br></code></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>else</p>
+<ul>
+<li><p>语法：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">try</span>:<br>    <span class="hljs-built_in">print</span>(name)<br><span class="hljs-keyword">except</span> 	Exception <span class="hljs-keyword">as</span> e:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;出现异常&quot;</span>)<br><span class="hljs-keyword">else</span>:<br>	<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;无异常时执行代码&quot;</span>)<br></code></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>finally</p>
+<ul>
+<li><p>表示无论是否异常都要执行的操作</p>
+</li>
+<li><p>语法：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">try</span>:<br>    <span class="hljs-built_in">print</span>(name)<br><span class="hljs-keyword">except</span> 	Exception <span class="hljs-keyword">as</span> e:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;出现异常&quot;</span>)<br><span class="hljs-keyword">else</span>:<br>	<span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;无异常时执行代码&quot;</span>)<br><span class="hljs-keyword">finally</span>:<br>	f.close()<br></code></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>异常是具有传递性的</p>
+</li>
+</ul>
+<h3 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h3><ul>
+<li><p>模块的导入方式</p>
+<ul>
+<li><p>语法：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python">[<span class="hljs-keyword">from</span> 模块名] <span class="hljs-keyword">import</span> [模块|类|变量|函数|*][<span class="hljs-keyword">as</span> 别名]([]表示可选)<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>导入模块部分功能</p>
+<ul>
+<li><pre><code class="python">from 模块名 import 功能名
+功能名()
+<figure class="highlight elm"><table><tr><td class="code"><pre><code class="hljs elm"><br>+ 导入全部模块<br><br>  + 语法：<br><br>    ```python<br>    from 模块名 <span class="hljs-keyword">import</span> *  (使用时可以直接使用方法，不用带模块名)<br></code></pre></td></tr></table></figure>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>自定义模块</p>
+<ul>
+<li><p>当导入多个模块，且模块内有同名的功能是，调用的是后面导入模块的功能</p>
+</li>
+<li><p>测试模块</p>
+<ul>
+<li><p>如果编写完模块后想测试一下模块，可以使用main来完成测试</p>
+</li>
+<li><p>例如</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">test</span>(<span class="hljs-params">a,b</span>):<br>    <span class="hljs-built_in">print</span>(a+b)<br><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&#x27;__main__&#x27;</span>:<br>    test(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>)<br></code></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><pre><code class="python">__all__:如果一个模块文件有这个变量，那么当使用from xxx import *  导入时，只能导入这个列表中的元素
+<figure class="highlight clean"><table><tr><td class="code"><pre><code class="hljs clean"><br>### 包<br><br>+ 导入包<br><br>  + 方式(跟模块类似)<br><br>    + ```python<br>      <span class="hljs-keyword">import</span> 包名.模块名<br></code></pre></td></tr></table></figure>
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>创建包时，必须要有一个（_init__）的文件</p>
+</li>
+</ul>
+<h3 id="json"><a href="#json" class="headerlink" title="json"></a>json</h3><ul>
+<li><p>json：是一个带特定格式的字符串</p>
+<ul>
+<li>作用：用于当做不同语言的中转站</li>
+</ul>
+</li>
+<li><p>python数据和json数据的相互转化</p>
+<ul>
+<li><p>导入json模块</p>
+</li>
+<li><p>json.dumps()可将python数据转化为json数据</p>
+</li>
+<li><p>json.loads()可将json数据转化为python数据</p>
+</li>
+<li><p>在两个方法中加入ensure_ascii&#x3D;False 可将中文显示出来</p>
+<ul>
+<li><p>例如</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python">json.dumps(d,ensure_ascii=<span class="hljs-literal">False</span>)<br></code></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>通过json模块对数据进行处理</p>
+</li>
+</ul>
+<h3 id="pyechars模块"><a href="#pyechars模块" class="headerlink" title="pyechars模块"></a>pyechars模块</h3><ul>
+<li><p>折线图</p>
+<ul>
+<li><pre><code class="python">from pyecharts.charts import Line
+#获取折线图对象
+line=Line()
+#添加x轴数据
+line.add_xaxis([&quot;gsh&quot;,&quot;dzr&quot;,&quot;wsy&quot;])
+#添加y轴数据
+line.add_yaxis(&quot;绩点&quot;,[100,99,99])
+#生成图表
+line.render()
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><br>+ 地图<br><br>  + ```python<br>    <span class="hljs-keyword">from</span> pyecharts.charts <span class="hljs-keyword">import</span> Map<br>    <span class="hljs-keyword">from</span> pyecharts.options <span class="hljs-keyword">import</span> VisualMapOpts<br>    <span class="hljs-comment">#准备地图对象</span><br>    <span class="hljs-built_in">map</span>=Map()<br>    <span class="hljs-comment">#准备数据</span><br>    date=[<br>        (<span class="hljs-string">&quot;北京&quot;</span>,<span class="hljs-number">10000</span>),<br>        (<span class="hljs-string">&quot;上海市&quot;</span>,<span class="hljs-number">1200</span>),<br>        (<span class="hljs-string">&quot;广东省&quot;</span>,<span class="hljs-number">4999</span>)<br>    ]<br>    <span class="hljs-comment">#添加数据</span><br>    <span class="hljs-built_in">map</span>.add(<span class="hljs-string">&quot;地图&quot;</span>,date,<span class="hljs-string">&quot;china&quot;</span>)<br>    <br>    <span class="hljs-comment">#设计全局选项</span><br>    <span class="hljs-built_in">map</span>.set_global_opts(<br>        visualmap_opts=VisualMapOpts(<br>            is_show=<span class="hljs-literal">True</span>,<br>            is_piecewise=<span class="hljs-literal">True</span>,<br>            pieces=[<br>                &#123;<span class="hljs-string">&quot;min&quot;</span>:<span class="hljs-number">1</span>,<span class="hljs-string">&quot;max&quot;</span>:<span class="hljs-number">9</span>,<span class="hljs-string">&quot;lable&quot;</span>:<span class="hljs-string">&quot;1-9&quot;</span>,<span class="hljs-string">&quot;color&quot;</span>:<span class="hljs-string">&quot;#CCFFFFF&quot;</span>&#125;<br>            ]<br>        )<br>    <br>    )<br>    <span class="hljs-comment">#绘图</span><br>    <span class="hljs-built_in">map</span>.render()<br></code></pre></td></tr></table></figure>
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>柱状图</p>
+<ul>
+<li><pre><code class="python">
+from pyecharts.charts import Bar
+from pyecharts.options import *
+#构建柱状图对象
+bar=Bar()
+#添加x轴
+bar.add_xaxis([&quot;gsh&quot;,&quot;dzr&quot;,&quot;wsy&quot;,&quot;zcr&quot;,&quot;lxm&quot;])
+#添加y轴
+bar.add_yaxis(&quot;成绩&quot;,[100,100,95,96,95],label_opts=LabelOpts(position=&quot;right&quot;))
+#反转x轴y轴
+bar.reversal_axis()
+#绘图
+bar.render()
+<figure class="highlight routeros"><table><tr><td class="code"><pre><code class="hljs routeros"><br>+ 创建时间线<br><br>  + ```python<br>    <br>    <span class="hljs-keyword">from</span> pyecharts.charts import Bar,Timeline<br>    <span class="hljs-keyword">from</span> pyecharts.options import *<br>    #构建柱状图对象<br>    <span class="hljs-attribute">bar</span>=Bar()<br>    #添加x轴<br>    bar.add_xaxis([<span class="hljs-string">&quot;gsh&quot;</span>,<span class="hljs-string">&quot;dzr&quot;</span>,<span class="hljs-string">&quot;wsy&quot;</span>,<span class="hljs-string">&quot;zcr&quot;</span>,<span class="hljs-string">&quot;lxm&quot;</span>])<br>    #添加y轴<br>    bar.add_yaxis(<span class="hljs-string">&quot;成绩&quot;</span>,[10,10,30,20,10],<span class="hljs-attribute">label_opts</span>=LabelOpts(position=&quot;right&quot;))<br>    #反转x轴y轴<br>    bar.reversal_axis()<br>    <br>    <span class="hljs-attribute">bar1</span>=Bar()<br>    bar1.add_xaxis([<span class="hljs-string">&quot;gsh&quot;</span>,<span class="hljs-string">&quot;dzr&quot;</span>,<span class="hljs-string">&quot;wsy&quot;</span>,<span class="hljs-string">&quot;zcr&quot;</span>,<span class="hljs-string">&quot;lxm&quot;</span>])<br>    bar1.add_yaxis(<span class="hljs-string">&quot;成绩&quot;</span>,[100,100,100,100,100],<span class="hljs-attribute">label_opts</span>=LabelOpts(position=&quot;right&quot;))<br>    bar1.reversal_axis()<br>    #创建时间线对象<br>    <span class="hljs-attribute">timeLine</span>=Timeline()<br>    #添加bar柱状图<br>    timeLine.<span class="hljs-built_in">add</span>(bar,<span class="hljs-string">&quot;2022成绩&quot;</span>)<br>    timeLine.<span class="hljs-built_in">add</span>(bar1,<span class="hljs-string">&quot;2023成绩&quot;</span>)<br>    #绘图<br>    timeLine.render(<span class="hljs-string">&quot;时间线.html&quot;</span>)<br></code></pre></td></tr></table></figure>
+</code></pre>
 </li>
 </ul>
 </li>

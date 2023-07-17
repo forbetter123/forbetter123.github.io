@@ -596,7 +596,131 @@ bar.render()
 </ul>
 </li>
 </ul>
-]]></content>
+<h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><ul>
+<li><p>类的使用方式和java中使用类似</p>
+</li>
+<li><p>类中成员方法</p>
+<ul>
+<li><p>成员方法的定义语法：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">方法名</span>(<span class="hljs-params">self,形参<span class="hljs-number">1</span></span>):<br>	方法体<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>在方法内部想要访问类的成员变量，必须使用self</p>
+</li>
+</ul>
+</li>
+<li><p>构造方法</p>
+<ul>
+<li><pre><code class="python">在python类中可以使用：__init__方法
+<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">  +</span> 可以实现：<br><br><span class="hljs-bullet">    +</span> 在创建类对象时候，自动执行<br><span class="hljs-bullet">    +</span> 或将传入参数自动传递给init方法使用<br><br><span class="hljs-bullet">+</span> 魔术方法<br><br><span class="hljs-bullet">  +</span> <span class="hljs-emphasis">_str_</span>字符串方法<br><br><span class="hljs-bullet">    +</span> 作用：控制类转换为字符串<br><br><span class="hljs-bullet">  +</span> <span class="hljs-emphasis">_lt_</span>方法<br><br><span class="hljs-bullet">    +</span>  作用：可以直接对两个对象进行：大于和小于两个符号的两种比较<br><br><span class="hljs-bullet">    +</span> <span class="hljs-code">```python</span><br><span class="hljs-code">          def __lt__(self, other):</span><br><span class="hljs-code">              return self.name&lt;other.name</span><br><span class="hljs-code">          </span><br><span class="hljs-code">          返回值为True或False</span><br></code></pre></td></tr></table></figure>
+</code></pre>
+</li>
+<li><p>le方法</p>
+<ul>
+<li>作用：可用于&gt;&#x3D;和&lt;&#x3D;两种比较运算符上</li>
+<li>语法和lt类似</li>
+</ul>
+</li>
+<li><p>eq方法</p>
+<ul>
+<li>作用：是&#x3D;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>私有成员</p>
+<ul>
+<li>私有成员只能在该类中使用</li>
+<li>私有成员变量：变量名以双下划线开头</li>
+<li>私有成员方法：方法名以双下划线开头</li>
+</ul>
+</li>
+<li><p>继承</p>
+<ul>
+<li><p>继承</p>
+<ul>
+<li>作用：可以调用父类那边的成员变量和成员方法<ul>
+<li>语法</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">类名</span>(<span class="hljs-title class_ inherited__">父类名</span>):<br>	类内容体<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>多继承</p>
+<ul>
+<li>语法：</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">类名</span>(父类名<span class="hljs-number">1</span>，父类<span class="hljs-number">2</span>，....):<br>	类内容体（如果不用添加新内容就写<span class="hljs-keyword">pass</span>）<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>注：如果多继承，优先级从左往右继承父类</li>
+</ul>
+</li>
+<li><p>复写</p>
+<ul>
+<li>在子类中重新定义同名的属性或者方法</li>
+<li>如果在复写之后想要调用被复写的父类成员可以有两种方式<ul>
+<li>一:父类名.成员变量（父类名.成员方法(self）</li>
+<li>二:super().成员变量(super().成员方法())</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>类型注解</p>
+<ul>
+<li><p>语法：变量：类型</p>
+</li>
+<li><p>另一种：</p>
+<ul>
+<li>语法：#type：类型</li>
+</ul>
+</li>
+<li><p>作用：</p>
+<ul>
+<li>开发者自身做的备注</li>
+<li>帮助pycharm等开发工具对代码类型推断协助做代码提示</li>
+</ul>
+</li>
+<li><p>函数方法的类型注解</p>
+<ul>
+<li><pre><code class="python">def 函数方法名(形参:类型，......，形参:类型) -&gt;返回值类型:
+    pass
+<figure class="highlight routeros"><table><tr><td class="code"><pre><code class="hljs routeros"><br>  + Union<br><br>    + 语法：变量：类型Union[类型1，类型2,<span class="hljs-built_in">..</span><span class="hljs-built_in">..</span>.]<br>    + 作用：可以表示类型可能为多种<br><br>+ 多态<br><br>  + 多态：多种状态，既完成某个行为时，使用不同对象会得到不同状态<br><br>+ ## 抽象类(接口)<br><br>  + 抽象方法：方法体是空实现的(pass)称之为抽象方法<br>  + 作用：多用于做顶层设计(设计标准)，以便子类做具体实现<br><br><span class="hljs-comment">## python联合mysql的使用</span><br><br>+ 链接数据库<br><br>  + <br><br>  ```python<br>  <span class="hljs-keyword">from</span>  pymysql import<span class="hljs-built_in"> Connection</span><br><span class="hljs-built_in"></span>  #获取到MYSQL数据库的链接对象<br>  <span class="hljs-attribute">conn</span>=Connection(<br>      <span class="hljs-attribute">host</span>=<span class="hljs-string">&#x27;localhost&#x27;</span>,	#主机名<br>      <span class="hljs-attribute">port</span>=3306,		#端口<br>      <span class="hljs-attribute">user</span>=<span class="hljs-string">&#x27;root&#x27;</span>,<br>      <span class="hljs-attribute">password</span>=<span class="hljs-string">&#x27;root&#x27;</span><br>  )<br>  conn.close()<br></code></pre></td></tr></table></figure>
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>执行sql语句</p>
+<ul>
+<li><pre><code class="python">from  pymysql import Connection
+conn=Connection(
+    host=&#39;localhost&#39;,
+    port=3306,
+    user=&#39;root&#39;,
+    password=&#39;root&#39;
+)
+
+#获取游标对象
+cursor=conn.cursor()
+conn.select_db(&quot;test&quot;)
+#使用游标对象，执行sql语句
+cursor.execute(&quot;create table test_pymysql(id INT,info varchar(255))&quot;)
+#获取结果查询
+results:tuple =cursor.fetchall()
+for r in results:
+    print(r)
+#关闭数据库链接
+conn.close()
+<figure class="highlight pgsql"><table><tr><td class="code"><pre><code class="hljs pgsql"><br>+ 数据插入<br><br>  + ```python<br>    <span class="hljs-keyword">from</span>  pymysql <span class="hljs-keyword">import</span> <span class="hljs-keyword">Connection</span><br>    conn=<span class="hljs-keyword">Connection</span>(<br>        host=<span class="hljs-string">&#x27;localhost&#x27;</span>,<br>        port=<span class="hljs-number">3306</span>,<br>        <span class="hljs-keyword">user</span>=<span class="hljs-string">&#x27;root&#x27;</span>,<br>        <span class="hljs-keyword">password</span>=<span class="hljs-string">&#x27;root&#x27;</span><br>        autocommit=<span class="hljs-keyword">True</span> #设置自动提交<br>    )<br>    <br>    #获取游标对象<br>    <span class="hljs-keyword">cursor</span>=conn.<span class="hljs-keyword">cursor</span>()<br>    conn.select_db(&quot;test&quot;)<br>    #使用游标对象，执行<span class="hljs-keyword">sql</span>语句<br>    <span class="hljs-keyword">cursor</span>.<span class="hljs-keyword">execute</span>(&quot;insert into student values(10001,&#x27;周杰伦&#x27;,31,&#x27;男&#x27;)&quot;)<br>    #通过<span class="hljs-keyword">commit</span>确认<br>    #conn.<span class="hljs-keyword">commit</span>()<br>    #关闭数据库链接<br>    conn.<span class="hljs-keyword">close</span>()<br></code></pre></td></tr></table></figure>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="PySpark"><a href="#PySpark" class="headerlink" title="PySpark"></a>PySpark</h1>]]></content>
       <tags>
         <tag>python</tag>
       </tags>

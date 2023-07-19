@@ -17,7 +17,7 @@
 <li><p>print 语句中加end&#x3D;’’可以不换行</p>
 <ul>
 <li><pre><code class="hljs">print(&quot;hellow&quot;,end=&#39;&#39;)
-<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">+</span> \t 效果等于 tab键<br><br><span class="hljs-bullet">+</span> ctrl+/快速注释<br><br><span class="hljs-bullet">+</span> 注释<br><br><span class="hljs-bullet">  +</span> 单行注释<br><span class="hljs-bullet">    +</span> 以#开头(一般#号和注释内容一般建议以一个空格隔开)<br><br><span class="hljs-bullet">  +</span> 多行注释<br><span class="hljs-bullet">    +</span> 以一对三个双引号引起来来接受说明一段代码的作用和使用方法<br><br><br><span class="hljs-bullet">+</span> 数据类型<br><br><span class="hljs-bullet">  +</span> type（）语句可以输出类型信息<br><br><span class="hljs-bullet">+</span> 数据类型转换<br><br><span class="hljs-bullet">  +</span> str（）转换为字符串<br><span class="hljs-bullet">  +</span> int（）转换为整数<br><span class="hljs-bullet">  +</span> float（）转换为数字     <br><br><span class="hljs-bullet">+</span> 标识符命名规则<br><br><span class="hljs-bullet">  +</span> 只能出现<br><span class="hljs-bullet">    +</span> 英文<br><span class="hljs-bullet">    +</span> 中文<br><span class="hljs-bullet">    +</span> 数字<br><span class="hljs-bullet">    +</span> 下划线<br><span class="hljs-bullet">  +</span> 大小写敏感<br><span class="hljs-bullet">  +</span> 不可使用关键词   <br><br><span class="hljs-bullet">+</span> 算术运算符<br><br><span class="hljs-bullet">  +</span> +<br><span class="hljs-bullet">  +</span> -<br><span class="hljs-bullet">  +</span> *<br><span class="hljs-bullet">  +</span> /<br><span class="hljs-bullet">  +</span> //（取整除）<br><span class="hljs-bullet">  +</span> %(取余)<br><span class="hljs-bullet">  +</span> <span class="hljs-strong">**（指数 ）</span><br><span class="hljs-strong"></span><br><span class="hljs-strong">+ 使用转义字符\接触引号的效用</span><br><span class="hljs-strong"></span><br><span class="hljs-strong">  + 例如&quot; \&quot;111 &quot;输出&quot;111（格式为name=“\“111”）</span><br><span class="hljs-strong"></span><br><span class="hljs-strong">+ 字符串格式化 </span><br><span class="hljs-strong"></span><br><span class="hljs-strong">  + 字符串拼接%s占位拼接</span><br><span class="hljs-strong"></span><br><span class="hljs-strong">    + ```python</span><br><span class="hljs-strong">      name = &quot;董佬&quot;</span><br><span class="hljs-strong">      message =&quot;卷王 %s&quot; % name</span><br><span class="hljs-strong">      print (message) </span><br></code></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">+</span> print时加&quot;&quot;&quot;   &quot;&quot;&quot;可以简洁多个换行<br><br><span class="hljs-bullet">+</span> \t 效果等于 tab键<br><br><span class="hljs-bullet">+</span> ctrl+/快速注释<br><br><span class="hljs-bullet">+</span> 注释<br><br><span class="hljs-bullet">  +</span> 单行注释<br><span class="hljs-bullet">    +</span> 以#开头(一般#号和注释内容一般建议以一个空格隔开)<br><br><span class="hljs-bullet">  +</span> 多行注释<br><span class="hljs-bullet">    +</span> 以一对三个双引号引起来来接受说明一段代码的作用和使用方法<br><br><br><span class="hljs-bullet">+</span> 数据类型<br><br><span class="hljs-bullet">  +</span> type（）语句可以输出类型信息<br><br><span class="hljs-bullet">+</span> 数据类型转换<br><br><span class="hljs-bullet">  +</span> str（）转换为字符串<br><span class="hljs-bullet">  +</span> int（）转换为整数<br><span class="hljs-bullet">  +</span> float（）转换为数字     <br><br><span class="hljs-bullet">+</span> 标识符命名规则<br><br><span class="hljs-bullet">  +</span> 只能出现<br><span class="hljs-bullet">    +</span> 英文<br><span class="hljs-bullet">    +</span> 中文<br><span class="hljs-bullet">    +</span> 数字<br><span class="hljs-bullet">    +</span> 下划线<br><span class="hljs-bullet">  +</span> 大小写敏感<br><span class="hljs-bullet">  +</span> 不可使用关键词   <br><br><span class="hljs-bullet">+</span> 算术运算符<br><br><span class="hljs-bullet">  +</span> +<br><span class="hljs-bullet">  +</span> -<br><span class="hljs-bullet">  +</span> *<br><span class="hljs-bullet">  +</span> /<br><span class="hljs-bullet">  +</span> //（取整除）<br><span class="hljs-bullet">  +</span> %(取余)<br><span class="hljs-bullet">  +</span> <span class="hljs-strong">**（指数 ）</span><br><span class="hljs-strong"></span><br><span class="hljs-strong">+ 使用转义字符\接触引号的效用</span><br><span class="hljs-strong"></span><br><span class="hljs-strong">  + 例如&quot; \&quot;111 &quot;输出&quot;111（格式为name=“\“111”）</span><br><span class="hljs-strong"></span><br><span class="hljs-strong">+ 字符串格式化 </span><br><span class="hljs-strong"></span><br><span class="hljs-strong">  + 字符串拼接%s占位拼接</span><br><span class="hljs-strong"></span><br><span class="hljs-strong">    + ```python</span><br><span class="hljs-strong">      name = &quot;董佬&quot;</span><br><span class="hljs-strong">      message =&quot;卷王 %s&quot; % name</span><br><span class="hljs-strong">      print (message) </span><br></code></pre></td></tr></table></figure>
 
 + %s 将内容转换为字符串，放入占位位置
 
@@ -720,7 +720,17 @@ conn.close()
 </ul>
 </li>
 </ul>
-<h1 id="PySpark"><a href="#PySpark" class="headerlink" title="PySpark"></a>PySpark</h1>]]></content>
+<h1 id="爬虫"><a href="#爬虫" class="headerlink" title="爬虫"></a>爬虫</h1><p>爬虫：通过编写程序，模拟浏览器上网，然后去互联网上抓取数据的过程</p>
+<ul>
+<li>写一个爬虫的步骤<ul>
+<li>第一步：获取网页内容</li>
+<li>第二步：解析网页内容</li>
+<li>第三步：储存或分析数据</li>
+</ul>
+</li>
+</ul>
+<h1 id="PySpark"><a href="#PySpark" class="headerlink" title="PySpark"></a>PySpark</h1><p>+ </p>
+]]></content>
       <tags>
         <tag>python</tag>
       </tags>
